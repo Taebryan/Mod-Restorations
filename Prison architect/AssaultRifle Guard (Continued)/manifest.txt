@@ -1,0 +1,9 @@
+
+Name                 "AssaultRifle Guards (Continued)"  
+Description          "Original Mod by maibee 美蜂  https://steamcommunity.com/sharedfiles/filedetails/?id=418801290 :\n\n- Staff Wages Fixed\n\nDisclaimer : This a updated version of the original mod. I am not the original author and don't claim any ownership, the original author can message me to request a take down of the mod if they so choose.\n\nOriginal Description\n\nThis mod equips all Guards with Assault Rifles. All new, recruited Guards will spawn with them. Old Guards will rush to the armory to retrieve them. Not compatible with other Guard weapon swaps! And check out my other weapon sets!"  
+IsTranslation        false  
+FileID               F3003275368  
+UpdateTime           1450158132  
+SteamAuthor          A76561198397419346  
+SteamTags            mod,content  
+Author               "maibee 美蜂"  

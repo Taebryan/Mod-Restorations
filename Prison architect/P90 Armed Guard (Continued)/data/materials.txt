@@ -1,0 +1,40 @@
+BEGIN Equipment  
+    Name                 P90#1  
+    Scale                1.20000  
+    AttackPower          2.00000  
+    RechargeTime         0.0500000
+    TwoHanded            true  
+    Range                20.0
+    Ammo                 50
+    Properties           Weapons
+    Properties           RangedWeapon
+    Properties           Metal
+    Properties           NoImport
+    BEGIN   Sprite
+        x 0 
+        y 0  
+        w 4  
+        h 4  
+        RotateType 0
+    END
+END
+
+BEGIN Object     
+    Name                 ArmedGuard
+    MoveSpeedFactor      0.500000  
+    Toughness            15.0000  
+    Price                -1500 
+    Upkeep               -350	
+    RenderDepth          2  
+    ViewRange            15
+    BlockedBy            Wall
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Research             Armoury
+    Sprite               ArmedGuard
+    SpriteVariants       4
+    Properties           Entity
+    Properties           Staff
+    Properties           Guard
+    Equipment            P90#1
+END

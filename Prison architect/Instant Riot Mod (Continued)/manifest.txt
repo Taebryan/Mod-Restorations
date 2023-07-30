@@ -1,0 +1,9 @@
+
+Name                 "Instant Riot Mod (Continued)"  
+Author               "Sambot (human tho, ffs)"  
+Description          "[h1]Original Mod[/h1]\nBy Sambot https://steamcommunity.com/sharedfiles/filedetails/?id=563159299\n\n[h1]Changes[/h1]\n- Added Modified Handgun and Modified Assault Rifle To Sambot Special\n\n- Removed Lighters from Sambot Special\n\n[h1]Disclaimer[/h1] This a updated version of the original mod. I am not the original author and don't claim any ownership, the original author can message me to request a take down of the mod if they so choose.\n\n[h1]Original Description[/h1] \nNEW IN LATEST VERSION: \r\nThe \"Sambot Special\"- for an extra challenge! Will your prison survive?\r\n\r\nI was testing my other mods, and I had to keep locking everybody in a room and waiting for them to riot to test things. So I made a mod that makes every single prisoner start to riot at the same time. That's right. Every. Single. One. At once. Such fun! \r\n\r\nTo use: \r\n1. Select \"Instant Riot\" from the Staff menu. \r\n2. Place it down anywhere. \r\n3. Depending on how many prisoners you have and how fast your computer is, you will experience some brief lag. \r\n4. One massive riot coming right up! \r\n\r\nFull feature list:\r\n- Instant Riot\r\n- Instant Fight\r\n- Instant Jailbreak\r\n- Instant Calm\r\n- The \"Sambot Special\" challenge\r\n\r\nI'm not responsible for any damages to prison property or loss of life resulting from the use of this mod. \r\n\r\nCheck out my other mods! \r\nhttp://steamcommunity.com/sharedfiles/filedetails/?id=563165423"  
+IsTranslation        false  
+UpdateTime           1449875591  
+SteamAuthor          A76561198397419346  
+SteamTags            mod,content  
+FileID               F3008753029  

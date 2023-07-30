@@ -1,0 +1,63 @@
+BEGIN Object   
+    Name                 sambotdefensive
+    MoveSpeedFactor      1.000
+    Toughness                  1.0000
+    Price                -1
+    Properties           Entity
+   Sprite                   Ak47
+    RenderDepth       2
+    ViewRange            0
+    Properties           Scripted 
+EN
+
+BEGIN Object   
+    Name                 InstantRiot
+    MoveSpeedFactor      1.000
+    Toughness                  1.0000
+    Price                -1
+    Properties           Entity
+   Sprite                   Soldier
+   SpriteVariants    4
+    RenderDepth       2
+    ViewRange            0
+    Properties           Scripted 
+END
+
+BEGIN Object   
+    Name                 InstantEscape
+    MoveSpeedFactor      1.000
+    Toughness                  1.0000
+    Price                -1
+    Properties           Entity
+   Sprite                   EscapeIcon
+   SpriteVariants    4
+    RenderDepth       2
+    ViewRange            0
+    Properties           Scripted 
+END
+
+BEGIN Object   
+    Name                 InstantFight
+    MoveSpeedFactor      1.000
+    Toughness                  1.0000
+    Price                -1
+    Properties           Entity
+   Sprite                   HenchmanKnifed
+   SpriteVariants    4
+    RenderDepth       2
+    ViewRange            0
+    Properties           Scripted 
+END
+
+BEGIN Object   
+    Name                 InstantCalm
+    MoveSpeedFactor      1.000
+    Toughness                  1.0000
+    Price                -1
+    Properties           Entity
+   Sprite                  Negotiator
+   SpriteVariants    4
+    RenderDepth       2
+    ViewRange            0
+    Properties           Scripted 
+END

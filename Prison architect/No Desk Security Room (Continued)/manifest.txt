@@ -1,0 +1,9 @@
+
+Name                 "No Desk Security Room (Continued)"  
+Description          "Original Mod by Maz https://steamcommunity.com/sharedfiles/filedetails/?id=1211603496:\n\nChanges :\n\n- Compatible to Place a tracking monitor now\n\nDisclaimer : This a updated version of the original mod. I am not the original author and don't claim any ownership, the original author can message me to request a take down of the mod if they so choose.\n\nOriginal Description\n\nI hate that you are forced to have an office desk, chair and filling cabnet in your security room.\r\nWell now it's up to you.\r\n\r\nI also reduced the minimum room size from 4x4 to 2x2.\r\n\r\nPlease rate this mod.\r\nIt helps it filter through the thousands of uploaded prisons.\r\n\r\n:)"  
+IsTranslation        false  
+UpdateTime           1511643028  
+SteamAuthor          A76561198397419346  
+SteamTags            mod,content  
+Author               Maz  
+FileID               F3007013805  

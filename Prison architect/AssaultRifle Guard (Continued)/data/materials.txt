@@ -1,0 +1,18 @@
+BEGIN Object     
+    Name                 Guard  
+    MoveSpeedFactor      0.500000  
+    Toughness            20.0000  
+    Price                -500 
+    Upkeep               -100	
+    RenderDepth          2  
+    ViewRange            12
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               Guard
+    SpriteVariants       4  
+    Properties           Entity
+    Properties           Staff
+    Properties           Guard
+    Equipment            AssaultRifle
+END

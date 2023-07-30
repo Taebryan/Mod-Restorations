@@ -1,0 +1,9 @@
+
+Name                 "Prison Architect Overhaul (Continued)"  
+Description          "[h1]Original Mod[/h1]\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=582409305]By HM2. Gunner9213[/url]\n\n[h1]Changes[/h1]\n- Fixed sprite\n\n- Fixed room requirements\n\n- Fixed Ui\n\n[h1]Disclaimer[/h1] This a updated version of the original mod. I am not the original author and don't claim any ownership, the original author can message me to request a take down of the mod if they so choose.\n\n[h1]Original Description[/h1]An overhaul of the graphics and gameplay of Prison Architect.\r\n\r\n[b]== FEATURES ==[/b]\r\n\r\n- Replaced the Guards with Correction Deputies.\r\n- Prisoners are now known as Inmates.\r\n- SEB (Armed) Emergency Teams.\r\n- Room size and required item changes, (EG - Smaller Cells, offices).\r\n- Many retextured items, people, inmate uniforms.\r\n- New sounds for Lockdown alarms.\r\n- Female Warden\r\n- Extra Grants, and eaiser reform programs,\r\n- UI changes.\r\n\r\nPlease leave any suggestions or comments below."  
+IsTranslation        false  
+FileID               F3011207981  
+UpdateTime           1611867811  
+SteamAuthor          A76561198397419346  
+SteamTags            "mod,graphics and sound,content"  
+Author               "HM2. Gunner9213"  

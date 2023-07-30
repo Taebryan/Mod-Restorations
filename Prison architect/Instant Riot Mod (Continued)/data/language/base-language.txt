@@ -1,0 +1,14 @@
+object_InstantRiot                   Instant Riot
+buildtoolbar_popup_staff_InstantRiot       Causes all prisoners to instantly riot.
+
+object_InstantCalm                 Instant Calm
+buildtoolbar_popup_staff_InstantCalm       All prisoners stop rioting/fighting/escaping.
+
+object_InstantEscape                  Instant Jailbreak
+buildtoolbar_popup_staff_InstantEscape       All prisoners make a mad dash for the exit.
+
+object_InstantFight                   Instant Fight
+buildtoolbar_popup_staff_InstantFight      All prisoners instantly start fighting.
+
+object_sambotdefensive                          The "Sambot Special"
+buildtoolbar_popup_staff_sambotdefensive      Good luck!

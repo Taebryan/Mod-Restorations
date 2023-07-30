@@ -1,0 +1,9 @@
+
+Name                 "P90 Armed Guards (Continued)"  
+Description          "Original Mod by maibee 美蜂  https://steamcommunity.com/sharedfiles/filedetails/?id=594757193 :\n\n- Staff Wages Fixed\n\n- Fixed the black bar on top of the P90\n\n- Fixed P90 Sizing issues\n\nDisclaimer : This a updated version of the original mod. I am not the original author and don't claim any ownership, the original author can message me to request a take down of the mod if they so choose.\n\nOriginal Description\n\nThis mod equips all Armed Guards with P90s. All new, recruited Armed Guards will spawn with them. Old Armed Guards will rush to the armory to retrieve them. Not compatible with other Armed Guard weapon swaps! And check out my other weapon sets!"  
+IsTranslation        false  
+UpdateTime           1453224021  
+SteamAuthor          A76561198397419346  
+SteamTags            mod,content  
+Author               "maibee 美蜂"  
+FileID               F3006418535  

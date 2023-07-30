@@ -1,0 +1,9 @@
+
+Name                 "Restyling UI (Continued)"  
+Author               Amedeel  
+Description          "[h1]Original Mod[/h1]\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2482292077]By Amedeel[/url]\n\n[h1]Changes[/h1]\n- Fixed Ui not showing up\n\n[h1]Disclaimer[/h1] This a updated version of the original mod. I am not the original author and don't claim any ownership, the original author can message me to request a take down of the mod if they so choose.\n\n[h1]Original Description[/h1][b]Restyled user interface elements.[/b]\r\n Last changes:\r\n- The mod is optimized to work with the latest DLC's \r\n Thank you for downloading and rating."  
+IsTranslation        false  
+FileID               F3009547076  
+UpdateTime           1662652262  
+SteamAuthor          A76561198397419346  
+SteamTags            "mod,graphics and sound"  
