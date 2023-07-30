@@ -1,0 +1,1253 @@
+
+#######################################################
+#
+#  Begin Advanced Roads
+#
+#######################################################
+
+object_GlassDoor										 Glass Door
+buildtoolbar_popup_obj_GlassDoor						 To be combined with the Glass Walls
+
+object_StaffMenuAR2										 -->
+buildtoolbar_popup_staff_StaffMenuAR2					 This is only a Menu Separator
+object_StaffMenuLG2										 -->
+buildtoolbar_popup_staff_StaffMenuLG2					 This is only a Menu Separator
+
+tooltip_SupplyTruck										 If you see me driving on the default road, then something is wrong.\n\nSTART WITH THE ADVANCED ROADS 2.0 GRANT TO BUILD A TRAFFIC TERMINAL.\n\nAlso make sure this mod is on top of all other mods in your modslist to work properly.
+
+object_TreeRemover										 Tree Remover
+
+object_RoadGate2TrafficLightLarge						 Traffic Light
+object_RoadGate2TrafficLightSmall						 Traffic Light
+tooltip_RoadGate2_SidelaneLight							 Turns red when a TowTruck is processing,\nturns green when it's done and leaving.
+
+object_RoadGate2PostLeftSmall							 Left Post
+object_RoadGate2PostRightSmall							 Right Post
+object_RoadGate2PostLeftLarge							 Left Post
+object_RoadGate2PostRightLarge							 Right Post
+object_RoadGate2PostLeftPoW								 Left Post
+object_RoadGate2PostRightPoW							 Right Post
+
+object_RoadGate2Small									 Road Gate
+object_RoadGate2SmallSpawner							 Road Gate (Small)
+buildtoolbar_popup_staff_RoadGate2SmallSpawner			 Advanced Roads 2.0 gate for single lanes.\nUse the buttons to configure.
+
+object_RoadGate2Large									 Road Gate
+object_RoadGate2LargeSpawner							 Road Gate (Large)
+buildtoolbar_popup_staff_RoadGate2LargeSpawner			 Advanced Roads 2.0 gate for double lanes.\nUse the buttons to configure.
+
+tooltip_RoadGate2_Separatorline							 =================
+tooltip_RoadGate2_Button_SubType						 Colour: *X
+tooltip_RoadGate2_Button_Direction						 Direction: *X
+tooltip_RoadGate2_Button_PostType						 Post: *X
+tooltip_RoadGate2_Button_Lights							 Lights: *X
+tooltip_RoadGate2_Button_TrafficLight					 Traffic Light: *X
+tooltip_RoadGate2_Button_StaffScan						 Staff Scan: *X
+tooltip_RoadGate2_Button_RemoveCrap						 Del Box/Rubble/Trash
+tooltip_RoadGate2_Button_LinkGate						 Linked Gates: *X
+tooltip_RoadGate2_Button_LinkGate1						 Pos *P  Link *X
+tooltip_RoadGate2_Button_LinkGate2						 Pos *P  Link *X
+tooltip_RoadGate2_Button_LinkGate3						 Pos *P  Link *X
+tooltip_RoadGate2_Button_LinkGate4						 Pos *P  Link *X
+tooltip_RoadGate2_Button_LinkGate5						 Pos *P  Link *X
+tooltip_RoadGate2_Button_LinkGate6						 Pos *P  Link *X
+tooltip_RoadGate2_Button_LinkGate7						 Pos *P  Link *X
+tooltip_RoadGate2_Button_LinkGate8						 Pos *P  Link *X
+tooltip_RoadGate2_Button_LinkGate9						 Pos *P  Link *X
+tooltip_RoadGate2_Button_LinkGate10						 Pos *P  Link *X
+
+object_StreetManager2									 Street Manager 2.0
+tooltip_StreetManager2									 \nID: *H\nHandles vehicles and road gates on the map.\nShows lane status on RoadMarkers.\n\nClick me to change the skin of any vehicle.\nOnly new vehicles will get the updated skin, existing ones on the map are not updated.
+tooltip_StreetManager2_SeparatorSubTypes				 ==TRUCK SKINS==
+tooltip_StreetManager2_ChangeSubTypeDeliveries			 Deliveries: *X/9
+tooltip_StreetManager2_ChangeSubTypeExports				 Exports: *X/9
+tooltip_StreetManager2_ChangeSubTypeGarbage				 Garbage: *X/9
+tooltip_StreetManager2_ChangeSubTypeIntake				 Intake: *X/14
+tooltip_StreetManager2_ChangeSubTypeEmergency			 Hearse: *X/14
+tooltip_StreetManager2_ChangeSubTypeFireEngine			 FireEngine: *X/13
+tooltip_StreetManager2_ChangeSubTypeAmbulance			 Paramedics: *X/14
+tooltip_StreetManager2_ChangeSubTypeRiotVan				 RiotVan: *X/15
+tooltip_StreetManager2_ChangeSubTypeTroopTruck			 TroopTruck: *X/11
+
+object_RoadMarker2										 Road Marker
+
+object_LoadChecker										 Exports & Garbage Checker
+object_CargoGarbage										 Cargo Garbage
+object_CargoDeliveries									 Cargo Deliveries
+object_CargoDeliveriesEmpty								 Deliveries Packaging
+object_CargoExports										 Cargo Exports
+
+object_CargoStopSign									 Stop Sign
+tooltip_CargoStopSign									 Home ID: *X\nCargoStation ID: *Y\nNumber: *Z
+tooltip_CargoStopSign_DeliveriesArriving				 Home ID: *X\nCargoStation ID: *Y\nNumber: *Z\n*T cargo items arriving\n\n=== [ *A ] === [ FOOD DISTRIBUTION ]\n=  Ingredients / Foodtrays / Staff Food / Cookers,\n=  Fridge / Sink / Serving Table / Sprinklers\n\n=== [ *B ] === [ LAUNDRY DISTRIBUTION ]\n=  Prisoner Uniforms / Vending Uniforms,\n=  Ironing Boards / Laundry Machines / Baskets\n\n=== [ *C ] === [ VENDING DISTRIBUTION ]\n=  Library Books / Shop / Vending Machines stock\n\n=== [ *D ] === [ FORESTRY DISTRIBUTION ]\n=  Tree Saplings / Forestry Tree\n\n=== [ *E ] === [ WORKSHOP MATERIALS ]\n=  Sheet Metal / Wood,\n=  Workshop Saw / Press / Carpenter Table\n\n=== [ *F ] === [ PLANTATION / GARDEN ]\n=  Seeds / Compost / ClothSpool / DDT\n\n=== [ *G ] === [ ACCOUNTING MATERIALS ]\n=  Dirty Money\n\n=== [ *H ] === [ PHONEFACTORY MATERIALS ]\n=  Sheet Aluminium\n\n=== [ *I ] === [ COMPUTER MATERIALS ]\n=  PrinterPaper / Toner / Drumkit\n=  ServerParts\n\n=== [ *J ] === [ CONSTRUCTION ]\n=  Brick / Concrete / Metal / Steel,\n=  Electrical Cable / Water Pipes,\n=  Power Station / Capacitors,\n=  WaterPump Station / WaterBoiler\n\n=== [ *K ] === [ FLOORS ]\n=  Floor Tiles / Grass Turf\n\n=== [ *L ] === [ ALL OTHER CARGO ]\n=  Anything else which is not listed above
+tooltip_CargoStopSign_PrisonersArriving					 Home ID: *X\nCargoStation ID: *Y\nNumber: *Z\n*T prisoner(s) arriving\n\n=== [ *A ] === [ MINSEC ]\n=  Prisoners for the Minimum Security wing\n\n=== [ *B ] === [ MEDSEC ]\n=  Prisoners for the Normal Security wing\n\n=== [ *C ] === [ MAXSEC ]\n=  Prisoners for the Maximum Security wing\n\n=== [ *D ] === [ PROTECTED ]\n=  Prisoners for the Protected Custody area\n\n=== [ *D ] === [ SUPMAX ]\n=  Prisoners for the Super Max security wing\n\n=== [ *F ] === [ DR ]\n=  Prisoners for Death Row\n\n=== [ *G ] === [ INSANE ]\n=  Prisoners who are completely nuts
+tooltip_CargoStopSign_TrafficTerminalRequired			 A Traffic Terminal is required
+
+object_CargoTruckBay									 Cargo Truck Bay
+object_TmpCargoTruckBay									 Deliveries On Route
+object_IntakeTruckBay									 Prisoner Truck Bay
+object_EmergencyTruckBay								 Hearse Truck Bay
+object_CalloutTruckBay									 Callout Truck Bay
+tooltip_Bay												 \nID: *H\nCargoStation ID: *I\nBay Number *N\nAmount: *A
+tooltip_BayIntake										 \nID: *H\nCargoStation ID: *I\nBay Number *N\nPrisoners: *A
+
+object_CargoStation										 Cargo Station
+tooltip_CargoStation_Placement							 \nIf you are not happy with the placement of this cargo station, then press Remove Station NOW.\n\nClick the DEPLOY button to create a road and to complete the station.\n\nYou can place several cargo stations of the same road width per road. Use the buttons to configure the cargo station.\n\nThere must be a Traffic Terminal on the map before the station can accept cargo.
+tooltip_CargoStation_Compact							 Home ID: *H\n\nTraffic enabled: *X\n\n*Y
+tooltip_CargoStation_Large								 Home ID: *H\n\nLEFT SIDE:\nTraffic enabled: *A\n\n*B\n\n\nRIGHT SIDE:\nTraffic enabled: *C\n\n*D
+tooltip_CargoStation_Deliveries							 This Cargo Station is used to deliver the cargo you specify with my buttons. Zoning its cargo area (3x5) as CARGO AREA room is optional. When specified stuff is available, a Cargo Truck will deliver it.
+tooltip_CargoStation_Exports							 This Cargo Station collects goods for exports. Zone the cargo area as EXPORTS room (3x5). When exports are available, a Cargo or Exports Truck will pick it up.
+tooltip_CargoStation_Garbage							 This Cargo Station collects garbage. Zone the cargo area as GARBAGE room (3x5). When garbage is available, a Cargo or Garbage Truck will pick it up.
+tooltip_CargoStation_Intake								 This Cargo Station will be used to deliver prisoners. Zoning its cargo area (3x5) as INTAKE AREA room is optional. Specify the authorized Security Level and toggle between escorting new prisoners either to Reception, or directly to their cells.
+tooltip_CargoStation_Emergency							 This Cargo Station will be used to collect dead bodies. Emergency call-outs will also arrive at this station type. Zoning its cargo area (3x5) as EMERGENCY room is optional.
+tooltip_CargoStation_Button_Delete						 Delete station
+tooltip_CargoStation_Or									 ====== OR =======
+tooltip_CargoStation_Button_BuildRoad					 DEPLOY
+tooltip_CargoStation_Button_BuildRails					 DEPLOY
+tooltip_CargoStation_Separatorline						 =================
+tooltip_CargoStation_Button_ReBuildRoad					 Rebuild Road
+tooltip_CargoStation_Button_FloorType					 Toggle Floor
+tooltip_CargoStation_Button_FloorTypeRoad				 [Road] Platform
+tooltip_CargoStation_Button_FloorTypePlatform			 [Platform] Road
+tooltip_CargoStation_Button_SubType						 Colour: *X
+tooltip_CargoStation_Button_Orange						 orange
+tooltip_CargoStation_Button_Blue						 blue
+tooltip_CargoStation_Button_Beige						 beige
+tooltip_CargoStation_Button_Green						 green
+tooltip_CargoStation_Button_White						 white
+tooltip_CargoStation_Button_StationFloor				 Floor: *X
+tooltip_CargoStation_Button_NORMAL						 NORMAL
+tooltip_CargoStation_Button_ELEVATED					 ELEVATED
+tooltip_CargoStation_Button_StationHeight				 Height: *X
+tooltip_CargoStation_Button_COMPACT						 [12] 21 tiles
+tooltip_CargoStation_Button_TALL						 12 [21] tiles
+tooltip_CargoStation_Button_ToggleLights				 Toggle lights
+tooltip_CargoStation_Button_RecyclingArea				 Recycling: *X
+tooltip_CargoStation_Button_DeleteStack					 Delete boxes/stack
+tooltip_CargoStation_Button_CargoSide					 *X SIDE
+tooltip_CargoStation_Button_LEFT						 LEFT
+tooltip_CargoStation_Button_RIGHT						 RIGHT
+tooltip_CargoStation_Button_CargoType					 Type: *X
+tooltip_CargoStation_Button_Deliveries					 DELIVERIES
+tooltip_CargoStation_Button_Exports						 EXPORTS
+tooltip_CargoStation_Button_Garbage						 GARBAGE
+tooltip_CargoStation_Button_Intake						 INTAKE
+tooltip_CargoStation_Button_Emergency					 EMERGENCY
+tooltip_CargoStation_Button_TrafficEnabled				 ENABLED: *X
+tooltip_CargoStation_SeparatorlineCARGO					 === CARGO: ===
+tooltip_CargoStation_Button_BuildingDelivery			 *X        Building
+tooltip_CargoStation_Button_FloorsDelivery				 *X    Floor/Grass
+tooltip_CargoStation_Button_LaundryDelivery				 *X       Uniforms
+tooltip_CargoStation_Button_FoodDelivery				 *X    Food/Trays
+tooltip_CargoStation_Button_ForestDelivery				 *X       Forestry
+tooltip_CargoStation_Button_VendingDelivery				 *X       Vending
+tooltip_CargoStation_Button_Workshop1Delivery			 *X      Workshop
+tooltip_CargoStation_Button_Workshop2Delivery			 *X      Plantation
+tooltip_CargoStation_Button_Workshop3Delivery			 *X  MoneyLaundry
+tooltip_CargoStation_Button_Workshop4Delivery			 *X PhoneWorkshop
+tooltip_CargoStation_Button_Workshop5Delivery			 *X   PC hardware
+tooltip_CargoStation_Button_OtherDelivery				 *X          Other
+tooltip_CargoStation_Button_yes							 YES
+tooltip_CargoStation_Button_no							 NO
+tooltip_CargoStation_Button_Delivery_yes				 V
+tooltip_CargoStation_Button_Delivery_no					 X
+tooltip_CargoStation_Button_SecLevel					 Unload: *X
+tooltip_CargoStation_Button_IsIntake					 To Reception: *X
+tooltip_CargoStation_Button_SecLevel_ALL				 ALL
+tooltip_CargoStation_Button_SecLevel_MinSec				 MINSEC
+tooltip_CargoStation_Button_SecLevel_Normal				 MEDSEC
+tooltip_CargoStation_Button_SecLevel_MaxSec				 MAXSEC
+tooltip_CargoStation_Button_SecLevel_Protected			 PROTECT
+tooltip_CargoStation_Button_SecLevel_SuperMax			 SUPMAX
+tooltip_CargoStation_Button_SecLevel_DeathRow			 DEATHROW
+tooltip_CargoStation_Button_SecLevel_Insane				 INSANE
+tooltip_CargoStation_Button_SecLevel1					 *X         MinSec
+tooltip_CargoStation_Button_SecLevel2					 *X         Normal
+tooltip_CargoStation_Button_SecLevel3					 *X        MaxSec
+tooltip_CargoStation_Button_SecLevel4					 *X      Protected
+tooltip_CargoStation_Button_SecLevel5					 *X      SuperMax
+tooltip_CargoStation_Button_SecLevel6					 *X      DeathRow
+tooltip_CargoStation_Button_SecLevel7					 *X          Insane
+
+tooltip_CargoStation_SeparatorEquipment					 ====Equipment====
+tooltip_CargoStation_Button_CalloutEquipmentFireman		 Fireman: *X
+tooltip_CargoStation_Button_CalloutEquipmentParamedic	 Paramedic: *X
+tooltip_CargoStation_Button_CalloutEquipmentRiotGuard	 RiotGuard: *X
+tooltip_CargoStation_Button_CalloutEquipmentArmedGuard	 ArmedGuard: *X
+tooltip_CargoStation_Button_CalloutEquipmentSoldier		 Soldier: *X
+tooltip_CargoStation_CalloutEquipment_Hose				 Hose
+tooltip_CargoStation_CalloutEquipment_Extinguisher		 Extinguisher
+tooltip_CargoStation_CalloutEquipment_Needle			 Needle
+tooltip_CargoStation_CalloutEquipment_SedativeSyringe	 Syringe
+tooltip_CargoStation_CalloutEquipment_Baton				 Baton
+tooltip_CargoStation_CalloutEquipment_AssaultRifle		 Assault
+tooltip_CargoStation_CalloutEquipment_AK47				 AK 47
+tooltip_CargoStation_CalloutEquipment_Axe				 Axe
+tooltip_CargoStation_CalloutEquipment_BatteringRam		 BatteringRam
+tooltip_CargoStation_CalloutEquipment_Gun				 Gun
+tooltip_CargoStation_CalloutEquipment_Knife				 Knife
+tooltip_CargoStation_CalloutEquipment_Rifle				 Rifle
+tooltip_CargoStation_CalloutEquipment_Shotgun			 Shotgun
+tooltip_CargoStation_CalloutEquipment_SubMachineGun		 Uzi
+tooltip_CargoStation_CalloutEquipment_Tazer				 Tazer
+
+
+object_CargoStationDoubleSpawner						 Cargo Station (Double Road)
+buildtoolbar_popup_staff_CargoStationDoubleSpawner		 Can be placed anywhere on the map.\nSpawns a double road if no road exists.\nIf you want, you can place several stations on the same road.\n\nAfter placing, use its BUTTONS to configure what this station will do. Toggle LEFT and RIGHT side to set up each road lane. Toggle ENABLED if you want to activate a side. Both sides are independent, so for example you can have the right side turned on while the left side is inactive.\n\nRequires a Traffic Terminal on the map to be operational. The Traffic Terminal must be switched to AUTO before it starts sending cargo to the stations.
+
+object_CargoStationUnloadLeftSpawner					 Cargo Station (Unload Left)
+buildtoolbar_popup_staff_CargoStationUnloadLeftSpawner	 Can be placed anywhere on the map.\nSpawns a single road lane if no road exists.\nIf you want, you can place several stations on the same road.\n\nAfter placing, use its BUTTONS to configure what this station will do. In case you need it, you can even toggle its placement afterwards, by clicking LEFT / RIGHT side. It will then hop to the other side of the road.\n\nToggle the ENABLED button if you want to activate this station.\n\nRequires a Traffic Terminal on the map to be operational. The Traffic Terminal must be switched to AUTO before it starts sending cargo to the stations.
+
+object_CargoStationUnloadRightSpawner					 Cargo Station (Unload Right)
+buildtoolbar_popup_staff_CargoStationUnloadRightSpawner	 Can be placed anywhere on the map.\nSpawns a single road lane if no road exists.\nIf you want, you can place several stations on the same road.\n\nAfter placing, use its BUTTONS to configure what this station will do. In case you need it, you can even toggle its placement afterwards, by clicking LEFT / RIGHT side. It will then hop to the other side of the road.\n\nToggle the ENABLED button if you want to activate this station.\n\nRequires a Traffic Terminal on the map to be operational. The Traffic Terminal must be switched to AUTO before it starts sending cargo to the stations.
+
+object_CargoStationGantryCrane							 Cargo Gantry
+object_CargoStationGantryHook							 Cargo Hook
+object_CargoStationControl								 Cargo Station Control
+job_custom_ActivateDeliveriesStation					 Activate Deliveries Station
+job_custom_OperateDeliveriesStation						 Operate Deliveries Station
+job_custom_LeaveDeliveriesStation						 Leave Deliveries Station
+job_custom_ActivateExportsStation						 Activate Exports Station
+job_custom_OperateExportsStation						 Operate Exports Station
+job_custom_LeaveExportsStation							 Leave Exports Station
+job_custom_ActivateGarbageStation						 Activate Garbage Station
+job_custom_OperateGarbageStation						 Operate Garbage Station
+job_custom_LeaveGarbageStation							 Leave Garbage Station
+job_custom_ActivateIntakeStation						 Activate Intake Station
+job_custom_OperateIntakeStation							 Operate Intake Station
+job_custom_LeaveIntakeStation							 Leave Intake Station
+job_custom_ActivateEmergencyStation						 Activate Emergency Station
+job_custom_OperateEmergencyStation						 Operate Emergency Station
+job_custom_LeaveEmergencyStation						 Leave Emergency Station
+job_custom_ActivateCalloutStation						 Activate Call-out Station
+job_custom_OperateCalloutStation						 Operate Call-out Station
+job_custom_LeaveCalloutStation							 Leave Call-out Station
+
+object_CargoStationFireEngine							 Fireman Equipment
+
+object_CargoStopSignHeliPad								 Stop Sign
+
+object_CargoHelipad										 Helipad
+tooltip_CargoHelipad_Placement							 \nIf you are not happy with the placement of this helipad, then press Delete helipad NOW.\n\nClick the DEPLOY button to create the helipad.\n\nUse the buttons to configure the helipad.\n\nThere must be a Traffic Terminal on the map before the station can accept cargo.
+tooltip_CargoHelipad_TrafficTerminalRequired			 A Traffic Terminal is required
+tooltip_CargoHelipad_Button_Delete						 Delete helipad
+tooltip_CargoHelipad_Or									 ====== OR =======
+tooltip_CargoHelipad_Button_BuildHelipad				 DEPLOY
+tooltip_CargoHelipad_Separatorline						 =================
+tooltip_CargoHelipad_Button_DeleteStack					 Delete boxes/stack
+tooltip_CargoHelipad_Button_FloorType					 Floor: *X
+tooltip_CargoHelipad_FloorType_Compact					 compact
+tooltip_CargoHelipad_FloorType_Large					 large
+tooltip_CargoHelipad									 HeliPad ID: *Y\nNumber: *Z
+tooltip_CargoHelipad_DeliveriesTraffic					 HeliPad ID: *H\n\nThis helipad is used to deliver the cargo you specify with my buttons.\nThere is no need to zone this area.\nWhen specified stuff is available, a Chinook will deliver it.\n\nTraffic enabled: *X
+tooltip_CargoHelipad_DeliveriesArriving					 HeliPad ID: *Y\nNumber: *Z\n*T cargo items arriving\n\n=== [ *A ] === [ FOOD DISTRIBUTION ]\n=  Ingredients / Foodtrays / Staff Food / Cookers,\n=  Fridge / Sink / Serving Table / Sprinklers\n\n=== [ *B ] === [ LAUNDRY DISTRIBUTION ]\n=  Prisoner Uniforms / Vending Uniforms,\n=  Ironing Boards / Laundry Machines / Baskets\n\n=== [ *C ] === [ VENDING DISTRIBUTION ]\n=  Library Books / Shop / Vending Machines stock\n\n=== [ *D ] === [ FORESTRY DISTRIBUTION ]\n=  Tree Saplings / Forestry Tree\n\n=== [ *E ] === [ WORKSHOP MATERIALS ]\n=  Sheet Metal / Wood,\n=  Workshop Saw / Press / Carpenter Table\n\n=== [ *F ] === [ PLANTATION / GARDEN ]\n=  Seeds / Compost / ClothSpool / DDT\n\n=== [ *G ] === [ ACCOUNTING MATERIALS ]\n=  Dirty Money\n\n=== [ *H ] === [ PHONEFACTORY MATERIALS ]\n=  Sheet Aluminium\n\n=== [ *I ] === [ COMPUTER MATERIALS ]\n=  PrinterPaper / Toner / Drumkit\n=  ServerParts\n\n=== [ *J ] === [ CONSTRUCTION ]\n=  Brick / Concrete / Metal / Steel,\n=  Electrical Cable / Water Pipes,\n=  Power Station / Capacitors,\n=  WaterPump Station / WaterBoiler\n\n=== [ *K ] === [ FLOORS ]\n=  Floor Tiles / Grass Turf\n\n=== [ *L ] === [ ALL OTHER CARGO ]\n=  Anything else which is not listed above
+tooltip_CargoHelipad_ExportsTraffic						 HeliPad ID: *H\n\nThis helipad collects goods for exports.\nZone the helipad area as Exports room (8x8). When exports are available, a Chinook will pick it up.\n\nTraffic enabled: *X
+tooltip_CargoHelipad_GarbageTraffic						 HeliPad ID: *H\n\nThis helipad collects garbage.\nZone the helipad area as Garbage room (8x8). When garbage is available, a Chinook will pick it up.\n\nTraffic enabled: *X
+tooltip_CargoHelipad_IntakeTraffic						 HeliPad ID: *H\n\nThis helipad will be used to deliver prisoners.\nThere is no need to zone this area.\nSpecify the authorized Security Level and toggle between escorting new prisoners either to Reception, or directly to their cells.\n\nTraffic enabled: *X
+tooltip_CargoHelipad_PrisonersArriving					 HeliPad ID: *Y\nNumber: *Z\n*T prisoner(s) arriving\n\n=== [ *A ] === [ MINSEC ]\n=  Prisoners for the Minimum Security wing\n\n=== [ *B ] === [ MEDSEC ]\n=  Prisoners for the Normal Security wing\n\n=== [ *C ] === [ MAXSEC ]\n=  Prisoners for the Maximum Security wing\n\n=== [ *D ] === [ PROTECTED ]\n=  Prisoners for the Protected Custody area\n\n=== [ *D ] === [ SUPMAX ]\n=  Prisoners for the Super Max security wing\n\n=== [ *F ] === [ DR ]\n=  Prisoners for Death Row\n\n=== [ *G ] === [ INSANE ]\n=  Prisoners who are completely nuts
+tooltip_CargoHelipad_EmergencyTraffic					 HeliPad ID: *H\n\nThis helipad will be used to collect dead bodies.\nThere is no need to zone this area.\n\nTraffic enabled: *X
+
+object_CargoHelipadSpawner								 Cargo Helipad
+buildtoolbar_popup_staff_CargoHelipadSpawner			 Can be placed anywhere to deliver and export cargo.\n\nAfter placing, use its BUTTONS to configure what this helipad will do.\n\nToggle the ENABLED button if you want to activate this helipad.\n\nRequires a Traffic Terminal on the map to be operational. The Traffic Terminal must be switched to =D= AUTO before it starts sending cargo to the stations.
+
+object_IntakeHelipadSpawner								 Intake Helipad
+buildtoolbar_popup_staff_IntakeHelipadSpawner			 Can be placed anywhere to deliver prisoners.\n\nAfter placing, use its BUTTONS to configure what this helipad will do.\n\nToggle the ENABLED button if you want to activate this helipad.\n\nRequires a Traffic Terminal on the map to be operational. The Traffic Terminal must be switched to =I= AUTO before it starts sending prisoners to the stations.
+
+object_CalloutHelipad									 Call-Out Helipad
+buildtoolbar_popup_staff_CalloutHelipad					 Place this call-out helipad anywhere in your prison.\nIt will spawn a temporary way point for all Call-Out types in the Emergencies menu (except DLC).\n\n -> When calling Chinooks, the selected emergency call-out will be dropped off at this waypoint.\n\n - > When using call-outs arriving by truck, then the nearest available Cargo Station with Emergency enabled is used. The emergencies will walk to this waypoint by themselves.\n\n -> When playing on an Island map without road, this helipad is useless due to game restrictions.
+
+tooltip_CalloutHelipad									 \n No call-out helipad was placed before calling the emergencies.\nThis random spot will be used to drop off the call-out.
+tooltip_CalloutHelipadA									 \n === [ Arriving type: no emergencies called ] ===\n\nUse the Emergencies menu to call for Chinook Emergencies of your choice.\n\n\n === [ Call-out equipment: default ] ===\n\nClick me to change the equipment of the arriving call-out while the chinook is airborne.
+tooltip_CalloutHelipadB									 \n === [ Arriving type: *X ] ===\n\n\n === [ Call-out equipment: *Y ] ===\n\nClick me to change the equipment of the arriving call-out while the chinook is airborne.\nParamedics/Orderly equipment can't be changed.
+tooltip_CalloutHelipadC									 \n === [ Arriving type: FireBrigade ] ===\n\n\n === [ Call-out equipment: *X ] ===\n\nClick me to change the equipment of the arriving call-out while the chinook is airborne.\nParamedics/Orderly equipment can't be changed.\n\n\n === [ Method: *Y ] ===\n\nYou can specify if Firemen perform a Fly By or are being dropped off.
+tooltip_CalloutHelipad_SeparatorMethod					 ==== Firemen ====
+tooltip_CalloutHelipad_Button_ToggleFiremanMethod		  *X
+tooltip_CalloutHelipad_FiremanMethod_FlyBy				 Fly By
+tooltip_CalloutHelipad_FiremanMethod_DropOff			 Drop Off
+tooltip_CalloutHelipad_SeparatorEquipment				 ====Equipment====
+tooltip_CalloutHelipad_Button_ToggleCalloutEquipment	  *X
+tooltip_CalloutHelipad_CalloutEquipment_Hose			 Hose
+tooltip_CalloutHelipad_CalloutEquipment_Extinguisher	 Fire extinguisher
+tooltip_CalloutHelipad_CalloutEquipment_Needle			 Needle
+tooltip_CalloutHelipad_CalloutEquipment_SedativeSyringe  Sedative syringe
+tooltip_CalloutHelipad_CalloutEquipment_Baton			 Baton
+tooltip_CalloutHelipad_CalloutEquipment_AssaultRifle	 Assault rifle
+tooltip_CalloutHelipad_CalloutEquipment_AK47			 AK 47
+tooltip_CalloutHelipad_CalloutEquipment_Axe				 Axe
+tooltip_CalloutHelipad_CalloutEquipment_BatteringRam	 Battering ram
+tooltip_CalloutHelipad_CalloutEquipment_Gun				 Gun
+tooltip_CalloutHelipad_CalloutEquipment_Knife			 Knife
+tooltip_CalloutHelipad_CalloutEquipment_Rifle			 Rifle
+tooltip_CalloutHelipad_CalloutEquipment_Shotgun			 Shotgun
+tooltip_CalloutHelipad_CalloutEquipment_SubMachineGun	 Uzi
+tooltip_CalloutHelipad_CalloutEquipment_Tazer			 Tazer
+object_CalloutStationTruck								 Callout Engine Block
+
+object_Chinook2											 Chinook
+tooltip_Chinook2_Status									 *X\nStatus: *Y
+
+object_CargoChinookHook									 Chinook (Cargo)
+object_ExportsChinookHook								 Chinook (Exports)
+object_EmergencyChinookHook								 Chinook (Emergency)
+tooltip_ChinookHook										 Helipad ID: *H\nHook Number *N\nAmount: *A
+
+object_IntakeChinookInside								 Chinook (inside)
+object_IntakeChinookBlock								 Chinook (block)
+tooltip_IntakeChinookBlock								 Blocks this part of the Chinook
+
+object_IntakeChinookHook								 Chinook (hook)
+object_IntakeChinookDoor								 Chinook (door)
+object_IntakeChinookPilot								 Chinook (pilot)
+object_IntakeChinookGuard								 Chinook (guard)
+
+object_HoseXY											 X/Y Hose Position Spawner Thingy
+
+object_Chinook2GrantChecker								 Grants checker (you can sell me after the grant completed)
+
+object_TrafficTerminal									 Traffic Terminal
+tooltip_TrafficTerminal									 \n=== [ *X ] === [DELIVERY METHOD]\n=\n= AUTO -> Deliveries are sorted and transported\n=== to enabled Cargo Helipads / Stations\n=== whenever they are ready to accept cargo.\n=== Specify on stations / pads which cargo to deliver.\n= SUSPEND -> Deliveries are stockpiled\n=== until you switch it back to AUTO.\n=== No deliveries meanwhile, just garbage / exports,\n=== and dead bodies collection.\n=== Queued items stay here meanwhile.\n\n===[ *A ] === [ TOTAL QUEUED ]\n= These items are ready to be delivered.\n= Stack Area tooltips show details.\n\n\n=== [ *Y ] === [INTAKE METHOD]\n=\n= AUTO -> Prisoners are sorted and transported\n=== to enabled Cargo Helipads / Stations\n=== whenever they are ready to accept prisoners.\n=== Specify security level on stations / pads.\n= SUSPEND -> Prisoners are stockpiled\n=== and all their needs get reset\n=== until you switch it back to AUTO.\n=== No intake to Cargo Helipads / Stations.\n=== Already queued prisoners stay here.\n\n===[ *B ] === [ TOTAL PRISONERS ]\n= These prisoners are ready to be delivered\n=  MinSec: *C  =  Normal: *D  =  MaxSec: *E\n=  Protect: *F  =  SuperMax: *G  =  DR: *H\n=  Insane: *I\n\nIMPORTANT:\nMARK THIS ENCLOSED ROOM AS TRAFFIC TERMINAL.\nNO DOORS SHOULD EXIST.
+tooltip_TrafficTerminal_Button_DeleteTerminal			 Delete terminal
+tooltip_TrafficTerminal_AnimateChinook					 === ANIMATE ===
+tooltip_TrafficTerminal_Button_AnimateChinook			 Chinooks: *X
+tooltip_TrafficTerminal_Button_TruckLights				 Truck lights: *X
+tooltip_TrafficTerminal_SeparatorLine					 =============
+tooltip_TrafficTerminal_DeliveryMethod					 =D= *X ==
+tooltip_TrafficTerminal_IntakeMethod					 =I= *X ==
+tooltip_TrafficTerminal_Button_DeleteStack				 Delete my stack
+tooltip_TrafficTerminal_Button_DeletePrisoners			 Delete prisoners
+tooltip_TrafficTerminal_TerminalPrisonerSort			 = PRISONER SORT =
+tooltip_TrafficTerminal_TerminalSnitchConfig			 = SNITCH TO PC =
+tooltip_TrafficTerminal_Button_minsec					 MinSec: *X
+tooltip_TrafficTerminal_Button_medsec					 MedSec: *X
+tooltip_TrafficTerminal_Button_maxsec					 MaxSec: *X
+tooltip_TrafficTerminal_Button_supmax					 SupMax: *X
+tooltip_TrafficTerminal_Button_legendary				 Legendary -> *X
+tooltip_TrafficTerminal_Button_lieutenant				 Lieutenant -> *X
+tooltip_TrafficTerminal_Button_green					 Green     -> *X
+tooltip_TrafficTerminal_Button_red						 Red       -> *X
+tooltip_TrafficTerminal_Button_blue						 Blue      -> *X
+tooltip_TrafficTerminal_Button_mother					 Mother    -> *X
+tooltip_TrafficTerminal_Button_addicted					 Addict    -> *X
+tooltip_TrafficTerminal_Button_insane					 Insane    -> *X
+tooltip_TrafficTerminal_YES								 YES
+tooltip_TrafficTerminal_NO								 NO
+tooltip_TrafficTerminal_MinSec							 MIN
+tooltip_TrafficTerminal_Normal							 MED
+tooltip_TrafficTerminal_MaxSec							 MAX
+tooltip_TrafficTerminal_SuperMax						 SUP
+tooltip_TrafficTerminal_Protected						 PC
+tooltip_TrafficTerminal_DeathRow						 DR
+
+object_TrafficTerminalSpawner							 Traffic Terminal
+buildtoolbar_popup_staff_TrafficTerminalSpawner			 Sorts out the arrival of new deliveries and prisoners.\nRequired by Cargo Helipads / Stations.\n\nMark the created room as TRAFFIC TERMINAL and remove older Deliveries areas you have on the map.\n\nNO DOORS SHOULD EXIST TO THIS ROOM.\n\nThe Traffic Terminal will be in SUSPEND mode\n(no deliveries will be brought to stations)\nuntil you click it and turn it to AUTO.\n=D= toggles Deliveries to all stations on/off\n=I= toggles prisoner Intake on/off
+
+object_TrafficTerminalIntakeDisplayLeft					 Intake Display
+object_TrafficTerminalIntakeDisplayRight				 Intake Display
+object_TrafficTerminalIntakeDisplay						 Intake Display
+object_TrafficTerminalCargoDisplayLeft					 Delivery Display
+object_TrafficTerminalCargoDisplayRight					 Delivery Display
+
+object_HeadTailChecker									 HeadTailChecker
+
+object_StackTransferrer									 Stack Transferrer
+tooltip_StackTransferrer								 This way point transfers incoming deliveries and prisoners to the Traffic Terminal.
+
+object_QueuedStackChecker								 Queued Stack Checker
+
+object_StackInQueueTop									 Queued Stack Area
+tooltip_StackInQueueTop_Totals							 Sorted items, waiting to be delivered:\n\n=== [ *A ] === [ FOOD DISTRIBUTION ]\n=  Ingredients / Foodtrays / Staff Food / Cookers,\n=  Fridge / Sink / Serving Table / Sprinklers\n\n=== [ *B ] === [ LAUNDRY DISTRIBUTION ]\n=  Prisoner Uniforms / Vending Uniforms,\n=  Ironing Boards / Laundry Machines / Baskets\n\n=== [ *C ] === [ VENDING DISTRIBUTION ]\n=  Library Books / Shop / Vending Machines stock\n\n=== [ *D ] === [ FORESTRY DISTRIBUTION ]\n=  Tree Saplings / Forestry Tree\n\n=== [ *E ] === [ WORKSHOP MATERIALS ]\n=  Sheet Metal / Wood,\n=  Workshop Saw / Press / Carpenter Table\n\n=== [ *F ] === [ PLANTATION / GARDEN ]\n=  Seeds / Compost / ClothSpool / DDT
+
+object_StackInQueueBottom								 Queued Stack Area
+tooltip_StackInQueueBottom_Totals						 Sorted items, waiting to be delivered:\n\n=== [ *A ] === [ ACCOUNTING MATERIALS ]\n=  Dirty Money\n\n=== [ *B ] === [ PHONEFACTORY MATERIALS ]\n=  Sheet Aluminium\n\n=== [ *C ] === [ COMPUTER MATERIALS ]\n=  PrinterPaper / Toner / Drumkit\n=  ServerParts\n\n=== [ *D ] === [ CONSTRUCTION ]\n=  Brick / Concrete / Metal / Steel,\n=  Electrical Cable / Water Pipes,\n=  Power Station / Capacitors,\n=  WaterPump Station / WaterBoiler\n\n=== [ *E ] === [ FLOORS ]\n=  Floor Tiles / Grass Turf\n\n=== [ *F ] === [ ALL OTHER CARGO ]\n=  Anything else
+
+object_PrisonerStackHolder								 Prisoner Holder
+
+object_DeliveriesTruckDriver							 Deliveries Truck Driver
+object_ExportsTruckDriver								 Exports Truck Driver
+object_GarbageTruckDriver								 Garbage Truck Driver
+object_IntakeTruckDriver								 Prisoner Truck Driver
+object_EmergencyTruckDriver								 Hearse Truck Driver
+object_CalloutTruckDriver								 Callout Truck Driver
+
+object_FireStarter										 Fire Starter
+buildtoolbar_popup_obj_FireStarter						 Spawn a fire at the position where you place me down.
+
+equipment_Extinguisher									 Extinguisher
+equipment_AK47											 AK 47
+equipment_SubMachineGun									 Uzi
+
+object_CargoStationTruck								 Engine Block
+tooltip_CargoStationTruck_Separatorline					 =================
+tooltip_CargoStationTruck_TruckSkin						 \nVehicle ID: *H\nClick on the Street Manager next to\nthe Traffic Terminal to change my skin
+tooltip_CargoStationTruck_SlowingDownForStation			 \nVehicle ID: *H\nCargoStation ID: *I\n\nSlowing down for Cargo Station...\n\nVehicle speed: *S
+tooltip_CargoStationTruck_SlowingDownForGate			 \nVehicle ID: *H\nCargoStation ID: *I\n\nSlowing down for gate...\n\nVehicle speed: *S
+tooltip_CargoStationTruck_SlowingDownForVehicle			 \nVehicle ID: *H\nCargoStation ID: *I\n\nSlowing down for *F...\n\nVehicle speed: *S
+tooltip_CargoStationTruck_StoppedForVehicle				 \nVehicle ID: *H\nCargoStation ID: *I\n\nStopped and waiting for *F...\n\nVehicle speed: 0
+tooltip_CargoStationTruck_StoppedForPeople				 \nVehicle ID: *H\nCargoStation ID: *I\n\nWaiting for people crossing the road...\n\nVehicle speed: 0
+tooltip_CargoStationTruck_DrivingWithGates				 \nVehicle ID: *H\nCargoStation ID: *I\n\nStatus: *A\n\nDistance to gate *G is: *X\n\nVehicle speed: *S\n\nVehicle behind me: *B\nDistance: *Y\n\nVehicle in front: *F\nDistance: *Z
+tooltip_CargoStationTruck_DrivingNoGates				 \nVehicle ID: *H\nCargoStation ID: *I\n\nStatus: *A\n\nNo known gates ahead\n\nVehicle speed: *S\n\nVehicle behind me: *B\nDistance: *Y\n\nVehicle in front: *F\nDistance: *Z
+tooltip_CargoStationTruck_StoppedAndProcessing			 \nVehicle ID: *H\nCargoStation ID: *I\n\nStopped and processing...
+tooltip_CargoStationTruck_StoppedAndWaiting				 \nVehicle ID: *H\nCargoStation ID: *I\n\nStopped and waiting...
+tooltip_CargoStationTruck_NoRoadMarker					 \nVehicle ID: *H\nNo RoadMarker found, ignoring all gates except default Road Gate and Road Barrier
+
+object_PreviewTruckSkinBG								 Preview Background
+object_DeliveriesTruckSkin								 Deliveries Truck
+object_PreviewDeliveriesTruckSkin						 Deliveries Preview
+object_ExportsTruckSkin									 Exports Truck
+object_PreviewExportsTruckSkin							 Exports Preview
+object_GarbageTruckSkin									 Garbage Truck
+object_PreviewGarbageTruckSkin							 Garbage Preview
+object_EmergencyTruckSkin								 Emergency Truck
+object_PreviewEmergencyTruckSkin						 Emergency Preview
+object_IntakeTruckSkin									 Prisoner Truck
+object_PreviewIntakeTruckSkin							 Prisoner Preview
+object_FireEngineTruckSkin								 FireEngine Truck
+object_PreviewFireEngineTruckSkin						 FireEngine Preview
+object_RiotVanTruckSkin									 RiotVan Truck
+object_PreviewRiotVanTruckSkin							 RiotVan Preview
+object_AmbulanceTruckSkin								 Paramedics Truck
+object_PreviewAmbulanceTruckSkin						 Paramedics Preview
+object_TroopTruckSkin									 Troop Truck
+object_PreviewTroopTruckSkin							 Troop Preview
+
+interfacecallout_Troops									 Soldiers
+interfacecallout_Chinook2Firebrigade					 Chinook FireBrigade
+interfacecallout_Chinook2Paramedics						 Chinook Paramedics
+interfacecallout_Chinook2Orderly						 Chinook Orderly
+interfacecallout_Chinook2RiotGuards						 Chinook RiotGuards
+interfacecallout_Chinook2ArmedGuards					 Chinook ArmedGuards
+interfacecallout_Chinook2ParaTroopers					 Chinook ParaTroopers
+
+
+material_RoadMarkerTile									 RoadMarker Tile
+material_RoadGate2Wall									 RoadGate Wall
+material_TTFloorA										 Traffic Terminal
+material_TTFloorB										 Traffic Terminal
+material_TTFloorC										 Traffic Terminal
+
+room_Garbage										 	 Garbage Area
+buildtoolbar_popup_room_Garbage							 Where Sorted Garbage gets collected before it goes to Exports.\n\nYou can place a Trash Compactor here (or put it at Recycling) to stack the garbage into bags of 60.
+room_Exports										 	 Exports Area
+room_Deliveries											 Traffic Terminal
+buildtoolbar_popup_room_deliveries						 Where your goods, materials, and prisoners are dropped off. Requires a Traffic Terminal from the Staff Menu to sort incoming stuff.
+room_CargoStorage										 Cargo  Area
+buildtoolbar_popup_room_CargoStorage					 Used to complete the Advanced Roads grant for a Cargo Station / Helipad with Deliveries enabled.\nWhen done, this room type becomes optional.\n\nMark the stations cargo area (3x5) or (9x9).\n\nTip: you could also mark it as a Storage area, so Workmen can roam there when they are idle.\n\nCargo stations don't need this room zoning to drop off deliveries. It's just there in case you want a room name for it.
+room_CargoIntake										 Intake Area
+buildtoolbar_popup_room_CargoIntake						 Used to complete the Advanced Roads grant for a Cargo Station / Helipad with Intake enabled.\nWhen done, this room type becomes optional.\n\nMark the stations intake area (3x5) or (20x9).\n\nIntake stations don't need this room zoning to drop off the prisoners. It's just there in case you want a room name for it.
+room_CargoEmergencies									 Emergency st.
+buildtoolbar_popup_room_CargoEmergencies				 Used to complete the Advanced Roads grant for a Cargo Station / Helipad with Emergency enabled.\nWhen done, this room type becomes optional.\n\nMark the stations emergency area (3x5) or (7x7).\n\nEmergency stations don't need this room zoning to collect dead people or to drop off emergency call-outs. It's just there in case you want a room name for it.
+
+object_GrantCheckerTerminal								 Grant Checker "Global Deliveries"
+object_GrantCheckerTerminalI							 Grant Checker "Global Intake"
+object_GrantCheckerDeliveries							 Grant Checker "Station / Helipad"
+object_GrantCheckerBuilding								 Grant Checker "Building"
+object_GrantCheckerFloors								 Grant Checker "Floor/Grass"
+object_GrantCheckerForestForest							 Grant Checker "Forestry"
+object_GrantCheckerVendingVending						 Grant Checker "Vending"
+object_GrantCheckerLaundry								 Grant Checker "Uniforms"
+object_GrantCheckerFood									 Grant Checker "Food/Trays"
+object_GrantCheckerWorkshop								 Grant Checker "Workshop"
+object_GrantCheckerOther								 Grant Checker "Other"
+object_GrantCheckerExports								 Grant Checker "Exports"
+object_GrantCheckerGarbage								 Grant Checker "Garbage"
+object_GrantCheckerIntake								 Grant Checker "Intake"
+object_GrantCheckerMinSec								 Grant Checker "MinSc"
+object_GrantCheckerMedSec								 Grant Checker "MedSec"
+object_GrantCheckerEmergency							 Grant Checker "Emergencies"
+
+objective_firstgrant                				     Start the Advanced Roads grants
+objective_firstgrant_description   					     Start the Advanced Roads grants as soon as possible, by opening the reports window (pressing the button in the bottom right of the screen), selecting the Grants tab and picking Advanced Roads 1/7: Traffic Terminal.
+
+objective_builddeliveriesroom							 Start the Advanced Roads grants as soon as possible
+objective_builddeliveriesroom_description				 Before building a prison you MUST first set up a Traffic Terminal and place various Cargo Stations / Helipads.\n\nYou can place several Cargo Stations on one road, or use dedicated roads per station, that's up to you. Roads will be spawned when they don't exist yet.\n\nNew objects are in the STAFF MENU.\n\nUse the Advanced Roads GRANTS to guide you through the important steps.
+
+
+objective_Grant_TrafficTerminal							 Advanced Roads 1/7: Traffic Terminal
+objective_Grant_TrafficTerminal_description				 Place 1 Traffic Terminal with unlimited Cargo Stations and Helipads to handle sorted deliveries, exports, garbage, prisoner intake, call-outs and collecting dead people.\n\nContinue with the next Advanced Roads grants when you are done.
+objective_Grant_TrafficTerminal_CreateTerminalA1		 -- REMOVE ALL EXISTING --\nDELIVERIES/EXPORTS/GARBAGE\n-- AREAS ON  THE MAP --\n\nPut 1 Traffic Terminal\n - Find it in the Staff menu
+objective_Grant_TrafficTerminal_CreateTerminalB			 Finish spawned room\n - Zone room (8x7)\n - as TRAFFIC TERMINAL
+objective_Grant_TrafficTerminal_CreateTerminalC			 Select vehicle skins\n - Click on Street Manager\n - next to Traffic Terminal
+
+objective_Grant_CargoStation_Deliveries					 Advanced Roads 2/7: Deliveries
+objective_Grant_CargoStation_Deliveries_description		 You can place several Cargo Stations on one road, or use dedicated roads per station, that's up to you. Roads will be spawned when they don't exist yet.\n\nComplete the Advanced Roads 1/7 grant first.
+objective_Grant_CargoStation_Deliveries_CreateStation	 Put CargoStation / Helipad\n - Find it in the Staff menu\n - Hit the DEPLOY button\n\n - Set Type: DELIVERIES\n - Zone (3x5) or (9x9)\n - as CARGO AREA room
+objective_Grant_CargoStation_Deliveries_ToggleBuilding	 Toggle "Building"
+objective_Grant_CargoStation_Deliveries_ToggleFloors	 Toggle "Floor/Grass"
+objective_Grant_CargoStation_Deliveries_ToggleLaundry	 Toggle "Uniforms"
+objective_Grant_CargoStation_Deliveries_ToggleVending	 Toggle "Vending"
+objective_Grant_CargoStation_Deliveries_ToggleForest	 Toggle "Forest"
+objective_Grant_CargoStation_Deliveries_ToggleFood		 Toggle "Food/Trays"
+objective_Grant_CargoStation_Deliveries_ToggleWorkshop	 Toggle "Workshop"
+objective_Grant_CargoStation_Deliveries_ToggleOther		 Toggle "Other"
+objective_Grant_CargoStation_Deliveries_EnableStation	 Enable specified cargo.\n - Hit the ENABLED button
+objective_Grant_CargoStation_Deliveries_EnableTerminalD	 Enable Global Deliveries.\n - Click Traffic Terminal\n - Set =D= to AUTO
+
+objective_Grant_CargoStation_Garbage					 Advanced Roads 3/7: Garbage
+objective_Grant_CargoStation_Garbage_description		 You can place several Cargo Stations on one road, or use dedicated roads per station, that's up to you. Roads will be spawned when they don't exist yet.\n\nComplete the Advanced Roads 1/7 grant first.
+objective_Grant_CargoStation_Garbage_CreateStation		 Put CargoStation / Helipad\n - Find it in the Staff menu\n - Or toggle SIDE button\n\n - Set Type: GARBAGE\n - Zone (3x5) or (7x7)\n - as GARBAGE AREA room
+objective_Grant_CargoStation_Garbage_EnableStation		 Activate Station / Helipad\n - Hit the ENABLED button
+
+objective_Grant_CargoStation_Exports					 Advanced Roads 4/7: Exports
+objective_Grant_CargoStation_Exports_description		 You can place several Cargo Stations on one road, or use dedicated roads per station, that's up to you. Roads will be spawned when they don't exist yet.\n\nComplete the Advanced Roads 1/7 grant first.
+objective_Grant_CargoStation_Exports_CreateStation		 Put CargoStation / Helipad\n - Find it in the Staff menu\n - Or toggle SIDE button\n\n - Set Type: EXPORTS\n - Zone (3x5) or (7x7)\n - as EXPORTS AREA room
+objective_Grant_CargoStation_Exports_EnableStation		 Activate Station / Helipad\n - Hit the ENABLED button
+
+objective_Grant_CargoStation_Intake						 Advanced Roads 5/7: Intake
+objective_Grant_CargoStation_Intake_description			 You can place several Cargo Stations on one road, or use dedicated roads per station, that's up to you. Roads will be spawned when they don't exist yet.\n\nComplete the Advanced Roads 1/7 grant first.
+objective_Grant_CargoStation_Intake_CreateStation		 Put CargoStation / Helipad\n - Find it in the Staff menu\n - Or toggle SIDE button\n\n - Set Type: INTAKE\n - Zone (3x5) or (20x9)\n - as INTAKE AREA room
+objective_Grant_CargoStation_Intake_ToggleMin	 		 Toggle "MinSec"
+objective_Grant_CargoStation_Intake_ToggleMed			 Toggle "Normal"
+objective_Grant_CargoStation_Intake_EnableStation		 Activate Station / Helipad\n - Hit the ENABLED button
+objective_Grant_CargoStation_Intake_EnableTerminalI		 Enable global Intake.\n - Click Traffic Terminal\n - Set =I= to AUTO
+
+objective_Grant_CargoStation_Emergency					 Advanced Roads 6/7: Emergency
+objective_Grant_CargoStation_Emergency_description		 You can place several Cargo Stations on one road, or use dedicated roads per station, that's up to you. Roads will be spawned when they don't exist yet.\n\nComplete the Advanced Roads 1/7 grant first.
+objective_Grant_CargoStation_Emergency_CreateStation	 Put CargoStation / Helipad\n - Find it in the Staff menu\n - Or toggle SIDE button\n\n - Set Type: EMERGENCY\n - Zone (3x5) or (7x7)\n - as EMERGENCY ST. room
+objective_Grant_CargoStation_Emergency_EnableStation	 Activate Station / Helipad\n - Hit the ENABLED button
+
+objective_Grant_ChinookCallout							 Advanced Roads 7/7: Call-out demo
+objective_Grant_ChinookCallout_description				 Create a fire and call the Chinook FireBrigade from the Emergencies menu to take care of it.\n\nComplete the Advanced Roads 1/7 grant first. 
+objective_Grant_ChinookCallout_FireStarter				 Start a fire on the map\n - Use FireStarter (Staff)
+objective_Grant_ChinookCallout_CalloutHelipad			 Place 1 Callout Helipad\n - Leftside of the fire\n - Chinook goes to this waypoint
+objective_Grant_ChinookCallout_Callout1					 Call 1 Chinook FireBrigade\n - From the Emergencies menu\n\n - Use buttons on Helipad\n - to select a Method\n - and desired Equipment
+
+
+object_PrisonerIntakeCashMinSec							 Prisoner Intake (MinSec)
+object_PrisonerIntakeCashNormal							 Prisoner Intake (MedSec)
+object_PrisonerIntakeCashMaxSec							 Prisoner Intake (MaxSec)
+object_PrisonerIntakeCashSuperMax						 Prisoner Intake (SuperMax)
+object_PrisonerIntakeCashDeathRow						 Prisoner Intake (DeathRow)
+object_PrisonerIntakeCashInsane							 Prisoner Intake (Insane)
+object_PrisonerIntakeCashLegendary						 Prisoner Intake (Legendary)
+tooltip_PrisonerIntakeCash								 Prisoner Intake money goes to Exports.
+
+
+
+
+
+
+material_MenuMetro										 -->
+material_MenuLimoWall									 -->
+material_MenuWater										 -->
+material_MenuTiles										 -->
+material_MenuCarpet										 -->
+material_MenuWood										 -->
+material_MenuMosaic										 -->
+material_MenuStone										 -->
+material_MenuDeploy										 -->
+material_MenuCemetery									 -->
+material_MenuCompost									 -->
+material_MenuChinook									 -->
+material_MenuCurb										 -->
+material_MenuRailways									 -->
+
+object_FloorMaterial									 Floor Material
+
+material_GrassWaterCornerFloor							 Grass / Water
+material_GrassWaterCornerFloor1							 Grass / Water
+material_GrassWaterCornerFloor2							 Grass / Water
+material_GrassWaterCornerFloor3							 Grass / Water
+material_SandWaterCornerFloor							 Sand / Water
+material_SandWaterCornerFloor1							 Sand / Water
+material_SandWaterCornerFloor2							 Sand / Water
+material_SandWaterCornerFloor3							 Sand / Water
+material_DirtWaterCornerFloor							 Dirt / Water
+material_DirtWaterCornerFloor1							 Dirt / Water
+material_DirtWaterCornerFloor2							 Dirt / Water
+material_DirtWaterCornerFloor3							 Dirt / Water
+material_LongGrassWaterCornerFloor						 LongGrass / Water
+material_LongGrassWaterCornerFloor1						 LongGrass / Water
+material_LongGrassWaterCornerFloor2						 LongGrass / Water
+material_LongGrassWaterCornerFloor3						 LongGrass / Water
+material_SnowWaterCornerFloor							 Snow / Water
+material_SnowWaterCornerFloor1							 Snow / Water
+material_SnowWaterCornerFloor2							 Snow / Water
+material_SnowWaterCornerFloor3							 Snow / Water
+
+material_Heli_TL										 HeliPad TL
+material_Heli_TC										 HeliPad TC
+material_Heli_TR										 HeliPad TR
+material_Heli_CL										 HeliPad CL
+material_Heli_CC										 HeliPad CC
+material_Heli_CR										 HeliPad CR
+material_Heli_BL										 HeliPad BL
+material_Heli_BC										 HeliPad BC
+material_Heli_BR										 HeliPad BR
+
+material_Limo2Wall										 Limo Wall
+material_Limo2WallConcrete								 Limo Wall Concrete
+material_Limo2WallBrick									 Limo Wall Brick
+material_Limo2WallBrownStrike							 Limo Wall Brown
+material_Limo2WallNewBBlockWall							 Limo Wall White
+material_Limo2WallNewTiledWall							 Limo Wall Tiled
+material_Limo2WallPavedFence							 Limo Paved Fence
+material_Limo2WallTiledFence							 Limo Tiled Fence
+
+material_RailwayLeft									 Railway Left
+material_RailwayRight									 Railway Right
+material_RailwayTop										 Railway Top
+material_RailwayBottom									 Railway Bottom
+material_RailwayCrossing1								 Railway Cross TL
+material_RailwayCrossing2								 Railway Cross TR
+material_RailwayCrossing3								 Railway Cross BL
+material_RailwayCrossing4								 Railway Cross BR
+material_RailwayCrossingA								 Railway Road TL
+material_RailwayCrossingB								 Railway Road TR
+material_RailwayCrossingC								 Railway Road BL
+material_RailwayCrossingD								 Railway Road BR
+material_RailwayRoadTop									 Railway Road Top
+material_RailwayRoadBottom								 Railway Road Bottom
+material_RailwayCTileTop								 Railway Tile Top
+material_RailwayCTileBottom								 Railway Tile Bottom
+material_RailwayCTileLeft								 Railway Tile Left
+material_RailwayCTileRight								 Railway Tile Right
+material_RailwayCrossingV1								 Railway Outline TL
+material_RailwayCrossingV2								 Railway Outline TR
+material_RailwayCrossingV3								 Railway Outline BL
+material_RailwayCrossingV4								 Railway Outline BR
+material_RailwayCrossingC1								 Railway Curb TL
+material_RailwayCrossingC2								 Railway Curb TR
+material_RailwayCrossingC3								 Railway Curb BL
+material_RailwayCrossingC4								 Railway Curb BR
+material_RailwayRoadLeft								 Railway Road Left
+material_RailwayRoadRight								 Railway Road Right
+material_RailwayCrossingCA								 Railway Curb TL
+material_RailwayCrossingCB								 Railway Curb TR
+material_RailwayCrossingCC								 Railway Curb BL
+material_RailwayCrossingCD								 Railway Curb BR
+
+material_RailwayStationCT								 Station Tiles
+material_RailwayStationTL								 Station TL
+material_RailwayStationTC								 Station TC
+material_RailwayStationTR								 Station TR
+material_RailwayStationCL								 Station CL
+material_RailwayStationCR								 Station CR
+material_RailwayStationBL								 Station BL
+material_RailwayStationBC								 Station BC
+material_RailwayStationBR								 Station BR
+
+material_RailwayStationTS1								 Station Stairs T1
+material_RailwayStationTS2								 Station Stairs T2
+material_RailwayStationLS1								 Station Stairs L1
+material_RailwayStationLS2								 Station Stairs L2
+material_RailwayStationRS1								 Station Stairs R1
+material_RailwayStationRS2								 Station Stairs R2
+material_RailwayStationBS1								 Station Stairs B1
+material_RailwayStationBS2								 Station Stairs B2
+material_RailwayStationCTL								 Station CTL
+material_RailwayStationCTR								 Station CTR
+material_RailwayStationCBL								 Station CBL
+material_RailwayStationCBR								 Station CBR
+
+material_RailwaySwitchLeft1								 Railway Switch Left
+material_RailwaySwitchLeft2								 Railway Switch Left
+material_RailwaySwitchLeft3								 Railway Switch Left
+material_RailwaySwitchLeft4								 Railway Switch Left
+material_RailwaySwitchLeft5								 Railway Switch Left
+material_RailwaySwitchLeft6								 Railway Switch Left
+material_RailwaySwitchLeft7								 Railway Switch Left
+material_RailwaySwitchLeft8								 Railway Switch Left
+material_RailwaySwitchLeft9								 Railway Switch Left
+material_RailwaySwitchLeft10							 Railway Switch Left
+material_RailwaySwitchLeft11							 Railway Switch Left
+material_RailwaySwitchLeft12							 Railway Switch Left
+material_RailwaySwitchLeft13							 Railway Switch Left
+material_RailwaySwitchLeft14							 Railway Switch Left
+material_RailwaySwitchLeft15							 Railway Switch Left
+material_RailwaySwitchLeft16							 Railway Switch Left
+material_RailwaySwitchLeft17							 Railway Switch Left
+material_RailwaySwitchLeft18							 Railway Switch Left
+material_RailwaySwitchLeft19							 Railway Switch Left
+material_RailwaySwitchLeft20							 Railway Switch Left
+material_RailwaySwitchLeft21							 Railway Switch Left
+material_RailwaySwitchLeft22							 Railway Switch Left
+material_RailwaySwitchLeft23							 Railway Switch Left
+material_RailwaySwitchLeft24							 Railway Switch Left
+material_RailwaySwitchLeft25							 Railway Switch Left
+material_RailwaySwitchLeft26							 Railway Switch Left
+material_RailwaySwitchLeft27							 Railway Switch Left
+material_RailwaySwitchLeft28							 Railway Switch Left
+material_RailwaySwitchLeft29							 Railway Switch Left
+material_RailwaySwitchLeft30							 Railway Switch Left
+material_RailwaySwitchLeft31							 Railway Switch Left
+material_RailwaySwitchLeft32							 Railway Switch Left
+material_RailwaySwitchLeft33							 Railway Switch Left
+material_RailwaySwitchLeft34							 Railway Switch Left
+material_RailwaySwitchLeft35							 Railway Switch Left
+material_RailwaySwitchLeft36							 Railway Switch Left
+material_RailwaySwitchLeft37							 Railway Switch Left
+material_RailwaySwitchLeft38							 Railway Switch Left
+material_RailwaySwitchLeft39							 Railway Switch Left
+material_RailwaySwitchLeft40							 Railway Switch Left
+material_RailwaySwitchLeft41							 Railway Switch Left
+material_RailwaySwitchLeft42							 Railway Switch Left
+material_RailwaySwitchLeft43							 Railway Switch Left
+material_RailwaySwitchLeft44							 Railway Switch Left
+material_RailwaySwitchLeft45							 Railway Switch Left
+material_RailwaySwitchLeft46							 Railway Switch Left
+material_RailwaySwitchLeft47							 Railway Switch Left
+material_RailwaySwitchLeft48							 Railway Switch Left
+material_RailwaySwitchLeft49							 Railway Switch Left
+material_RailwaySwitchLeft50							 Railway Switch Left
+material_RailwaySwitchLeft51							 Railway Switch Left
+material_RailwaySwitchLeft52							 Railway Switch Left
+material_RailwaySwitchLeft53							 Railway Switch Left
+material_RailwaySwitchLeft54							 Railway Switch Left
+
+material_RailwaySwitchRight1							 Railway Switch Right
+material_RailwaySwitchRight2							 Railway Switch Right
+material_RailwaySwitchRight3							 Railway Switch Right
+material_RailwaySwitchRight4							 Railway Switch Right
+material_RailwaySwitchRight5							 Railway Switch Right
+material_RailwaySwitchRight6							 Railway Switch Right
+material_RailwaySwitchRight7							 Railway Switch Right
+material_RailwaySwitchRight8							 Railway Switch Right
+material_RailwaySwitchRight9							 Railway Switch Right
+material_RailwaySwitchRight10							 Railway Switch Right
+material_RailwaySwitchRight11							 Railway Switch Right
+material_RailwaySwitchRight12							 Railway Switch Right
+material_RailwaySwitchRight13							 Railway Switch Right
+material_RailwaySwitchRight14							 Railway Switch Right
+material_RailwaySwitchRight15							 Railway Switch Right
+material_RailwaySwitchRight16							 Railway Switch Right
+material_RailwaySwitchRight17							 Railway Switch Right
+material_RailwaySwitchRight18							 Railway Switch Right
+material_RailwaySwitchRight19							 Railway Switch Right
+material_RailwaySwitchRight20							 Railway Switch Right
+material_RailwaySwitchRight21							 Railway Switch Right
+material_RailwaySwitchRight22							 Railway Switch Right
+material_RailwaySwitchRight23							 Railway Switch Right
+material_RailwaySwitchRight24							 Railway Switch Right
+material_RailwaySwitchRight25							 Railway Switch Right
+material_RailwaySwitchRight26							 Railway Switch Right
+material_RailwaySwitchRight27							 Railway Switch Right
+material_RailwaySwitchRight28							 Railway Switch Right
+material_RailwaySwitchRight29							 Railway Switch Right
+material_RailwaySwitchRight30							 Railway Switch Right
+material_RailwaySwitchRight31							 Railway Switch Right
+material_RailwaySwitchRight32							 Railway Switch Right
+material_RailwaySwitchRight33							 Railway Switch Right
+material_RailwaySwitchRight34							 Railway Switch Right
+material_RailwaySwitchRight35							 Railway Switch Right
+material_RailwaySwitchRight36							 Railway Switch Right
+material_RailwaySwitchRight37							 Railway Switch Right
+material_RailwaySwitchRight38							 Railway Switch Right
+material_RailwaySwitchRight39							 Railway Switch Right
+material_RailwaySwitchRight40							 Railway Switch Right
+material_RailwaySwitchRight41							 Railway Switch Right
+material_RailwaySwitchRight42							 Railway Switch Right
+material_RailwaySwitchRight43							 Railway Switch Right
+material_RailwaySwitchRight44							 Railway Switch Right
+material_RailwaySwitchRight45							 Railway Switch Right
+material_RailwaySwitchRight46							 Railway Switch Right
+material_RailwaySwitchRight47							 Railway Switch Right
+material_RailwaySwitchRight48							 Railway Switch Right
+material_RailwaySwitchRight49							 Railway Switch Right
+material_RailwaySwitchRight50							 Railway Switch Right
+material_RailwaySwitchRight51							 Railway Switch Right
+material_RailwaySwitchRight52							 Railway Switch Right
+material_RailwaySwitchRight53							 Railway Switch Right
+material_RailwaySwitchRight54							 Railway Switch Right
+
+material_RailwaySwitchTop1							 Railway Switch Top
+material_RailwaySwitchTop2							 Railway Switch Top
+material_RailwaySwitchTop3							 Railway Switch Top
+material_RailwaySwitchTop4							 Railway Switch Top
+material_RailwaySwitchTop5							 Railway Switch Top
+material_RailwaySwitchTop6							 Railway Switch Top
+material_RailwaySwitchTop7							 Railway Switch Top
+material_RailwaySwitchTop8							 Railway Switch Top
+material_RailwaySwitchTop9							 Railway Switch Top
+material_RailwaySwitchTop10							 Railway Switch Top
+material_RailwaySwitchTop11							 Railway Switch Top
+material_RailwaySwitchTop12							 Railway Switch Top
+material_RailwaySwitchTop13							 Railway Switch Top
+material_RailwaySwitchTop14							 Railway Switch Top
+material_RailwaySwitchTop15							 Railway Switch Top
+material_RailwaySwitchTop16							 Railway Switch Top
+material_RailwaySwitchTop17							 Railway Switch Top
+material_RailwaySwitchTop18							 Railway Switch Top
+material_RailwaySwitchTop19							 Railway Switch Top
+material_RailwaySwitchTop20							 Railway Switch Top
+material_RailwaySwitchTop21							 Railway Switch Top
+material_RailwaySwitchTop22							 Railway Switch Top
+material_RailwaySwitchTop23							 Railway Switch Top
+material_RailwaySwitchTop24							 Railway Switch Top
+material_RailwaySwitchTop25							 Railway Switch Top
+material_RailwaySwitchTop26							 Railway Switch Top
+material_RailwaySwitchTop27							 Railway Switch Top
+material_RailwaySwitchTop28							 Railway Switch Top
+material_RailwaySwitchTop29							 Railway Switch Top
+material_RailwaySwitchTop30							 Railway Switch Top
+material_RailwaySwitchTop31							 Railway Switch Top
+material_RailwaySwitchTop32							 Railway Switch Top
+material_RailwaySwitchTop33							 Railway Switch Top
+material_RailwaySwitchTop34							 Railway Switch Top
+material_RailwaySwitchTop35							 Railway Switch Top
+material_RailwaySwitchTop36							 Railway Switch Top
+material_RailwaySwitchTop37							 Railway Switch Top
+material_RailwaySwitchTop38							 Railway Switch Top
+material_RailwaySwitchTop39							 Railway Switch Top
+material_RailwaySwitchTop40							 Railway Switch Top
+material_RailwaySwitchTop41							 Railway Switch Top
+material_RailwaySwitchTop42							 Railway Switch Top
+material_RailwaySwitchTop43							 Railway Switch Top
+material_RailwaySwitchTop44							 Railway Switch Top
+material_RailwaySwitchTop45							 Railway Switch Top
+material_RailwaySwitchTop46							 Railway Switch Top
+material_RailwaySwitchTop47							 Railway Switch Top
+material_RailwaySwitchTop48							 Railway Switch Top
+material_RailwaySwitchTop49							 Railway Switch Top
+material_RailwaySwitchTop50							 Railway Switch Top
+material_RailwaySwitchTop51							 Railway Switch Top
+material_RailwaySwitchTop52							 Railway Switch Top
+material_RailwaySwitchTop53							 Railway Switch Top
+material_RailwaySwitchTop54							 Railway Switch Top
+
+material_RailwaySwitchBottom1							 Railway Switch Bottom
+material_RailwaySwitchBottom2							 Railway Switch Bottom
+material_RailwaySwitchBottom3							 Railway Switch Bottom
+material_RailwaySwitchBottom4							 Railway Switch Bottom
+material_RailwaySwitchBottom5							 Railway Switch Bottom
+material_RailwaySwitchBottom6							 Railway Switch Bottom
+material_RailwaySwitchBottom7							 Railway Switch Bottom
+material_RailwaySwitchBottom8							 Railway Switch Bottom
+material_RailwaySwitchBottom9							 Railway Switch Bottom
+material_RailwaySwitchBottom10							 Railway Switch Bottom
+material_RailwaySwitchBottom11							 Railway Switch Bottom
+material_RailwaySwitchBottom12							 Railway Switch Bottom
+material_RailwaySwitchBottom13							 Railway Switch Bottom
+material_RailwaySwitchBottom14							 Railway Switch Bottom
+material_RailwaySwitchBottom15							 Railway Switch Bottom
+material_RailwaySwitchBottom16							 Railway Switch Bottom
+material_RailwaySwitchBottom17							 Railway Switch Bottom
+material_RailwaySwitchBottom18							 Railway Switch Bottom
+material_RailwaySwitchBottom19							 Railway Switch Bottom
+material_RailwaySwitchBottom20							 Railway Switch Bottom
+material_RailwaySwitchBottom21							 Railway Switch Bottom
+material_RailwaySwitchBottom22							 Railway Switch Bottom
+material_RailwaySwitchBottom23							 Railway Switch Bottom
+material_RailwaySwitchBottom24							 Railway Switch Bottom
+material_RailwaySwitchBottom25							 Railway Switch Bottom
+material_RailwaySwitchBottom26							 Railway Switch Bottom
+material_RailwaySwitchBottom27							 Railway Switch Bottom
+material_RailwaySwitchBottom28							 Railway Switch Bottom
+material_RailwaySwitchBottom29							 Railway Switch Bottom
+material_RailwaySwitchBottom30							 Railway Switch Bottom
+material_RailwaySwitchBottom31							 Railway Switch Bottom
+material_RailwaySwitchBottom32							 Railway Switch Bottom
+material_RailwaySwitchBottom33							 Railway Switch Bottom
+material_RailwaySwitchBottom34							 Railway Switch Bottom
+material_RailwaySwitchBottom35							 Railway Switch Bottom
+material_RailwaySwitchBottom36							 Railway Switch Bottom
+material_RailwaySwitchBottom37							 Railway Switch Bottom
+material_RailwaySwitchBottom38							 Railway Switch Bottom
+material_RailwaySwitchBottom39							 Railway Switch Bottom
+material_RailwaySwitchBottom40							 Railway Switch Bottom
+material_RailwaySwitchBottom41							 Railway Switch Bottom
+material_RailwaySwitchBottom42							 Railway Switch Bottom
+material_RailwaySwitchBottom43							 Railway Switch Bottom
+material_RailwaySwitchBottom44							 Railway Switch Bottom
+material_RailwaySwitchBottom45							 Railway Switch Bottom
+material_RailwaySwitchBottom46							 Railway Switch Bottom
+material_RailwaySwitchBottom47							 Railway Switch Bottom
+material_RailwaySwitchBottom48							 Railway Switch Bottom
+material_RailwaySwitchBottom49							 Railway Switch Bottom
+material_RailwaySwitchBottom50							 Railway Switch Bottom
+material_RailwaySwitchBottom51							 Railway Switch Bottom
+material_RailwaySwitchBottom52							 Railway Switch Bottom
+material_RailwaySwitchBottom53							 Railway Switch Bottom
+material_RailwaySwitchBottom54							 Railway Switch Bottom
+
+material_outercornerTL									 Outer Corner
+material_outercornerTR									 Outer Corner
+material_outercornerBL									 Outer Corner
+material_outercornerBR									 Outer Corner
+material_outerlineT										 Outer Line Top
+material_outerlineB										 Outer Line Bottom
+material_dashedcenterline_vertical						 Dashed Centre Line
+material_dashedcenterline_horizontal					 Dashed Centre Line
+material_solidcenterline_vertical						 Solid Centre Line
+material_solidcenterline_horizontal						 Solid Centre Line
+material_solidyellowcenterline_vertical					 Yellow Centre Line
+material_solidyellowcenterline_horizontal				 Yellow Centre Line
+material_diagroadwithsidewalkTL							 Diag Sidewalk
+material_diagroadwithsidewalkTR							 Diag Sidewalk
+material_diagroadwithsidewalkBL							 Diag Sidewalk
+material_diagroadwithsidewalkBR							 Diag Sidewalk
+
+material_verticallinewithzebraT							 Line with Zebra
+material_verticallinewithzebraB							 Line with Zebra
+
+material_verticalcurbwithzebraT							 Curb with Zebra
+material_verticalcurbwithzebraB							 Curb with Zebra
+material_verticalzebra									 Zebra Crossing
+
+material_whitecrosslinesTL								 White Crosslines
+material_whitecrosslinesTR								 White Crosslines
+material_whitecrosslinesBL								 White Crosslines
+material_whitecrosslinesBR								 White Crosslines
+
+material_yellowcrosslinesL								 Yellow Crosslines
+material_yellowcrosslinesR								 Yellow Crosslines
+material_yellowcrosslinesBL								 Yellow Crosslines
+material_yellowcrosslinesBR								 Yellow Crosslines
+
+material_yellowcenterturnTL								 Centre Line Turn
+material_yellowcenterturnTR								 Centre Line Turn
+material_yellowcenterturnBL								 Centre Line Turn
+material_yellowcenterturnBR								 Centre Line Turn
+
+material_whitecenterturnTL								 Centre Line Turn
+material_whitecenterturnTR								 Centre Line Turn
+material_whitecenterturnBL								 Centre Line Turn
+material_whitecenterturnBR								 Centre Line Turn
+
+material_innerwhitecornerTL								 Inner Corner
+material_innerwhitecornerTR								 Inner Corner
+material_innerwhitecornerBL								 Inner Corner
+material_innerwhitecornerBR								 Inner Corner
+
+material_outercurbT										 Outer Curb
+material_outercurbL										 Outer Curb
+material_outercurbB										 Outer Curb
+material_outercurbR										 Outer Curb
+
+material_innercurbT										 Inner Curb
+material_innercurbL										 Inner Curb
+material_innercurbB										 Inner Curb
+material_innercurbR										 Inner Curb
+
+material_innerdiagroadTL								 Diagonal Inner Line
+material_innerdiagroadTR								 Diagonal Inner Line
+material_innerdiagroadBL								 Diagonal Inner Line
+material_innerdiagroadBR								 Diagonal Inner Line
+
+material_diagsidewalkTL									 Diag Road Sidewalk
+material_diagsidewalkTR									 Diag Road Sidewalk
+material_diagsidewalkBL									 Diag Road Sidewalk
+material_diagsidewalkBR									 Diag Road Sidewalk
+
+material_curbcornerTL									 Curb Corner
+material_curbcornerTR									 Curb Corner
+material_curbcornerBL									 Curb Corner
+material_curbcornerBR									 Curb Corner
+material_curbgutter										 Curb Gutter
+material_manhole										 Manhole
+
+material_diagcenterturnTL								 Diagonal / Straight center line
+material_diagcenterturnTR								 Diagonal / Straight center line
+material_diagcenterturnBL								 Diagonal / Straight center line
+material_diagcenterturnBR								 Diagonal / Straight center line
+
+material_diagcenterL									 Diagonal Center Line	
+material_diagcenterR									 Diagonal Center Line	
+
+material_diagreversecenterturnTL						 Diagonal / Straight center line
+material_diagreversecenterturnTR						 Diagonal / Straight center line
+material_diagreversecenterturnBL						 Diagonal / Straight center line
+material_diagreversecenterturnBR						 Diagonal / Straight center line
+
+material_parkingspot1TL									 Parking Spot 1
+material_parkingspot1TR									 Parking Spot 1
+material_parkingspot1BL									 Parking Spot 1
+material_parkingspot1BR									 Parking Spot 1
+
+material_parkingspot2TL									 Parking Spot 2
+material_parkingspot2TR									 Parking Spot 2
+material_parkingspot2BL									 Parking Spot 2
+material_parkingspot2BR									 Parking Spot 2
+
+material_parkingspot3TL									 Parking Spot 3
+material_parkingspot3TR									 Parking Spot 3
+material_parkingspot3BL									 Parking Spot 3
+material_parkingspot3BR									 Parking Spot 3
+
+material_RoadCrossing									 Crossing
+material_RoadCrossingLeft								 Crossing (Left)
+material_RoadCrossingRight								 Crossing (Right)
+
+material_cinderbwall			 						 Cinderblock Wall
+material_WoodenWall				 						 Wooden Wall
+material_PoWPerimeterWall			 					 Perimeter Wall
+material_mud					 						 Mud
+
+material_GraveHole										 Grave Hole
+material_CemeteryStone									 Cemetery Stone
+material_CemeteryPavingStone							 Cemetery Paving Stone
+
+material_longgrass										 Long Grass
+material_BlueMosaic										 Blue Mosaic
+material_SalmonTiles									 Salmon Tiles
+material_WoodLaminate									 Wood Laminate
+material_BlackMosaic									 Black Mosaic
+material_BrownMosaic									 Brown Mosaic
+material_LightWood										 Light Wood
+material_RedTiles										 Red Tiles
+material_RedCarpet3										 Red Carpet
+material_BlueCarpet3									 Blue Carpet
+material_GreenCarpet									 Green Carpet
+material_RedCarpet1										 Red Carpet
+material_BlueCarpet1									 Blue Carpet
+material_GreenCarpet1									 Green Carpet
+material_OrangeCarpet									 Orange Carpet
+material_YellowCarpet									 Yellow Carpet
+material_YellowCarpet1									 Yellow Carpet
+material_RedCarpet2										 Red Carpet
+material_BlueCarpet2									 Blue Carpet
+material_GreenCarpet2									 Green Carpet
+material_YellowCarpet2									 Yellow Carpet
+material_BlackCarpet1									 Black Carpet
+material_WhiteCarpet									 White Carpet
+material_WhiteCarpet1									 White Carpet
+material_BlackCarpet2									 Black Carpet
+material_WhiteCarpet2									 White Carpet
+material_LightBlueCarpet								 Blue Carpet
+material_BlackCarpet									 Black Carpet
+material_GreyTiles										 Grey Tiles
+material_BlackTiles										 Black Tiles
+material_OrangeTiles									 Orange Tiles
+material_BlueTiles										 Blue Tiles
+material_YellowTiles									 Yellow Tiles
+material_DarkWood										 Dark Wood
+material_Cobblestone									 Cobble Stone
+material_LinoleumFloor									 Linoleum Floor
+material_KeramikFloor									 Ceramic Floor
+material_GraniteFloor									 Granite Floor
+material_MetallTiles									 Metal Tiles
+material_DarkParkett									 Dark Parkett
+material_StoneTiles										 Stone Tiles
+
+material_MetroFloor										 Metro Floor
+buildtoolbar_popup_mat_MetroFloor						 This new floor material is made to slow people down while passing through a Metro station. It is needed at Staff Metro stations, because it takes a few moments for the station to cycle through a big entity list.\n\nBy default the station will usually spawn more metro tiles than needed. Using one or two rows of these tiles can be sufficient, sometimes you need three rows.\n\nMetro Stations have a scan radius of 2 tiles with the roof object being the centre.
+
+material_BorderWater									 Border Water
+# People can walk across this tweaked water. It's very salty!\n\nUsed by the BorderChanger mod to change the whole map edge into this special water type, because using normal water on the whole edge will make the game crash.
+
+material_Water											 Water
+# Default water, can only be used outdoors.
+
+material_WaterStable									 Water (Stable)
+# This water can be used indoors as well to create a dummy swimming pool or other water creations.
+# It will still block movement, so people can't cross it.
+
+material_PaddedWall										 Padded Wall
+material_PaddedTile										 Padded Tile
+
+material_ConcreteWallProtCus							 PC Wall
+material_ConcreteWallLowSec								 MinSec Wall
+material_ConcreteWallMedSec								 MedSec Wall
+material_ConcreteWallMaxSec								 MaxSec Wall
+material_ConcreteWallSuperMaxSec						 SupMax Wall
+
+material_ConcreteWallDeathRow							 DeathRow Wall
+material_ConcreteWallDirt								 Dirt Wall
+material_ConcreteWallBrownStrike						 Brown Wall
+material_ConcreteWallBlackRust							 Black Rust Wall
+material_ConcreteWallBrownRust							 Brown Rust Wall
+
+material_carpetOne										 Beige Carpet
+material_carpetTwo										 Brown Carpet
+material_carpetThree									 Beige Carpet
+material_carpetFour										 Brown Carpet
+
+material_VaultTiles										 Vault Tiles
+material_DarkMetalFloor									 Dark Metal
+
+
+material_RoofTiles1										 Roof Tiles 1
+material_RoofTiles2										 Roof Tiles 2
+material_FX2K_Tile1										 Concrete Tile
+material_FX2K_Tile2										 Crazy Paving
+material_FX2K_Tile3										 Grey Carpet
+material_FX2K_Tile4										 Grey Carpet
+material_FX2K_Tile5										 Yellow Carpet
+material_FX2K_Tile6										 Orange Carpet
+material_FX2K_Tile7										 Green Carpet
+material_FX2K_Tile8										 Green Carpet
+material_FX2K_Tile9										 Kitchen Tiles
+material_FX2K_Tile10									 Blue Carpet
+material_FX2K_Tile11									 Blue Carpet
+material_FX2K_Tile12									 Blue Carpet
+material_FX2K_Tile13									 Dark Wood Floor
+material_FX2K_Tile14									 Red Carpet
+material_FX2K_Tile15									 Maroon Carpet
+material_FX2K_Tile16									 Purple Carpet
+material_LooseStone										 Loose Stone
+material_PavedFence										 Paved Fence
+material_SandFence										 Sand Fence
+material_GravelFence									 Gravel Fence
+material_SnowFence										 Snow Fence
+material_WaterFence										 Water Fence
+material_PavedBushFence									 Paved Bush Fence
+material_StoneBushFence									 Stone Bush Fence
+material_TiledFence										 Tiled Fence
+material_TiledBushFence									 Tiled Bush Fence
+material_GrassFence										 Grass Fence
+material_LongGrassFence									 Long Grass Fence
+material_JailFence										 Jail Fence
+material_JailWall										 Jail Wall
+material_GlassWall										 Glass Wall
+material_YellowBigMosaic								 Yellow Mosaic
+material_GreenBigMosaic									 Green Mosaic
+material_WhiteBigMosaic									 White Mosaic
+material_RedBigMosaic									 Red Mosaic
+material_GreyBigMosaic									 Grey Mosaic
+
+material_Farmland										 Compost
+
+material_T0_WhiteTile									 White Tile
+material_BL_PublicTile									 Public Tile
+material_BR_PublicTile									 Public Tile
+material_C_PublicTile									 Public Tile
+material_T3_PublicTile									 Public Tile
+material_T6_PublicTile									 Public Tile
+material_T9_PublicTile									 Public Tile
+material_T12_PublicTile									 Public Tile
+material_TL_PublicTile									 Public Tile
+material_TR_PublicTile									 Public Tile
+material_X_PublicTile									 Public Tile
+material_Y_PublicTile									 Public Tile
+material_BL_PublicConcrete								 Public Concrete
+material_BR_PublicConcrete								 Public Concrete
+material_C_PublicConcrete								 Public Concrete
+material_T3_PublicConcrete								 Public Concrete
+material_T6_PublicConcrete								 Public Concrete
+material_T9_PublicConcrete								 Public Concrete
+material_T12_PublicConcrete								 Public Concrete
+material_TL_PublicConcrete								 Public Concrete
+material_TR_PublicConcrete								 Public Concrete
+material_X_PublicConcrete								 Public Concrete
+material_Y_PublicConcrete								 Public Concrete
+material_BL_StaffTile									 Staff Tile
+material_BR_StaffTile									 Staff Tile
+material_C_StaffTile									 Staff Tile
+material_T3_StaffTile									 Staff Tile
+material_T6_StaffTile									 Staff Tile
+material_T9_StaffTile									 Staff Tile
+material_T12_StaffTile									 Staff Tile
+material_TL_StaffTile									 Staff Tile
+material_TR_StaffTile									 Staff Tile
+material_X_StaffTile									 Staff Tile
+material_Y_StaffTile									 Staff Tile
+material_BL_StaffConcrete								 Staff Concrete
+material_BR_StaffConcrete								 Staff Concrete
+material_C_StaffConcrete								 Staff Concrete
+material_T3_StaffConcrete								 Staff Concrete
+material_T6_StaffConcrete								 Staff Concrete
+material_T9_StaffConcrete								 Staff Concrete
+material_T12_StaffConcrete								 Staff Concrete
+material_TL_StaffConcrete								 Staff Concrete
+material_TR_StaffConcrete								 Staff Concrete
+material_X_StaffConcrete								 Staff Concrete
+material_Y_StaffConcrete								 Staff Concrete
+material_BL_MinimumTile									 Minimum Tile
+material_BR_MinimumTile									 Minimum Tile
+material_C_MinimumTile									 Minimum Tile
+material_T3_MinimumTile									 Minimum Tile
+material_T6_MinimumTile									 Minimum Tile
+material_T9_MinimumTile									 Minimum Tile
+material_T12_MinimumTile								 Minimum Tile
+material_TL_MinimumTile									 Minimum Tile
+material_TR_MinimumTile									 Minimum Tile
+material_X_MinimumTile									 Minimum Tile
+material_Y_MinimumTile									 Minimum Tile
+material_BL_MinimumConcrete								 Minimum Concrete
+material_BR_MinimumConcrete								 Minimum Concrete
+material_C_MinimumConcrete								 Minimum Concrete
+material_T3_MinimumConcrete								 Minimum Concrete
+material_T6_MinimumConcrete								 Minimum Concrete
+material_T9_MinimumConcrete								 Minimum Concrete
+material_T12_MinimumConcrete							 Minimum Concrete
+material_TL_MinimumConcrete								 Minimum Concrete
+material_TR_MinimumConcrete								 Minimum Concrete
+material_X_MinimumConcrete								 Minimum Concrete
+material_Y_MinimumConcrete								 Minimum Concrete
+material_BL_MediumTile									 Medium Tile
+material_BR_MediumTile									 Medium Tile
+material_C_MediumTile									 Medium Tile
+material_T3_MediumTile									 Medium Tile
+material_T6_MediumTile									 Medium Tile
+material_T9_MediumTile									 Medium Tile
+material_T12_MediumTile									 Medium Tile
+material_TL_MediumTile									 Medium Tile
+material_TR_MediumTile									 Medium Tile
+material_X_MediumTile									 Medium Tile
+material_Y_MediumTile									 Medium Tile
+material_BL_MediumConcrete								 Medium Concrete
+material_BR_MediumConcrete								 Medium Concrete
+material_C_MediumConcrete								 Medium Concrete
+material_T3_MediumConcrete								 Medium Concrete
+material_T6_MediumConcrete								 Medium Concrete
+material_T9_MediumConcrete								 Medium Concrete
+material_T12_MediumConcrete								 Medium Concrete
+material_TL_MediumConcrete								 Medium Concrete
+material_TR_MediumConcrete								 Medium Concrete
+material_X_MediumConcrete								 Medium Concrete
+material_Y_MediumConcrete								 Medium Concrete
+material_BL_MaximumTile									 Maximum Tile
+material_BR_MaximumTile									 Maximum Tile
+material_C_MaximumTile									 Maximum Tile
+material_T3_MaximumTile									 Maximum Tile
+material_T6_MaximumTile									 Maximum Tile
+material_T9_MaximumTile									 Maximum Tile
+material_T12_MaximumTile								 Maximum Tile
+material_TL_MaximumTile									 Maximum Tile
+material_TR_MaximumTile									 Maximum Tile
+material_X_MaximumTile									 Maximum Tile
+material_Y_MaximumTile									 Maximum Tile
+material_BL_MaximumConcrete								 Maximum Concrete
+material_BR_MaximumConcrete								 Maximum Concrete
+material_C_MaximumConcrete								 Maximum Concrete
+material_T3_MaximumConcrete								 Maximum Concrete
+material_T6_MaximumConcrete								 Maximum Concrete
+material_T9_MaximumConcrete								 Maximum Concrete
+material_T12_MaximumConcrete							 Maximum Concrete
+material_TL_MaximumConcrete								 Maximum Concrete
+material_TR_MaximumConcrete								 Maximum Concrete
+material_X_MaximumConcrete								 Maximum Concrete
+material_Y_MaximumConcrete								 Maximum Concrete
+material_BL_ProtectiveTile								 Protective Tile
+material_BR_ProtectiveTile								 Protective Tile
+material_C_ProtectiveTile								 Protective Tile
+material_T3_ProtectiveTile								 Protective Tile
+material_T6_ProtectiveTile								 Protective Tile
+material_T9_ProtectiveTile								 Protective Tile
+material_T12_ProtectiveTile								 Protective Tile
+material_TL_ProtectiveTile								 Protective Tile
+material_TR_ProtectiveTile								 Protective Tile
+material_X_ProtectiveTile								 Protective Tile
+material_Y_ProtectiveTile								 Protective Tile
+material_BL_ProtectiveConcrete							 Protective Concrete
+material_BR_ProtectiveConcrete							 Protective Concrete
+material_C_ProtectiveConcrete							 Protective Concrete
+material_T3_ProtectiveConcrete							 Protective Concrete
+material_T6_ProtectiveConcrete							 Protective Concrete
+material_T9_ProtectiveConcrete							 Protective Concrete
+material_T12_ProtectiveConcrete							 Protective Concrete
+material_TL_ProtectiveConcrete							 Protective Concrete
+material_TR_ProtectiveConcrete							 Protective Concrete
+material_X_ProtectiveConcrete							 Protective Concrete
+material_Y_ProtectiveConcrete							 Protective Concrete
+material_BL_SupermaxTile								 Supermax Tile
+material_BR_SupermaxTile								 Supermax Tile
+material_C_SupermaxTile									 Supermax Tile
+material_T3_SupermaxTile								 Supermax Tile
+material_T6_SupermaxTile								 Supermax Tile
+material_T9_SupermaxTile								 Supermax Tile
+material_T12_SupermaxTile								 Supermax Tile
+material_TL_SupermaxTile								 Supermax Tile
+material_TR_SupermaxTile								 Supermax Tile
+material_X_SupermaxTile									 Supermax Tile
+material_Y_SupermaxTile									 Supermax Tile
+material_BL_SupermaxConcrete							 Supermax Concrete
+material_BR_SupermaxConcrete							 Supermax Concrete
+material_C_SupermaxConcrete								 Supermax Concrete
+material_T3_SupermaxConcrete							 Supermax Concrete
+material_T6_SupermaxConcrete							 Supermax Concrete
+material_T9_SupermaxConcrete							 Supermax Concrete
+material_T12_SupermaxConcrete							 Supermax Concrete
+material_TL_SupermaxConcrete							 Supermax Concrete
+material_TR_SupermaxConcrete							 Supermax Concrete
+material_X_SupermaxConcrete								 Supermax Concrete
+material_Y_SupermaxConcrete								 Supermax Concrete

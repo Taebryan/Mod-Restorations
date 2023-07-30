@@ -1,0 +1,32 @@
+
+BEGIN Program
+	Name					 Limo2RepairTheoretic
+	SessionCost				 -100
+	Places					 10
+	SessionLength			 120
+	NumSessions				 2
+	Difficulty				 20
+	Research				 LimoRepairShop
+	Room					 Classroom
+	Teacher					 CarMechanic2
+    Properties				 StudentsSit
+	Equipment				 SchoolDesk
+	Intake					 Voluntary
+	Properties				 Practical
+END
+
+BEGIN Program
+	Name					 Limo2RepairPractical
+	SessionCost				 -100
+	Places					 10
+	SessionLength			 120
+	NumSessions				 2
+	Difficulty				 20
+	Qualification			 Limo2RepairTheoretic
+	Research				 LimoRepairShop
+	Room					 LimoGarage2
+	Teacher					 CarMechanic2
+	Equipment				 Limo2Lesson
+	Intake					 Voluntary
+	Properties				 Practical
+END

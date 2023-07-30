@@ -1,0 +1,215 @@
+
+#removed HighPriority from hearse
+BEGIN ProductionRule
+    Rule                 Entity
+    Container            Hearse
+    Distribution         Random
+    MaxSlotId            3
+    Condition            EntityDead
+END
+
+
+BEGIN ProductionRule
+	Rule				 Entity
+	Container			 EmergencyChinookHook
+	Distribution		 Nearest
+	MinSlotId			 0
+	MaxSlotId			 7
+	Condition			 EntityDead
+	Properties			 HighPriority
+END
+
+BEGIN ProductionRule
+	Rule				 Entity
+	Container			 EmergencyTruckBay
+	Distribution		 Nearest
+	MinSlotId			 0
+	MaxSlotId			 7
+	Condition			 EntityDead
+	Properties			 HighPriority
+END
+
+BEGIN ProductionRule
+    Rule                 Entity
+    Container            MorgueSlab
+    Room                 Morgue
+    Distribution         Random
+    Condition            EntityDead
+    Properties           HighPriority
+END
+
+BEGIN ProductionRule
+    Rule                 Entity
+    Room                 Morgue
+    Distribution         Random
+    Condition            EntityDead
+    Properties           HighPriority
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerTerminal
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerTerminalI
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerDeliveries
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerBuilding
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerFloors
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerLaundry
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerFood
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerVending
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerForest
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerWorkshop
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerOther
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerExports
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerGarbage
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerIntake
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerMinSec
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerMedSec
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 GrantCheckerEmergency
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 PrisonerIntakeCashMinSec
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 PrisonerIntakeCashNormal
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 PrisonerIntakeCashMaxSec
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 PrisonerIntakeCashSuperMax
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 PrisonerIntakeCashDeathRow
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 PrisonerIntakeCashInsane
+    Room                 Exports
+    Distribution         Random
+END
+
+BEGIN ProductionRule
+    Rule                 Storage
+	Material			 PrisonerIntakeCashLegendary
+    Room                 Exports
+    Distribution         Random
+END

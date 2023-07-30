@@ -1,0 +1,13 @@
+
+OBJECT TrafficTerminal
+	EVENT SnitchFound  
+		SOUNDNAME          CS_Heist_Music_5
+		SOURCETYPE         0
+		POSITIONTYPE       0
+		INSTANCETYPE       0
+		LOOPTYPE           0
+		MINDISTANCE        7.25
+		VOLUME             PARAMETER TypeFixedValue        9.23  UpdateOncePerLoop
+		FREQUENCY          PARAMETER TypeFixedValue        1.40  UpdateOncePerLoop
+	END
+END

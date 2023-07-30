@@ -1,0 +1,10 @@
+
+transportZones_hover_hint					 USING TRAFFIC TERMINAL? Set =D= to AUTO; set ENABLED YES at Cargo Stations / Cargo Helipads. --- NOT USING TERMINAL? => Link to Helipads, Docks and the road, via the Logistics menu.
+
+buildtoolbar_popup_obj_BoatDock				NOT USED BY ADVANCED ROADS 2.0\nUSE CARGO HELIPAD/STATION IN STAFF MENU.\n\nEssential for allowing boats to dock at your prison, ferry new prisoners, or deliver supplies.
+
+buildtoolbar_popup_obj_Helipad				NOT USED BY ADVANCED ROADS 2.0\nUSE CARGO HELIPAD/STATION IN STAFF MENU.\n\nEssential for allowing helicopters to fly into your prison, transport new prisoners, deliver supplies, or call upon special air-based emergency crews.
+
+buildtoolbar_Logistics_DeliveryTargeting 	NOT USED BY ADVANCED ROADS 2.0\nUSE BUTTONS ON CARGO HELIPAD/STATION INSTEAD.\n\nLink Delivery, Garbage and Export zones to Helipads, Docks and the Road. Doing so allows you to control where deliveries are taken, and how exports leave your prison.
+
+buildtoolbar_Logistics_VehiclePurpose		NOT USED BY ADVANCED ROADS 2.0\nUSE BUTTONS ON CARGO HELIPAD/STATION INSTEAD.\n\nControl which services will be handled by specific Docks, Helipads or the Road. Doing so allows you to recieve specific goods or prisoners to various locations around your prison, by sea and air.

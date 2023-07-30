@@ -1,0 +1,2741 @@
+
+# # #
+#
+#  Begin Limo Garage 2.1
+#
+# # #
+
+
+BEGIN Object
+	Name				 StaffMenuLG2
+	Width				 1
+	Height				 1
+	Properties			 Entity
+	BEGIN Sprite		 x 125 y 78 w 2 h 2 RotateType 4 END
+	Price				 -99999999
+	Properties			 Staff
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 RoadPoleStart
+	Width				 1
+	Height				 1
+	Toughness			 100.000
+	RenderDepth			 2
+	NumSlots			 1
+	BEGIN Sprite		 x 120 y 89 w 2 h 2 RotateType 0
+		BEGIN Marker	 x 0.9785 y 0.2875 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 CanPlaceOnRoad
+	Properties			 Uncloneable
+END
+
+BEGIN Object
+	Name				 RoadPoleEnd
+	Width				 1
+	Height				 1
+	Toughness			 100.000
+	NumSprites			 2
+	BEGIN Sprite		 x 122 y 89 w 2 h 2 RotateType 0 END
+	BEGIN Sprite		 x 124 y 89 w 2 h 2 RotateType 0 END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 CanPlaceOnRoad
+	Properties			 Uncloneable
+END
+
+BEGIN Object
+	Name				 SmallRoadPole
+	Width				 2
+	Height				 1
+	Toughness			 100.000
+	NumSprites			 2
+	BEGIN Sprite		 x 53 y 107 w 4 h 2 RotateType 1 END
+	BEGIN Sprite		 x 57 y 107 w 4 h 2 RotateType 1 END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 CanPlaceOnRoad
+	Properties			 Uncloneable
+END
+
+BEGIN Object
+	Name				 LimoTowTruckSkin
+	Width				 2
+	Height				 8
+	MaxStackSize		 -1
+	NumSlots			 5
+	NumSprites			 6
+	BEGIN	Sprite		 x 101 y 100 w 4 h 16 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 13  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 2.5 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 9 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 105 y 100 w 4 h 16 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 13  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 2.5 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 9 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 109 y 100 w 4 h 16 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 13  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 2.5 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 9 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 114 y 100 w 4 h 16 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 13  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 1.7 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 8.3 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 118 y 100 w 4 h 16 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 13  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 1.7 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 8.3 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 122 y 100 w 4 h 16 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 13  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 14.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 1.7 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 8.3 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	RenderDepth			 1
+	SpriteScale			 1.2
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 CarPartsTowTruckSkin
+	Width				 2
+	Height				 6
+	MaxStackSize		 -1
+	NumSlots			 5
+	NumSprites			 6
+	BEGIN	Sprite		 x 101 y 116 w 4 h 12 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 9  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 2 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 105 y 116 w 4 h 12 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 9  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 2 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 109 y 116 w 4 h 12 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 9  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 2 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 114 y 116 w 4 h 12 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 9  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 2 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 118 y 116 w 4 h 12 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 9  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 2 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	BEGIN	Sprite		 x 122 y 116 w 4 h 12 RotateType 0 TopAligned false
+		BEGIN	Marker	 x 2  y 9  orientation.x 0.0000000	orientation.y 0.0000000	 Index 0  END
+		BEGIN	Marker	 x 0.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.5  y 10.4  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+		BEGIN Marker	 x 2 y 2 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 4 END
+	END
+	RenderDepth			 1
+	SpriteScale			 1.1
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	GroundBaseOveride	 1
+END
+
+BEGIN Object
+	Name				 Limo2Window
+	Width				 2
+	Height				 2
+#	RenderDepth			 4
+	Properties			 DontAvoid
+	Properties			 Sellable
+	BEGIN	Sprite		 x 61 y 123 w 4 h 4 RotateType 4 TopAligned false END
+	SpriteScale			 1
+	Properties			 Vehicle
+	WorkGroup			 LimoRepair
+	Properties			 Scripted
+	Properties			 Uncloneable
+	GroundBaseOveride	 2
+END
+
+BEGIN Object
+	Name				 Limo2
+	Width				 2
+	Height				 4
+#	RenderDepth			 1
+	NumSprites			 5
+	NumSlots			 2
+	BEGIN	Sprite		 x 41 y 120 w 4 h 8 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 0.75  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.25  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+	END
+	BEGIN	Sprite		 x 45 y 120 w 4 h 8 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 0.75  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.25  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+	END
+	BEGIN	Sprite		 x 49 y 120 w 4 h 8 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 0.75  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.25  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+	END
+	BEGIN	Sprite		 x 53 y 120 w 4 h 8 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 0.75  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.25  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+	END
+	BEGIN	Sprite		 x 57 y 120 w 4 h 8 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 0.75  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 1  END
+		BEGIN	Marker	 x 3.25  y 6.14  orientation.x 0.0000000	orientation.y 0.0000000	 Index 2  END
+	END
+	SpriteScale			 1
+	Properties			 Vehicle
+	WorkGroup			 LimoRepair
+	Properties			 Scripted
+	GroundBaseOveride	 3
+END
+
+BEGIN Object
+	Name				 Limo2Broken
+	Price				 -1
+	Width				 2
+	Height				 3
+#	RenderDepth			 2
+	NumSprites			 4
+	BEGIN	Sprite		 x 41 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 45 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 49 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 53 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	SpriteScale			 1
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 3
+END
+
+BEGIN Object
+	Name				 Limo2OnFloor
+    MoveSpeedFactor      0.800000
+	Price				 -1
+	Width				 2
+	Height				 3
+#	RenderDepth			 0
+	NumSlots			 1
+	NumSprites			 4
+	Properties			 DontAvoid
+	AttachToWall		 false
+	BEGIN	Sprite		 x 41 y 120 w 4 h 7 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 45 y 120 w 4 h 7 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 49 y 120 w 4 h 7 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 53 y 120 w 4 h 7 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+
+	BEGIN	Sprite		 x 111 y 2 w 4 h 7 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 115 y 2 w 4 h 7 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 119 y 2 w 4 h 7 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 123 y 2 w 4 h 7 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+
+	SpriteScale			 1
+	Properties			 Scripted
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 3
+END
+
+BEGIN Object
+	Name				 Limo2OnCrane
+	Price				 -1
+	Width				 2
+	Height				 3
+#	RenderDepth			 4
+	NumSprites			 4
+	Properties			 DontAvoid
+	BEGIN	Sprite		 x 41 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 45 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 49 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 53 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	SpriteScale			 1
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 3
+END
+
+BEGIN Object
+	Name				 Limo2Engine
+	Width				 1
+	Height				 1
+	Toughness			 1.0000
+#	RenderDepth			 2
+	NumSprites			 2
+	Properties			 DontAvoid
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 23 y 123 w 2 h 2 RotateType 0 TopAligned false END
+	BEGIN	Sprite		 x 23 y 125 w 2 h 2 RotateType 0 TopAligned false END
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 2
+END
+
+BEGIN Object
+	Name				 Limo2EngineInRack
+	Width				 1
+	Height				 1
+	Toughness			 1.0000
+	RenderDepth			 1
+	NumSprites			 2
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 23 y 123 w 2 h 2 RotateType 0 TopAligned false END
+	BEGIN	Sprite		 x 23 y 125 w 2 h 2 RotateType 0 TopAligned false END
+	Research			 LimoRepairShop
+	GroundBaseOveride	 2
+END
+
+BEGIN Object
+	Name				 Limo2EngineInCar
+	Width				 1
+	Height				 1
+	Toughness			 1.0000
+#	RenderDepth			 2
+	NumSprites			 2
+	Properties			 DontAvoid
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 23 y 123 w 2 h 2 RotateType 0 TopAligned false END
+	BEGIN	Sprite		 x 23 y 125 w 2 h 2 RotateType 0 TopAligned false END
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 2
+END
+
+BEGIN Object
+	Name				 Limo2EngineInLessonCar
+	Width				 1
+	Height				 1
+	Toughness			 1.0000
+#	RenderDepth			 2
+	NumSprites			 2
+	Properties			 DontAvoid
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 23 y 123 w 2 h 2 RotateType 0 TopAligned false END
+	BEGIN	Sprite		 x 23 y 125 w 2 h 2 RotateType 0 TopAligned false END
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 2
+END
+
+BEGIN Object
+	Name				 Limo2EngineOnTruck
+	Width				 1
+	Height				 1
+	Toughness			 1.0000
+	RenderDepth			 1
+	NumSprites			 2
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 23 y 123 w 2 h 2 RotateType 0 TopAligned false END
+	BEGIN	Sprite		 x 23 y 125 w 2 h 2 RotateType 0 TopAligned false END
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 2
+END
+
+BEGIN Object
+	Name				 Limo2EngineOnCrane
+	Width				 1
+	Height				 1
+	Toughness			 1.0000
+#	RenderDepth			 4
+	NumSprites			 2
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 23 y 123 w 2 h 2 RotateType 0 TopAligned false END
+	BEGIN	Sprite		 x 23 y 125 w 2 h 2 RotateType 0 TopAligned false END
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 2
+END
+
+BEGIN Object
+	Name				 Limo2Lesson
+    MoveSpeedFactor      0.800000
+	Toughness			 15.0000
+#	RenderDepth			 0
+	Width				 2
+	Height				 2
+	NumSlots			 1
+	Properties			 DontAvoid
+	Properties			 Scripted
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 111 y 10 w 4 h 4 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 1.8725 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 115 y 10 w 4 h 4 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 1.8725 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 119 y 10 w 4 h 4 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 1.8725 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 123 y 10 w 4 h 4 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 2 y 1.8725 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 4
+END
+
+BEGIN Object
+	Name				 Limo2Repaired
+    MoveSpeedFactor      0.800000
+	Price				 -1
+	Width				 2
+	Height				 3
+#	RenderDepth			 1
+	NumSprites			 4
+	BEGIN	Sprite		 x 41 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 45 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 49 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 53 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	SpriteScale			 1
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 3
+END
+
+BEGIN Object
+	Name				 Limo2RepairedOnRoad
+    MoveSpeedFactor      0.800000
+	Price				 -1
+	Width				 2
+	Height				 4
+#	RenderDepth			 1
+	NumSprites			 4
+	NumSlots			 1
+	BEGIN	Sprite		 x 41 y 120 w 4 h 8 RotateType 4 TopAligned false
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 45 y 120 w 4 h 8 RotateType 4 TopAligned false
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 49 y 120 w 4 h 8 RotateType 4 TopAligned false
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	BEGIN	Sprite		 x 53 y 120 w 4 h 8 RotateType 4 TopAligned false
+		BEGIN Marker	 x 2 y 5 orientation.x 0 orientation.y 0 Index 0 END
+	END
+	SpriteScale			 1
+	Properties			 Scripted
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 3
+END
+#		BEGIN Marker	 x 3.9 y 5.5 orientation.x 0 orientation.y 0 Index 0 END
+
+
+
+
+BEGIN Object
+	Name				 GantryCrane2
+	Toughness			 15.0000
+	RenderDepth			 2
+	Height				 1
+	Properties			 DontAvoid
+	Properties			 Scripted
+	NumSprites			 2
+	NumSlots			 3
+	BEGIN	Sprite		 x 66 y 76 w 44 h 2 RotateType 4 TopAligned true
+		BEGIN	Marker	 x 0 y 0.5 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 32 y 0.5 orientation.x 0 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 44 y 0.5 orientation.x 0 orientation.y 0 Index 2 END
+	END
+	BEGIN	Sprite		 x 66 y 76 w 32 h 2 RotateType 4 TopAligned true
+		BEGIN	Marker	 x 0 y 0.5 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 32 y 0.5 orientation.x 0 orientation.y 0 Index 1 END
+	END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 2
+END
+
+BEGIN Object
+	Name				 GantryCrane2RailLeft
+	Toughness			 15.0000
+	RenderDepth			 0
+	Width				 1
+	Properties			 DontAvoid
+	NumSprites			 2
+	BEGIN	Sprite		 x 127 y 15 w 1 h 19 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 127 y 55 w 1 h 29 RotateType 4 TopAligned false END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 29
+END
+
+BEGIN Object
+	Name				 GantryCrane2RailRight
+	Toughness			 15.0000
+	RenderDepth			 0
+	Width				 1
+	NumSlots			 8
+	Properties			 DontAvoid
+	NumSprites			 2
+	BEGIN	Sprite		 x 127 y 15 w 1 h 19 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 127 y 55 w 1 h 29 RotateType 4 TopAligned false END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+	GroundBaseOveride	 29
+END
+
+BEGIN Object
+	Name				 GantryCrane2Wheel
+	Toughness			 15.0000
+	RenderDepth			 2
+	Width				 1
+	Height				 2
+	NumSlots			 1
+	NumSprites			 2
+	Properties			 DontAvoid
+	BEGIN	Sprite		 x 31 y 119 w 2 h 4 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 1 y 2.75 orientation.x 1.0 orientation.y 0.0 Index 0 END
+	END
+	BEGIN	Sprite		 x 31 y 123 w 2 h 4 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 1 y 0.75 orientation.x -1.0 orientation.y 0.0 Index 0 END
+	END
+	ViewThroughObstacles true
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+END
+
+BEGIN Object
+	Name				 GantryCrane2Hook
+	Toughness			 15.0000
+	RenderDepth			 2
+	Width				 2
+	Height				 2
+	NumSlots			 3
+	NumSprites			 3
+	Properties			 DontAvoid
+	Properties			 Scripted
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned true
+		BEGIN	Marker	 x 2 y 4 orientation.x 0.0 orientation.y 0.0 Index 0 END
+		BEGIN	Marker	 x 1.484375 y 1.5 orientation.x 0.0 orientation.y 0.0 Index 1 END
+		BEGIN	Marker	 x 2 y 2.25 orientation.x 0.0 orientation.y 0.0 Index 2 END
+	END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned true
+		BEGIN	Marker	 x 2 y 4 orientation.x 0.0 orientation.y 0.0 Index 0 END
+		BEGIN	Marker	 x 2.484375 y 1.5 orientation.x 0.0 orientation.y 0.0 Index 1 END
+		BEGIN	Marker	 x 2 y 2.25 orientation.x 0.0 orientation.y 0.0 Index 2 END
+	END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned true
+		BEGIN	Marker	 x 2 y 4 orientation.x 0.0 orientation.y 0.0 Index 0 END
+		BEGIN	Marker	 x 2.484375 y 1.5 orientation.x 0.0 orientation.y 0.0 Index 1 END
+		BEGIN	Marker	 x 2 y 2.25 orientation.x 0.0 orientation.y 0.0 Index 2 END
+	END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+END
+
+BEGIN Object
+	Name				 GantryCrane2Booth
+	MoveSpeedFactor		 0.500000
+	Toughness			 150.0000
+#	RenderDepth			 1
+	Width				 1
+	Height				 1
+	NumSlots			 3
+	NumSprites			 2
+	Properties			 Processor
+	Properties			 Scripted
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 18 y 124 w 2 h 3 RotateType 4
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 2 END
+	END
+	BEGIN	Sprite		 x 20 y 124 w 2 h 3 RotateType 4
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 2 END
+	END
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+END
+
+BEGIN Object
+    Name				 GantryCrane2PaintCabin
+    Width				 2
+    Height				 4
+	BEGIN	Sprite		 x 10 y 119 w 4 h 8 RotateType 4 TopAligned false END
+    Toughness			 10.000
+	RenderDepth			 4
+	WorkGroup			 LimoRepair
+	Properties			 DontAvoid
+	Properties			 Utility
+	Properties			 Wired
+	MadeOf				 Composite
+	AttachToWall		 false
+	Properties			 Uncloneable
+END
+
+BEGIN Object
+	Name				 CarPartsRack2
+    MoveSpeedFactor      0.800000
+	Toughness			 90
+	NumSlots			 8
+#	RenderDepth			 0
+	Width				 4
+	Height				 2
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 34 y 119 w 6 h 3 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 0.85 y 1.75 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 2.25 y 1.75 orientation.x 0 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 3.75 y 1.75 orientation.x 0 orientation.y 0 Index 2 END
+		BEGIN	Marker	 x 5.15 y 1.75 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN	Marker	 x 0.7 y 0.25 orientation.x 0 orientation.y 0 Index 4 END
+		BEGIN	Marker	 x 2.15 y 0.25 orientation.x 0 orientation.y 0 Index 5 END
+		BEGIN	Marker	 x 3.65 y 0.25 orientation.x 0 orientation.y 0 Index 6 END
+		BEGIN	Marker	 x 5.15 y 0.25 orientation.x 0 orientation.y 0 Index 7 END
+	END
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+END
+
+BEGIN Object
+    Name                 Limo2FilingCabinet
+	Toughness			 15.0000
+    MoveSpeedFactor      0.800000
+#    RenderDepth          2
+	NumSlots			 3
+	Properties			 Processor
+	BEGIN	Sprite		 x 33 y 124 w 2 h 3 RotateType 3 TopAligned false
+		BEGIN	Marker	 x 1 y 0.75 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 1 y 0.75 orientation.x 0 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 1 y 0.75 orientation.x 0 orientation.y 0 Index 2 END
+		BEGIN	Marker	 x 3 y 0.6 orientation.x 0 orientation.y -1 Index 0 END
+		BEGIN	Marker	 x 3 y 0.6 orientation.x 0 orientation.y -1 Index 1 END
+		BEGIN	Marker	 x 3 y 0.6 orientation.x 0 orientation.y -1 Index 2 END
+		BEGIN	Marker	 x 5 y 0.75 orientation.x 1 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 5 y 0.75 orientation.x 1 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 5 y 0.75 orientation.x 1 orientation.y 0 Index 2 END
+		BEGIN	Marker	 x 5 y 0.75 orientation.x -1 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 5 y 0.75 orientation.x -1 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 5 y 0.75 orientation.x 1 orientation.y 0 Index 2 END
+	END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+    ToolbarSprite        FilingCabinetToolbar
+	Properties			 Uncloneable
+	GroundBaseOveride	 0
+END
+
+BEGIN Object
+	Name				 Limo2ServiceDesk
+	Toughness			 15.0000
+    MoveSpeedFactor      0.400000
+#	RenderDepth			 0
+	Width				 2
+	NumSlots			 2
+	BEGIN	Sprite		 x 115 y 76 w 4 h 2 RotateType 1 TopAligned false
+		BEGIN	Marker	 x 2 y 0.1 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 2 y 1.9 orientation.x 0 orientation.y -1 Index 1 END
+		BEGIN	Marker	 x 6 y 1.9 orientation.x 0 orientation.y -1 Index 0 END
+		BEGIN	Marker	 x 6 y 0.1 orientation.x 0 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 8.1 y 0 orientation.x 1 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 9.9 y 0 orientation.x -1 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 10.1 y 0 orientation.x 1 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 11.9 y 0 orientation.x -1 orientation.y 0 Index 1 END
+	END
+	Properties			 Scripted
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Uncloneable
+END
+
+
+
+BEGIN Object
+	Name				 Limo2Papers
+	Price				 -1
+	RenderDepth			 0
+	Properties			 Sellable
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2BoothOrder
+	Price				 -1
+	RenderDepth			 1
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2RepairPapers
+	Price				 -1
+	MaxStackSize		 10
+	Properties			 Sellable
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2RepairPapersCopy
+	Price				 -1
+	RenderDepth			 1
+	MaxStackSize		 10
+	Properties			 Sellable
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill1
+	Price				 -1000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill2
+	Price				 -2000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill3
+	Price				 -3000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill4
+	Price				 -4000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill5
+	Price				 -5000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill6
+	Price				 -6000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill7
+	Price				 -7000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill8
+	Price				 -8000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill9
+	Price				 -9000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Bill10
+	Price				 -10000
+	RenderDepth			 1
+	Properties			 Sellable
+	MaxStackSize		 10
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+	BEGIN	StackSprite	 x 39 y 122 w 2 h 2 RotateType 0 END
+	Properties			 Material
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Equipment
+	Name				 Limo2Receipt
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0
+		BEGIN	Marker	 x 1 y 1.53125 orientation.x 0 orientation.y 0 Index 0 END
+	END
+    Scale                0.600000
+	Properties			 NoImport
+END
+
+BEGIN Equipment
+    Name                 ExpensiveLimo2Bill
+	BEGIN	Sprite		 x 35 y 122 w 2 h 2 RotateType 0 END
+    Scale                0.600000
+    Properties           Luxuries
+	Properties			 Smelly
+	Properties			 NoImport
+END
+
+BEGIN Equipment
+    Name                 DriverLicence
+	BEGIN	Sprite		 x 28 y 126 w 1 h 1 RotateType 0 END
+    Scale                0.600000
+    Properties           Luxuries
+	Properties			 Smelly
+	Properties			 NoImport
+END
+
+BEGIN Equipment
+    Name                 SprayPainter
+	BEGIN	Sprite		 x 29 y 125 w 2 h 2 RotateType 0
+		BEGIN	Marker	 x 1 y 1.53125 orientation.x 0 orientation.y 0 Index 0 END
+	END
+    Scale                0.600000
+    Properties           Metal
+	Properties			 Smelly
+	Properties			 NoImport
+END
+
+BEGIN Equipment
+    Name                 Wrench
+	BEGIN	Sprite		 x 28 y 123 w 2 h 2 RotateType 0
+		BEGIN	Marker	 x 1 y 1.53125 orientation.x 0 orientation.y 0 Index 0 END
+	END
+    Scale                0.600000
+    Properties           Metal
+	Properties			 Smelly
+	Properties			 NoImport
+END
+
+
+
+
+
+BEGIN Object
+	Name				 GantryRoadGate2Preview
+	RenderDepth			 5
+	Width				 1
+	Properties			 Sellable
+	BEGIN Sprite		 x 33 y 107 w 4 h 2 RotateType 1 END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryRail2Preview
+	RenderDepth			 0
+	Width				 1
+	Properties			 Sellable
+	NumSprites			 2
+	BEGIN	Sprite		 x 127 y 15 w 1 h 19 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 127 y 55 w 1 h 29 RotateType 4 TopAligned false END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	GroundBaseOveride	 29
+END
+
+BEGIN Object
+	Name				 GantryCrane2BoothPreview
+	Price				 -1
+	RenderDepth			 1
+	Width				 1
+	Height				 1
+	NumSlots			 3
+	NumSprites			 2
+	Properties			 Sellable
+	Group				 StaticObject
+	Properties			 StaticObject
+	Properties			 BlockMovement
+	Properties			 Scripted
+	MadeOf				 Composite
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Processor
+	Properties			 Scripted
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 18 y 124 w 2 h 3 RotateType 4
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 2 END
+	END
+	BEGIN	Sprite		 x 20 y 124 w 2 h 3 RotateType 4
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 1 y 1.5 orientation.x 1 orientation.y 0 Index 2 END
+	END
+	Research			 LimoRepairShop
+	Properties			 Entity
+END
+
+BEGIN Object
+	Name				 CarPartsRack2Preview
+	Price				 -1
+	RenderDepth			 0
+	Width				 4
+	Height				 2
+	AttachToWall		 false
+	Properties			 Sellable
+	Group				 StaticObject
+	Properties			 StaticObject
+	Properties			 BlockMovement
+	Properties			 Scripted
+	MadeOf				 Composite
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	NumSprites			 2
+	BEGIN	Sprite		 x 34 y 119 w 6 h 3 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 34 y 119 w 6 h 3 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+	Properties			 Entity
+END
+
+BEGIN Object
+	Name				 Limo2ServiceDeskPreview
+    Price                -1
+	MadeOf				 Composite
+	Group				 StaticObject
+	Properties			 StaticObject
+	Properties			 BlockMovement
+	Properties			 Sellable
+	MadeOf				 Composite
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	NumSprites			 4
+	SpriteScale			 0.5
+	BEGIN	Sprite		 x 115 y 76 w 4 h 2 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 119 y 76 w 4 h 2 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 123 y 74 w 2 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 125 y 74 w 2 h 4 RotateType 4 TopAligned false END
+	ToolbarSprite		 ShopFrontToolbar
+	Properties			 Scripted
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	Properties			 Entity
+END
+
+BEGIN Object
+    Name                 Limo2FilingCabinetPreview
+    Price                -1
+    RenderDepth          2
+	NumSlots			 3
+    AttachToWall         true
+    Group                StaticObject
+	Properties			 BlockMovement
+	Properties			 Sellable
+    BlockedBy            Wall
+	Properties			 Processor
+	Properties			 Scripted
+	WorkGroup			 LimoRepair
+    BlockedBy            StaticObject
+    BlockedBy            UtilityStation
+	NumSprites			 4
+	BEGIN	Sprite		 x 33 y 124 w 2 h 3 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 35 y 124 w 2 h 3 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 37 y 124 w 2 h 3 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 39 y 124 w 2 h 3 RotateType 4 TopAligned false END
+    MadeOf               HollowMetal
+    ToolbarSprite        FilingCabinetToolbar
+	Research			 LimoRepairShop
+    Properties           StaticObject
+	Properties			 Entity
+END
+
+BEGIN Object
+	Name				 Limo2Preview
+	Price				 -1
+	Width				 2
+	Height				 4
+	RenderDepth			 0
+	AttachToWall		 false
+	Properties			 Sellable
+	Group				 StaticObject
+	Properties			 StaticObject
+	Properties			 BlockMovement
+	Properties			 Scripted
+	MadeOf				 Composite
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	NumSprites			 3
+	BEGIN	Sprite		 x 41 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 53 y 120 w 4 h 7 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 10 y 119 w 4 h 8 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+	Properties			 Entity
+END
+
+BEGIN Object
+	Name				 Limo2LessonPreview
+	Price				 -1
+	Width				 2
+	Height				 2
+	RenderDepth			 0
+	AttachToWall		 false
+	Properties			 Sellable
+	Group				 StaticObject
+	Properties			 StaticObject
+	Properties			 BlockMovement
+	Properties			 Scripted
+	MadeOf				 Composite
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	NumSprites			 2
+	BEGIN	Sprite		 x 111 y 10 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 123 y 10 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+	Properties			 Entity
+END
+
+BEGIN Object
+	Name				 GantryCrane2Preview
+	RenderDepth			 1
+	Height				 1
+	NumSprites			 2
+	Properties			 Sellable
+	BEGIN	Sprite		 x 66 y 76 w 44 h 2 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 66 y 76 w 32 h 2 RotateType 4 TopAligned false END
+	WorkGroup			 LimoRepair
+	Research			 LimoRepairShop
+	GroundBaseOveride	 0.2
+END
+
+
+
+
+
+BEGIN Object
+	Name				 GantryCrane2Spawner
+	Price				 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+	Properties			 Entity
+	Properties			 Staff
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerCentreNormal
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerCentreTall
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerLeftNormal
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerLeftWide
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerLeftTall
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerRightNormal
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerRightWide
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerRightTall
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerCentreNormalDouble
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerCentreTallDouble
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerLeftNormalDouble
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerLeftWideDouble
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerLeftTallDouble
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerRightNormalDouble
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerRightWideDouble
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 GantryCrane2SpawnerRightTallDouble
+	Price				 -1
+	ConstructionTime	 -1
+	RenderDepth			 7
+	Width				 2
+	Height				 2
+	Properties			 BlockMovement
+	Properties			 Sellable
+	Properties			 Scripted
+	NumSprites			 3
+	BEGIN	Sprite		 x 18 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 22 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 119 w 4 h 4 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+
+
+
+
+BEGIN Room
+    Name RoomDivider8
+    Research             LimoRepairShop
+END
+
+
+
+
+BEGIN Room
+	Name				 Limo2WaitingRoom
+	Research			 LimoRepairShop
+	WorkGroup			 LimoRepair
+	Properties			 RequiresSector
+	BEGIN Contraband	 Id		DriverLicence	END
+END
+
+BEGIN Room
+	Name				 LimoGarage2
+	Research			 LimoRepairShop
+	Properties			 PrisonersCanWork
+	Properties			 RequiresSector
+	Qualification		 Limo2RepairPractical
+	WorkGroup			 LimoRepair
+    BEGIN LikelyObject	 Id		Limo2ServiceDesk    END
+    BEGIN LikelyObject	 Id		Limo2FilingCabinet  END
+	BEGIN Contraband	 Id		ExpensiveLimo2Bill	END
+	BEGIN Contraband	 Id		Wrench			END
+	BEGIN Contraband	 Id		SprayPainter	END
+	BEGIN Contraband	Id		Screwdriver		END
+	BEGIN Contraband	Id		Hammer			END
+	BEGIN Contraband	Id		Drill			END
+END
+
+
+
+
+BEGIN Object
+	Name				 CarMechanic2
+	Properties			 Entity
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	Price				 -500
+	Upkeep				 -150
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 RoomSpecific
+	Equipment			 Screwdriver
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 1 y 119 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 121 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 123 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 125 w 2 h 2 RotateType 1 END
+	SpriteVariants		 4
+	Research			 LimoRepairShop
+	Properties			 Staff
+	Properties			 StaffNeeds
+	Properties			 DefaultBehaviour
+	HangOutRoom			 LimoGarage2
+END
+
+BEGIN Object
+	Name				 CraneOperator2
+	Properties			 Entity
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	Price				 -500
+	Upkeep				 -150
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 RoomSpecific
+	Equipment			 Screwdriver
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 25 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 106 w 2 h 2 RotateType 1 END
+	SpriteVariants		 4
+	Research			 LimoRepairShop
+	Properties			 Staff
+	Properties			 StaffNeeds
+	Properties			 DefaultBehaviour
+	HangOutRoom			 LimoGarage2
+END
+
+BEGIN Object
+	Name				 TowTruck2Driver
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	Equipment			 Screwdriver
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 103 y 98 w 2 h 2 RotateType 1 END
+	Properties			 Staff
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 TowTruck2DriverMilitary
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	Equipment			 Screwdriver
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 1 y 106 w 2 h 2 RotateType 1 END
+	Properties			 Staff
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver0
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver1
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver2
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver3
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver4
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver5
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver6
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver7
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver8
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver9
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver10
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver11
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver12
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver13
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver14
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2Driver15
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	WorkGroup			 LimoRepair
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Limo2DriverLeaving
+	Toughness			 10.0000
+	RenderDepth			 3
+	ViewRange			 12
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Properties			 Entity
+	BEGIN	Sprite		 x 9 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 106 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 108 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 110 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 112 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 114 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 1 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 9 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 17 y 116 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 25 y 116 w 2 h 2 RotateType 1 END
+
+	BEGIN	Sprite		 x 57 y 15 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 17 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 57 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 49 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 41 y 23 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 19 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 21 w 2 h 2 RotateType 1 END
+	BEGIN	Sprite		 x 33 y 23 w 2 h 2 RotateType 1 END
+
+	SpriteVariants		 35
+	Properties			 Staff
+	Properties			 DoesNotTire
+	Properties			 DefaultBehaviour
+	HangOutRoom			 Limo2WaitingRoom
+	Research			 LimoRepairShop
+END
+
+BEGIN Object
+	Name				 Nr1
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 1 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr2
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 2 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr3
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 3 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr4
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 4 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr5
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 5 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr6
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 6 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr7
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 7 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr8
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 8 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr9
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 9 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr10
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 11 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr11
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 12 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr12
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 13 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr13
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 14 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr14
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 15 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr15
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 16 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 Nr16
+	Width				 1
+    ConstructionTime	 -1
+    Toughness            20.0000
+    Price				 -1
+	Properties           Sellable
+	Properties			 DontAvoid
+	Research			 LimoRepairShop
+    Properties           CanPlaceOnRoad
+	RenderDepth			 2
+	SpriteScale			 0.25
+	BEGIN	Sprite		 x 17 y 127 w 1 h 1 RotateType 0 END
+END
+
+BEGIN Object
+	Name				 FoundationChecker
+	RenderDepth			 5
+	Width				 2
+	Height				 2
+	Properties			 Sellable
+	NumSprites			 2
+	BEGIN	Sprite		 x 26 y 123 w 2 h 2 RotateType 4 TopAligned false END
+	BEGIN	Sprite		 x 26 y 125 w 2 h 2 RotateType 4 TopAligned false END
+	Research			 LimoRepairShop
+END
+
+
+# # #
+#
+#  End Limo Garage 2.1
+#
+# # #

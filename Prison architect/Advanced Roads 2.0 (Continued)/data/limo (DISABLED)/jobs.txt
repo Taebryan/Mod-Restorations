@@ -1,0 +1,356 @@
+
+#######################################################
+#
+# Begin Limo Garage
+#
+#######################################################
+
+
+BEGIN Job
+    Name					 OpenHood2
+    JobTime					 3
+    Worker					 Prisoner
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 CloseHood2
+    JobTime					 3
+    Worker					 Prisoner
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 RepairEngine2
+    JobTime					 60
+    Tool					 Wrench
+    Worker					 Prisoner
+	Worker					 CarMechanic2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PaintCar2
+    JobTime					 120
+    Tool					 SprayPainter
+    Worker					 Prisoner
+	Worker					 CarMechanic2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 RefurbishEngine2
+    JobTime					 60
+    Tool					 Wrench
+    Worker					 Prisoner
+	Worker					 CarMechanic2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 RemoveEngine2
+    JobTime					 60
+    Tool					 Wrench
+    Worker					 Prisoner
+	Worker					 CarMechanic2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 MountNewEngine2
+    JobTime					 60
+    Tool					 Wrench
+    Worker					 Prisoner
+	Worker					 CarMechanic2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill0
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill0
+    JobTime					 3
+	Worker					 Limo2Driver0
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill1
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill1
+    JobTime					 3
+	Worker					 Limo2Driver1
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill2
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill2
+    JobTime					 3
+	Worker					 Limo2Driver2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill3
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill3
+    JobTime					 3
+	Worker					 Limo2Driver3
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill4
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill4
+    JobTime					 3
+	Worker					 Limo2Driver4
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill5
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill5
+    JobTime					 3
+	Worker					 Limo2Driver5
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill6
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill6
+    JobTime					 3
+	Worker					 Limo2Driver6
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill7
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill7
+    JobTime					 3
+	Worker					 Limo2Driver7
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill8
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill8
+    JobTime					 3
+	Worker					 Limo2Driver8
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill9
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill9
+    JobTime					 3
+	Worker					 Limo2Driver9
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill10
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill10
+    JobTime					 3
+	Worker					 Limo2Driver10
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill11
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill11
+    JobTime					 3
+	Worker					 Limo2Driver11
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill12
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill12
+    JobTime					 3
+	Worker					 Limo2Driver12
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill13
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill13
+    JobTime					 3
+	Worker					 Limo2Driver13
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill14
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill14
+    JobTime					 3
+	Worker					 Limo2Driver14
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 WriteBill15
+    JobTime					 0
+	Tool					 Clipboard
+	Worker					 CarMechanic2
+	Worker					 CraneOperator2
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 PayBill15
+    JobTime					 3
+	Worker					 Limo2Driver15
+	WorkGroup				 LimoRepair
+END
+
+BEGIN Job
+    Name					 TruckDriverLeaving
+    JobTime					 1
+	Worker					 TowTruck2Driver
+	WorkGroup				 LimoRepair
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 TruckDriverLeavingMilitary
+    JobTime					 1
+	Worker					 TowTruck2DriverMilitary
+	WorkGroup				 LimoRepair
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 LimoDriverLeaving
+    JobTime					 1
+	Worker					 Limo2DriverLeaving
+	WorkGroup				 LimoRepair
+END
+
+
+#######################################################
+#
+# End Limo Garage
+#
+#######################################################

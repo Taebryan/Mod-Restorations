@@ -1,0 +1,13 @@
+
+BEGIN Research
+	Name				 LimoRepairShop
+	Type				 Ability
+	Requires			 PrisonLabour
+	Admin				 Maintainance
+	Cost				 -10
+	Time				 1
+	X					 520
+	Y					 300
+    NonWideX             320  
+    NonWideY             660 
+END

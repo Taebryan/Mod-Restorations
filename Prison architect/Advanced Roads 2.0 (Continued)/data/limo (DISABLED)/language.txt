@@ -1,0 +1,585 @@
+
+#######################################################
+#
+# Railways mod related
+#
+#######################################################
+
+object_RailwayStation									 Railway Station
+
+object_RailwayStationDoubleSpawner						 Railway Station (Double Rails)
+buildtoolbar_popup_staff_RailwayStationDoubleSpawner	 Can be placed anywhere on the map.\nYou can only place 1 Railway Station per track.\n\nAfter placing, use its BUTTONS to configure what this station will do. Toggle LEFT and RIGHT side to set up each road lane. Toggle ENABLED if you want to activate a side. Both sides are independent, so for example you can have the right side turned on while the left side is inactive.\n\nRequires a Traffic Terminal on the map to be operational. The Traffic Terminal must be switched to AUTO before it starts sending cargo to the stations.
+
+object_RailwayStationUnloadLeftSpawner					 Railway Station (Unload Left)
+buildtoolbar_popup_staff_RailwayStationUnloadLeftSpawner Can be placed anywhere on the map.\nYou can only place 1 Railway Station per track.\n\nAfter placing, use its BUTTONS to configure what this station will do. In case you need it, you can even toggle its placement afterwards, by clicking LEFT / RIGHT side. It will then hop to the other side of the road.\n\nToggle the ENABLED button if you want to activate this station.\n\nRequires a Traffic Terminal on the map to be operational. The Traffic Terminal must be switched to AUTO before it starts sending cargo to the stations.
+
+object_RailwayStationUnloadRightSpawner					 Railway Station (Unload Right)
+buildtoolbar_popup_staff_RailwayStationUnloadRightSpawner Can be placed anywhere on the map.\nYou can only place 1 Railway Station per track.\n\nAfter placing, use its BUTTONS to configure what this station will do. In case you need it, you can even toggle its placement afterwards, by clicking LEFT / RIGHT side. It will then hop to the other side of the road.\n\nToggle the ENABLED button if you want to activate this station.\n\nRequires a Traffic Terminal on the map to be operational. The Traffic Terminal must be switched to AUTO before it starts sending cargo to the stations.
+
+object_RailwayStationGantryCrane						 Railway Gantry
+object_RailwayStationGantryHook							 Railway Hook
+object_RailwayStationControl							 Railway Station Control
+object_RailwayStationFireEngine							 Fireman Equipment
+object_RailwayStationTrain								 Engine Block
+
+
+
+#######################################################
+#
+#  End Advanced Roads
+#
+#######################################################
+
+
+
+#######################################################
+#
+#  Begin Limo Garage
+#
+#######################################################
+
+tooltip_Init_Garage										 The Garage will be created when the foundation is done.
+object_FoundationChecker								 Foundation Checker
+
+object_SmallRoadPole									 Road Pole
+object_RoadPoleStart									 Road Pole
+object_RoadPoleEnd										 Road Pole
+
+object_LimoTowTruckSkin									 Tow Truck
+object_CarPartsTowTruckSkin								 Tow Truck
+object_TowTruck2Driver									 Tow Truck Driver
+object_TowTruck2DriverMilitary							 Tow Truck Driver
+object_Limo2Driver0										 Limo Driver
+object_Limo2Driver1										 Limo Driver
+object_Limo2Driver2										 Limo Driver
+object_Limo2Driver3										 Limo Driver
+object_Limo2Driver4										 Limo Driver
+object_Limo2Driver5										 Limo Driver
+object_Limo2Driver6										 Limo Driver
+object_Limo2Driver7										 Limo Driver
+object_Limo2Driver8										 Limo Driver
+object_Limo2Driver9										 Limo Driver
+object_Limo2Driver10									 Limo Driver
+object_Limo2Driver11									 Limo Driver
+object_Limo2Driver12									 Limo Driver
+object_Limo2Driver13									 Limo Driver
+object_Limo2Driver14									 Limo Driver
+object_Limo2Driver15									 Limo Driver
+object_Limo2DriverLeaving								 Limo Driver (Leaving)
+
+object_Limo2Window										 Window
+object_Limo2											 Limo
+object_Limo2Broken										 Broken Limo
+object_Limo2Repaired									 Repaired Limo
+object_Limo2RepairedOnRoad								 Repaired Limo
+object_Limo2OnFloor										 Limo on floor
+object_Limo2OnCrane										 Limo on crane
+
+object_Limo2FilingCabinet								 Limo Filing Cabinet
+object_Limo2Papers										 Limo Papers
+object_GantryCrane2BoothOrder							 This is a dummy material which loads into slot1 of the booth to start its Processor functionality. When the processor job starts, it will set a Timer on the booth, telling the gantry crane it can start moving around.
+object_Limo2RepairPapers								 Limo Repair Papers
+object_Limo2RepairPapersCopy							 Limo Repair Papers (copy)
+object_Limo2Receipt										 Limo Receipt
+object_Limo2Bill1										 Cheap Limo Bill
+object_Limo2Bill2										 Cheap Limo Bill
+object_Limo2Bill3										 Cheap Limo Bill
+object_Limo2Bill4										 Average Limo Bill
+object_Limo2Bill5										 Average Limo Bill
+object_Limo2Bill6										 Average Limo Bill
+object_Limo2Bill7										 Average Limo Bill
+object_Limo2Bill8										 Expensive Limo Bill
+object_Limo2Bill9										 Expensive Limo Bill
+object_Limo2Bill10										 Expensive Limo Bill
+
+object_CraneOperator2									 Crane Operator
+buildtoolbar_popup_staff_CraneOperator2					 The Crane Operator will operate the gantry crane and write repair bills for the limo drivers when they come to fetch a repaired car.
+object_CarMechanic2										 Car Mechanic
+buildtoolbar_popup_staff_CarMechanic2					 The Car Mechanic will teach your prisoners how to repair cars in a Limo Garage. He can also fix cars if no prisoners are working.
+
+object_GantryCrane2Spawner								 Limo Garage Installer
+buildtoolbar_popup_staff_GantryCrane2Spawner			 Spawns a Limo Garage template:\n - after calculating the map size, you can configure the Limo Garage placement and size with my buttons.\n\n - Press the Show/Hide button to see how much space the garage will take. You can sack these spawned preview parts at any moment without a problem.\n\n - Press the Build Floor button once you are done. If you want to place walls inside this building then you can ONLY use the special Limo Wall, which doesn't block movement (otherwise the Gantry Crane will get stuck).\n\n - Next, place up to 16 Limo Repair Spots (depending on garage size). Also place 1 Rack spot, 1 Gantry Control spot, 1 Service Desk spot and 1 Filing Cabinet spot. You can sell all these objects and place them again until you are happy with your layout.\n\n - When your garage looks the way you want it, press the Check For Objects button. All required items are present? Then the garage is finalized and ready for use.
+
+
+reportTitle_GarageInstaller								 Limo Garage Installer
+
+reportTab_tab1											 Overview
+reportTab_tab2											 Placement
+reportTab_tab3											 Objects
+reportTab_tab4											 Deployment
+reportTab_tab5											 Logistics
+
+reportTooltip_CaptionTimeWarp							 TIMEWARP
+reportTooltip_TimeWarp									 The installer is now calculating the TimeWarpFactor and checks if you are using the Slow Time Mutator. Keep an eye on the tooltip to see the progress...
+
+reportTooltip_CaptionOverview							 OVERVIEW
+reportTooltip_Overview									 This Garage Installer will guide you while creating a Limo Garage.\nYou will need to complete a few steps which will be presented as new tabs to the left. Start by pressing one of the buttons below:
+
+reportButton_StartBuilding								 Let's start!
+reportButton_CancelBuilding								 Oops, I changed my mind...
+
+reportTooltip_Placement									 Your garage can have 8 different layouts as shown above. Before building the garage, you need to specify which of these layouts you want to use. Make your choice with the buttons below:
+
+reportButton_OptionSelected								   √
+reportButton_OptionUnavailable							   X
+reportTooltip_GaragePlacement							 PLACEMENT
+reportButton_GaragePlacement							 *B
+reportButton_GaragePlacementLeft						 left
+reportButton_GaragePlacementRight						 right
+reportButton_GaragePlacementCentre						 centre
+
+reportTooltip_GarageSize								 GARAGE SIZE
+reportButton_GarageSize									 *B
+reportButton_GarageSizeNormal							 normal
+reportButton_GarageSizeTall								 tall
+reportButton_GarageSizeWide								 wide
+
+reportTooltip_GarageRoadSize							 ROAD SIZE
+reportButton_GarageRoadSize							    *B
+reportButton_GarageRoadSizeSingle						 single
+reportButton_GarageRoadSizeDouble						 double
+
+reportTooltip_GarageType								 GARAGE TYPE
+reportButton_GarageType									 *B
+reportButton_GarageTypeNormal							 normal
+reportButton_GarageTypeMilitary							 military
+
+reportTooltip_ShowHidePreview							 Press the Show/Hide button to see how much space your layout will take. You can sell these spawned preview parts at any time, or remove me as well at the Overview tab.
+reportButton_ShowHidePreview							 Show/Hide preview
+
+reportTooltip_BuildFloor								 Press the Build Foundation button once you are happy!
+reportButton_BuildFloor									 Build Foundation
+
+reportTooltip_CaptionFoundationDone						 CONGRATULATIONS!
+reportTooltip_FoundationDone							 The first steps to build a garage have been completed.\nThe next objective is to place the required inventory in your garage. More info is at the Objects tab. Current inventory:
+
+reportTooltip_FoundationDone1							  Repair Spots\nCar Parts Rack\nGantry Control\nService Desk\nLimo Filing Cabinet
+reportTooltip_FoundationDone2 *A\n*B\n*C\n*D\n*E
+
+reportTooltip_FoundationDoneTips						 For Quickbuild users, or those who forgot:\nYou can toggle between a Military or Normal garage here.
+
+reportTooltip_CaptionObjects							 WALLS AND OBJECTS
+reportTooltip_Objects									 If you want to place walls inside this garage, then you can ONLY use the special Limo Wall which doesn't block movement (otherwise the Gantry Crane will get stuck).\n\nPlace up to 16 Limo Repair Spots (depending on garage size) anywhere in your garage. Also place 1 Rack spot, 1 Gantry Control spot, 1 Service Desk spot and 1 Filing Cabinet spot. Optionally place up to 10 Lesson Cars. You can sell all these objects and place them again until you are happy with your layout.\n\nWhen your garage looks the way you want it then press the button below. All required items are present? Then the garage is finalized and ready for use.
+reportButton_CheckObjects								 Check for objects
+
+reportTooltip_CaptionTips								 PLACEMENT TIPS
+reportTooltip_TipsAdjacent								 If you want to make two adjacent garages: build the foundation of the first garage and place a new Garage Installer somewhere inside the building as shown below. It will automatically adjust and make the second garage adjacent:
+reportTooltip_TipsPath									 If you want a path between garages: place the second Installer below the first garage. The top of the Installer always shows the top wall of the garage. Link the bottom and top gates of these garages at the Road Marker, so they will open at the same time:
+reportTooltip_TipsMaxGarage								 You can build up to 3 garages on the same lane if there is a walking path in between the garages. If you make them all adjacent then you can have up to 4 garages. This limitation is due to the RoadMarker which can handle up to 10 gates per road.
+
+reportTooltip_CaptionDeployment							 DEPLOYMENT
+reportTooltip_Deployment								 When the garage is done, zone the Limo Garage and the Limo Waiting Room. They will be separate sectors.\n\nOpen the Deployment window to set the Security levels: you can mark the whole garage for one level, or divide it for example like shown above. It might be appropriate to zone the road and the waiting room as Access Only and Staff Only, depending on your prison layout.\n\nIf you made Limo Walls inside the building, then zone your rooms with 1 spare tile between the walls, and zone the area below the walls as Access Only. The Access Only zone will be 3 tiles wide, with the wall in the middle. This should somehow prevent people from walking through these fake walls, since they don't block movement.
+
+reportTooltip_CaptionLogistics							 LOGISTICS
+reportTooltip_Logistics									 Open the logistics screen to assign jobs to the garage. If you divided the garage into separate sectors, then you can assign jobs for each sector in the garage like shown above.\n\nDon't forget to set up your reform programs as well, so prisoners can learn how to work here. For the practical reform lessons each prisoner will need a Lesson Car.
+
+
+object_GantryCrane2SpawnerCentreNormal					 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerCentreTall					 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerLeftNormal					 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerLeftWide						 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerLeftTall						 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerRightNormal					 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerRightWide						 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerRightTall						 Limo Garage Prefab Installer
+
+object_GantryCrane2SpawnerCentreNormalDouble			 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerCentreTallDouble				 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerLeftNormalDouble				 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerLeftWideDouble				 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerLeftTallDouble				 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerRightNormalDouble				 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerRightWideDouble				 Limo Garage Prefab Installer
+object_GantryCrane2SpawnerRightTallDouble				 Limo Garage Prefab Installer
+
+quickbuild_LimoGarageRightNormalDouble					 Right Normal Double
+quickbuild_LimoGarageRightWideDouble					 Right Wide Double
+quickbuild_LimoGarageRightTallDouble					 Right Tall Double
+
+quickbuild_LimoGarageCentreNormalDouble					 Centre Normal Double
+quickbuild_LimoGarageCentreTallDouble					 Centre Tall Double
+
+quickbuild_LimoGarageLeftNormalDouble					 Left Normal Double
+quickbuild_LimoGarageLeftWideDouble						 Left Wide Double
+quickbuild_LimoGarageLeftTallDouble						 Left Tall Double
+
+quickbuild_LimoGarageRightNormal						 Right Normal Single
+quickbuild_LimoGarageRightWide							 Right Wide Single
+quickbuild_LimoGarageRightTall							 Right Tall Single
+
+quickbuild_LimoGarageCentreNormal						 Centre Normal Single
+quickbuild_LimoGarageCentreTall							 Centre Tall Single
+
+quickbuild_LimoGarageLeftNormal							 Left Normal Single
+quickbuild_LimoGarageLeftWide							 Left Wide Single
+quickbuild_LimoGarageLeftTall							 Left Tall Single
+
+object_Limo2Preview										 Limo repair spot
+object_Limo2LessonPreview								 Lesson car spot
+object_CarPartsRack2Preview								 Parts Rack spot
+object_GantryCrane2BoothPreview							 Gantry Control spot
+object_Limo2FilingCabinetPreview						 Filing Cabinet spot
+object_Limo2ServiceDeskPreview							 Service Desk spot
+object_GantryCrane2Preview								 Gantry Crane preview
+object_GantryRail2Preview								 Gantry Crane Rail preview
+object_GantryRoadGate2Preview							 Road Gate preview
+
+buildtoolbar_popup_staff_Limo2Preview					 Place some Limo Repair Spots in your garage where you want cars to be placed on the floor by the Gantry Crane.\n\nClick my button to toggle between Repair or Paint Cabin spot.\n\nMaximum amount of Repair plus Paint Cabin Spots:\n Tall or Wide garage -> 16\n Normal garage -> 8
+buildtoolbar_popup_staff_Limo2LessonPreview				 Place up to 10 optional Limo Lesson Spots in your garage.\n\nPrisoners need this lesson spot to complete the reform program.\n\nA garage must have normal repair spots as well, otherwise the lesson spots don't get broken engines.
+buildtoolbar_popup_staff_CarPartsRack2Preview			 Place 1 Car Parts Rack in your garage.
+buildtoolbar_popup_staff_GantryCrane2BoothPreview		 Place 1 Gantry Crane Control booth in your garage.
+buildtoolbar_popup_staff_Limo2FilingCabinetPreview		 Place 1 Filing Cabinet spot in your garage.\nUse my button to rotate.
+buildtoolbar_popup_staff_Limo2ServiceDeskPreview		 Place 1 Service Desk spot in your garage.\nUse my button to rotate.
+
+
+tooltip_Caption_GarageSetup								 ==== SETUP ====
+tooltip_Caption_GarageTooltipInfo						 = TOOLTIP INFO =
+tooltip_ShowLimo2BoothInfo								 Booth: *X
+tooltip_Button_ShowLimo2InfoNo							 No
+tooltip_Button_ShowLimo2InfoYes							 Yes
+reportTooltip_MilitaryYes								 military
+tooltip_ShowLimo2CraneInfo								 Crane: *X
+tooltip_ShowLimo2HookInfo								 Hook: *X
+tooltip_ShowLimo2RackInfo								 Rack: *X
+tooltip_ShowLimo2LimoInfo								 Cars: *X
+tooltip_ShowLimo2LessonInfo								 Lesson: *X
+tooltip_ShowLimo2TruckInfo								 Truck: *X
+tooltip_Button_DeleteGarage								 Delete Garage
+tooltip_Button_ResetGarage								 Reset Garage
+tooltip_Button_ResetGate								 Clear Gates Auth
+tooltip_Button_ClearErrorLogs							 Clear Error Logs
+tooltip_Button_UnloadTruck								 Unload Truck
+
+object_GantryRail2SlotFiller							 Slot filler
+object_GantryCrane2Hook									 Gantry Crane Hook
+object_GantryCrane2										 Gantry Crane
+object_GantryCrane2RailLeft								 Gantry Crane Rail
+object_GantryCrane2RailRight							 Gantry Crane Rail
+object_GantryCrane2Wheel								 Gantry Crane Wheel
+object_GantryCrane2Booth								 Gantry Crane Control
+object_Limo2ServiceDesk									 Service Desk
+object_CarPartsRack2									 Car Parts Rack
+object_GantryCrane2PaintCabin							 Paint Cabin
+object_Limo2Lesson										 Lesson Car
+object_Limo2Engine										 Engine (obsolete)
+object_Limo2EngineOnCrane								 Engine on crane
+object_Limo2EngineOnTruck								 Engine on truck
+object_Limo2EngineInCar									 Engine in car
+object_Limo2EngineInLessonCar							 Engine in lesson
+object_Limo2EngineInRack								 Engine in rack
+
+
+room_Limo2WaitingRoom									 Limo Waiting Room
+buildtoolbar_popup_room_Limo2WaitingRoom				 People coming to fetch their repaired limo will hang out in this sector.
+room_LimoGarage2										 Limo Garage
+buildtoolbar_popup_room_LimoGarage2						 The Limo Garage is a workshop where prisoners repair broken cars. The cars will be delivered by a Tow Truck, so a road leading to this room is required.\n\nTo build a garage, use the Limo Garage Installer from the Staff menu.\n\nYou can have several garages on the same road, or have several roads with garages.\n\nGarage roads do not allow other traffic types.
+
+research_LimoRepairShop									 Limo Garage 2.0
+researchtooltip_LimoRepairShop							 The Limo Garage is a workshop where prisoners repair broken cars. They require a theoretic and a practical reform program before they can work here. A Limo Garage requires a road leading straight to this room. You can find the Garage Installer and required objects to create your personal garage in the Staff menu once the research is completed.
+
+reformprogram_Limo2RepairTheoretic						 Limo Repair (Theoretic)
+reformprogram_Limo2RepairTheoretic_text					 The theoretic course for the Limo Garage takes place in a classroom where your prisoners learn about car engines and stuff. After this course they will go to the practical part of the reform program where they learn how to deal with cars in the garage.
+reformprogram_Limo2RepairPractical						 Limo Repair (Practical)
+reformprogram_Limo2RepairPractical_text					 After finishing the Limo Repair Theoretic reform program, your prisoners will go to this course in the Limo Garage to learn how to repair car engines with actual bolts and nuts instead of theory books.
+
+job_custom_RepairEngine2								 Repair engine
+job_custom_RemoveEngine2								 Remove engine
+job_custom_RefurbishEngine2								 Refurbish engine
+job_custom_MountNewEngine2								 Mount new engine
+job_custom_PaintCar2									 Paint car
+job_custom_OpenHood2									 Open hood
+job_custom_CloseHood2									 Close hood
+job_custom_WriteBill0									 Write bill
+job_custom_WriteBill1									 Write bill
+job_custom_WriteBill2									 Write bill
+job_custom_WriteBill3									 Write bill
+job_custom_WriteBill4									 Write bill
+job_custom_WriteBill5									 Write bill
+job_custom_WriteBill6									 Write bill
+job_custom_WriteBill7									 Write bill
+job_custom_WriteBill8									 Write bill
+job_custom_WriteBill9									 Write bill
+job_custom_WriteBill10									 Write bill
+job_custom_WriteBill11									 Write bill
+job_custom_WriteBill12									 Write bill
+job_custom_WriteBill13									 Write bill
+job_custom_WriteBill14									 Write bill
+job_custom_WriteBill15									 Write bill
+job_custom_PayBill0										 Pay bill
+job_custom_PayBill1										 Pay bill
+job_custom_PayBill2										 Pay bill
+job_custom_PayBill3										 Pay bill
+job_custom_PayBill4										 Pay bill
+job_custom_PayBill5										 Pay bill
+job_custom_PayBill6										 Pay bill
+job_custom_PayBill7										 Pay bill
+job_custom_PayBill8										 Pay bill
+job_custom_PayBill9										 Pay bill
+job_custom_PayBill10									 Pay bill
+job_custom_PayBill11									 Pay bill
+job_custom_PayBill12									 Pay bill
+job_custom_PayBill13									 Pay bill
+job_custom_PayBill14									 Pay bill
+job_custom_PayBill15									 Pay bill
+job_custom_LimoDriverLeaving							 Leave garage
+job_custom_LimoDriverLeavingMilitary					 Leave garage
+job_custom_TruckDriverLeaving							 Leave garage
+job_custom_TruckDriverLeavingMilitary					 Leave garage
+
+equipment_DriverLicence									 Driver Licence
+equipment_ExpensiveLimo2Bill							 Expensive Limo Bill
+equipment_SprayPainter									 Spray Painter
+equipment_Limo2Receipt									 Limo Receipt
+equipment_Wrench										 Wrench
+
+material_Limo2Wall										 Limo Wall
+material_Limo2WallConcrete								 Limo Wall Concrete
+material_Limo2WallBrick									 Limo Wall Brick
+material_Limo2WallBrownStrike							 Limo Wall Brown
+material_Limo2WallNewBBlockWall							 Limo Wall White
+material_Limo2WallNewTiledWall							 Limo Wall Tiled
+material_Limo2WallPavedFence							 Limo Paved Fence
+material_Limo2WallTiledFence							 Limo Tiled Fence
+
+tooltip_GantryCraneReset								 Gantry Crane Reset
+tooltip_limo2onfloor									 CarUID: *X\nRepair Spot: *Y
+tooltip_limo2lesson										 CarUID: *X\nLesson Spot: *Y
+tooltip_limo2engine										 CarUID: *X\nRepair Spot: *Y
+tooltip_Caption_GaragePlacement							 Step 1/5 Where?
+tooltip_Button_GaragePlacement							 *X
+tooltip_Button_Left										 Road right
+tooltip_Button_Centre									 Centre road
+tooltip_Button_Right									 Road left
+tooltip_Caption_GarageSize								 Step 2/5 Size?
+tooltip_Button_GarageSize								 *X
+tooltip_Button_Military									 Military: *X
+tooltip_Button_IsMilitary_No							 No
+tooltip_Button_IsMilitary_Yes							 Yes
+
+tooltip_Button_Normal									 Normal
+tooltip_Button_Tall										 Tall
+tooltip_Button_Wide										 Wide
+tooltip_Caption_PreviewGarage							 Step 3/5 Preview
+tooltip_Button_ShowPreview								 Show or Hide
+tooltip_Caption_BuildFloor								 Step 4/5 Build
+tooltip_Button_BuildFloor								 Create floor
+tooltip_Caption_Inventory								 Step 5/5 Objects
+tooltip_Button_ScanInventory							 Check for objects
+tooltip_Caption_PlaceRepairSpots						 Limo RepairSpots
+tooltip_Caption_PlaceBooth								 1 Gantry Control
+tooltip_Caption_PlaceRack								 1 Car Parts Rack
+tooltip_Caption_PlaceDesk								 1 Service Desk
+tooltip_Caption_PlaceFiling								 1 Limo Filing Cabinet
+tooltip_Caption_toggleRepair							 Repair or Paint?
+tooltip_Button_toggleRepair								 *X
+tooltip_toggleSpotType_Repair							 Repair Spot
+tooltip_toggleSpotType_Paint							 Paint Cabin Spot
+tooltip_Button_toggleRotate								 Rotate
+
+tooltip_GantryCraneBoothOverview						 HomeUID: *A\n\n _________________________ CURRENT TASK\n |  *B*C
+
+tooltip_RepairSpotReserved								 (not in use)
+tooltip_RepairSpotFree									 Empty Repair Spot
+tooltip_RepairSpotLoading								 Getting car from truck
+tooltip_PaintSpotFree									 Empty Paint Spot
+tooltip_RepairSpotInUse									 Repair in progress
+tooltip_RepairSpotEngineDamage							 Repair in progress, engine damage:
+tooltip_PaintSpotInUse									 Painting in progress
+tooltip_RequestNewEngine								 Requesting new engine
+tooltip_BringNewEngine									 Getting a new engine
+tooltip_MountNewEngine									 Mount new engine
+tooltip_RefurbishEngine									 Refurbish engine in lesson car
+tooltip_RepairSpotDone									 Repaired, waiting for bill...
+tooltip_RepairSpotPaid									 Bill paid, waiting for crane...
+tooltip_LessonSpotFree									 Empty Lesson Spot
+tooltip_LessonSpotTaken									 Waiting for engine...
+tooltip_LessonSpotGettingEngine							 Getting engine to refurbish
+tooltip_LessonSpotInUse									 Refurbish in progress
+tooltip_LessonSpotReserved								 (not in use)
+
+tooltip_Caption_GarageSeparator							 =================
+tooltip_Caption_GarageTools								 = CRANE STUCK? =
+tooltip_Button_MakeRoad									 Show road
+tooltip_Button_ShowRepairSpots							 Show Repair Spots
+tooltip_CraneIdle										 Gantry Crane is idle
+tooltip_FetchingLimofromTowTruckspot1					 Fetch Limo from TowTruck spot 1
+tooltip_FetchingLimofromTowTruckspot2					 Fetch Limo from TowTruck spot 2
+tooltip_FetchingEnginefromTowTruckspot1					 Fetch Engine from TowTruck spot 1
+tooltip_FetchingEnginefromTowTruckspot2					 Fetch Engine from TowTruck spot 2
+tooltip_Placingrepairedlimo0 							 Place repaired limo 1 on road
+tooltip_Placingrepairedlimo1 							 Place repaired limo 2 on road
+tooltip_Placingrepairedlimo2 							 Place repaired limo 3 on road
+tooltip_Placingrepairedlimo3 							 Place repaired limo 4 on road
+tooltip_Placingrepairedlimo4 							 Place repaired limo 5 on road
+tooltip_Placingrepairedlimo5 							 Place repaired limo 6 on road
+tooltip_Placingrepairedlimo6 							 Place repaired limo 7 on road
+tooltip_Placingrepairedlimo7 							 Place repaired limo 8 on road
+tooltip_Placingrepairedlimo8 							 Place repaired limo 9 on road
+tooltip_Placingrepairedlimo9 							 Place repaired limo 10 on road
+tooltip_Placingrepairedlimo10 							 Place repaired limo 11 on road
+tooltip_Placingrepairedlimo11							 Place repaired limo 12 on road
+tooltip_Placingrepairedlimo12 							 Place repaired limo 13 on road
+tooltip_Placingrepairedlimo13 							 Place repaired limo 14 on road
+tooltip_Placingrepairedlimo14 							 Place repaired limo 15 on road
+tooltip_Placingrepairedlimo15 							 Place repaired limo 16 on road
+
+tooltip_Placingenginefromlimo0							 Place limo 1 engine in lesson car
+tooltip_Placingenginefromlimo1							 Place limo 2 engine in lesson car
+tooltip_Placingenginefromlimo2							 Place limo 3 engine in lesson car
+tooltip_Placingenginefromlimo3							 Place limo 4 engine in lesson car
+tooltip_Placingenginefromlimo4							 Place limo 5 engine in lesson car
+tooltip_Placingenginefromlimo5							 Place limo 6 engine in lesson car
+tooltip_Placingenginefromlimo6							 Place limo 7 engine in lesson car
+tooltip_Placingenginefromlimo7							 Place limo 8 engine in lesson car
+tooltip_Placingenginefromlimo8							 Place limo 9 engine in lesson car
+tooltip_Placingenginefromlimo9							 Place limo 10 engine in lesson car
+tooltip_Placingenginefromlimo10							 Place limo 11 engine in lesson car
+tooltip_Placingenginefromlimo11							 Place limo 12 engine in lesson car
+tooltip_Placingenginefromlimo12							 Place limo 13 engine in lesson car
+tooltip_Placingenginefromlimo13							 Place limo 14 engine in lesson car
+tooltip_Placingenginefromlimo14							 Place limo 15 engine in lesson car
+tooltip_Placingenginefromlimo15							 Place limo 16 engine in lesson car
+
+tooltip_Placingenginefromlessoncar1						 Place lesson car 1 engine in rack
+tooltip_Placingenginefromlessoncar2						 Place lesson car 2 engine in rack
+tooltip_Placingenginefromlessoncar3						 Place lesson car 3 engine in rack
+tooltip_Placingenginefromlessoncar4						 Place lesson car 4 engine in rack
+tooltip_Placingenginefromlessoncar5						 Place lesson car 5 engine in rack
+tooltip_Placingenginefromlessoncar6						 Place lesson car 6 engine in rack
+tooltip_Placingenginefromlessoncar7						 Place lesson car 7 engine in rack
+tooltip_Placingenginefromlessoncar8						 Place lesson car 8 engine in rack
+tooltip_Placingenginefromlessoncar9						 Place lesson car 9 engine in rack
+tooltip_Placingenginefromlessoncar10					 Place lesson car 10 engine in rack
+
+tooltip_Placinglimoonrepairspot0						 Place limo on repair spot 1
+tooltip_Placinglimoonrepairspot1						 Place limo on repair spot 2
+tooltip_Placinglimoonrepairspot2						 Place limo on repair spot 3
+tooltip_Placinglimoonrepairspot3						 Place limo on repair spot 4
+tooltip_Placinglimoonrepairspot4						 Place limo on repair spot 5
+tooltip_Placinglimoonrepairspot5						 Place limo on repair spot 6
+tooltip_Placinglimoonrepairspot6						 Place limo on repair spot 7
+tooltip_Placinglimoonrepairspot7						 Place limo on repair spot 8
+tooltip_Placinglimoonrepairspot8						 Place limo on repair spot 9
+tooltip_Placinglimoonrepairspot9						 Place limo on repair spot 10
+tooltip_Placinglimoonrepairspot10						 Place limo on repair spot 11
+tooltip_Placinglimoonrepairspot11						 Place limo on repair spot 12
+tooltip_Placinglimoonrepairspot12						 Place limo on repair spot 13
+tooltip_Placinglimoonrepairspot13						 Place limo on repair spot 14
+tooltip_Placinglimoonrepairspot14						 Place limo on repair spot 15
+tooltip_Placinglimoonrepairspot15						 Place limo on repair spot 16
+
+tooltip_Placingengineinrackspot0						 Place engine in rack spot 1
+tooltip_Placingengineinrackspot1						 Place engine in rack spot 2
+tooltip_Placingengineinrackspot2						 Place engine in rack spot 3
+tooltip_Placingengineinrackspot3						 Place engine in rack spot 4
+tooltip_Placingengineinrackspot4						 Place engine in rack spot 5
+tooltip_Placingengineinrackspot5						 Place engine in rack spot 6
+tooltip_Placingengineinrackspot6						 Place engine in rack spot 7
+tooltip_Placingengineinrackspot7						 Place engine in rack spot 8
+
+tooltip_Fetchingenginefromrackspot0						 Fetch engine from rack spot 1
+tooltip_Fetchingenginefromrackspot1						 Fetch engine from rack spot 2
+tooltip_Fetchingenginefromrackspot2						 Fetch engine from rack spot 3
+tooltip_Fetchingenginefromrackspot3						 Fetch engine from rack spot 4
+tooltip_Fetchingenginefromrackspot4						 Fetch engine from rack spot 5
+tooltip_Fetchingenginefromrackspot5						 Fetch engine from rack spot 6
+tooltip_Fetchingenginefromrackspot6						 Fetch engine from rack spot 7
+tooltip_Fetchingenginefromrackspot7						 Fetch engine from rack spot 8
+
+tooltip_Fetchengineforlimo0								 Fetch engine for limo 1
+tooltip_Fetchengineforlimo1								 Fetch engine for limo 2
+tooltip_Fetchengineforlimo2								 Fetch engine for limo 3
+tooltip_Fetchengineforlimo3								 Fetch engine for limo 4
+tooltip_Fetchengineforlimo4								 Fetch engine for limo 5
+tooltip_Fetchengineforlimo5								 Fetch engine for limo 6
+tooltip_Fetchengineforlimo6								 Fetch engine for limo 7
+tooltip_Fetchengineforlimo7								 Fetch engine for limo 8
+tooltip_Fetchengineforlimo8								 Fetch engine for limo 9
+tooltip_Fetchengineforlimo9								 Fetch engine for limo 10
+tooltip_Fetchengineforlimo10							 Fetch engine for limo 11
+tooltip_Fetchengineforlimo11							 Fetch engine for limo 12
+tooltip_Fetchengineforlimo12							 Fetch engine for limo 13
+tooltip_Fetchengineforlimo13							 Fetch engine for limo 14
+tooltip_Fetchengineforlimo14							 Fetch engine for limo 15
+tooltip_Fetchengineforlimo15							 Fetch engine for limo 16
+
+tooltip_Placingengineinlimo0							 Place engine in limo 1
+tooltip_Placingengineinlimo1							 Place engine in limo 2
+tooltip_Placingengineinlimo2							 Place engine in limo 3
+tooltip_Placingengineinlimo3							 Place engine in limo 4
+tooltip_Placingengineinlimo4							 Place engine in limo 5
+tooltip_Placingengineinlimo5							 Place engine in limo 6
+tooltip_Placingengineinlimo6							 Place engine in limo 7
+tooltip_Placingengineinlimo7							 Place engine in limo 8
+tooltip_Placingengineinlimo8							 Place engine in limo 9
+tooltip_Placingengineinlimo9							 Place engine in limo 10
+tooltip_Placingengineinlimo10							 Place engine in limo 11
+tooltip_Placingengineinlimo11							 Place engine in limo 12
+tooltip_Placingengineinlimo12							 Place engine in limo 13
+tooltip_Placingengineinlimo13							 Place engine in limo 14
+tooltip_Placingengineinlimo14							 Place engine in limo 15
+tooltip_Placingengineinlimo15							 Place engine in limo 16
+
+tooltip_Placingengineinlessoncar1						 Place engine in lesson car 1
+tooltip_Placingengineinlessoncar2						 Place engine in lesson car 2
+tooltip_Placingengineinlessoncar3						 Place engine in lesson car 3
+tooltip_Placingengineinlessoncar4						 Place engine in lesson car 4
+tooltip_Placingengineinlessoncar5						 Place engine in lesson car 5
+tooltip_Placingengineinlessoncar6						 Place engine in lesson car 6
+tooltip_Placingengineinlessoncar7						 Place engine in lesson car 7
+tooltip_Placingengineinlessoncar8						 Place engine in lesson car 8
+tooltip_Placingengineinlessoncar9						 Place engine in lesson car 9
+tooltip_Placingengineinlessoncar10						 Place engine in lesson car 10
+
+tooltip_button_cranespeed								 Crane Speed: *X
+tooltip_cranespeed_1.5									 slow
+tooltip_cranespeed_2.75									 medium
+tooltip_cranespeed_4									 fast
+tooltip_Parkingthecrane									 Parking the crane
+
+objective_Grant_LimoGarage2								 Limo Garage
+objective_Grant_LimoGarage2_description					 Build a Limo Garage to repair and paint cars
+objective_Grant_LimoGarage2_Research					 First you must research Limo Garage 2.0
+objective_Grant_LimoGarage2_SpawnerNumber				 Place a Limo Garage Installer from the Staff menu, specify desired size and placement and press the Create Floor button
+objective_Grant_LimoGarage2_RepairNumber				 Place at least 4 Limo Repair Spots
+objective_Grant_LimoGarage2_LessonNumber				 Place at least 2 Lesson Spots
+objective_Grant_LimoGarage2_BoothNumber					 Place 1 Gantry Control spot
+objective_Grant_LimoGarage2_RackNumber					 Place 1 Parts Rack spot
+objective_Grant_LimoGarage2_DeskNumber					 Place 1 Service Desk spot
+objective_Grant_LimoGarage2_FilingNumber				 Place 1 Filing Cabinet spot
+objective_Grant_LimoGarage2_LimoGarageRoom				 Zone the room as Limo Garage
+objective_Grant_LimoGarage2_LimoWaitingRoom				 Zone the Service Desk area as Limo Waiting Room
+objective_Grant_LimoGarage2_CarMechanicNumber			 Hire at least 1 Car Mechanic
+objective_Grant_LimoGarage2_CraneOperatorNumber			 Hire at least 1 Crane Operator. When finished you can press the Check For Objects button on the Garage Installer to complete the garage
+
+objective_Grant_LimoMechanics2							 Limo Mechanics
+objective_Grant_LimoMechanics2_description				 Educate prisoners and start to repair cars
+objective_Grant_LimoMechanics2_Research					 First you must complete the Limo Garage grant
+objective_Grant_LimoMechanics2_ProgramPassed1			 Have 2 prisoners pass the Limo Repair (theoretic) reform program
+objective_Grant_LimoMechanics2_ProgramPassed2			 Have 2 prisoners pass the Limo Repair (practical) reform program
+objective_Grant_LimoMechanics2_Assigned					 Assign 2 prisoners to work at the Limo Garage
+objective_Grant_LimoMechanics2_Repaired					 Repair 1 car
+
+object_Nr1												 Spot One
+Object_Nr2												 Spot Two
+object_Nr3												 Spot Three
+object_Nr4												 Spot Four
+object_Nr5												 Spot Five
+object_Nr6												 Spot Six
+object_Nr7												 Spot Seven
+object_Nr8												 Spot Eight
+object_Nr9												 Spot Nine
+object_Nr10												 Spot Ten
+object_Nr11												 Spot Eleven
+object_Nr12												 Spot Twelve
+object_Nr13												 Spot Thirteen
+object_Nr14												 Spot Fourteen
+object_Nr15												 Spot Fifteen
+object_Nr16												 Spot Sixteen
+
+
+#######################################################
+#
+#  End Limo Garage
+#
+#######################################################

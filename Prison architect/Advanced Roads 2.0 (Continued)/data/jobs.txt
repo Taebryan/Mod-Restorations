@@ -1,0 +1,127 @@
+
+BEGIN Job
+    Name					 ActivateDeliveriesStation
+    JobTime					 1
+	Worker					 DeliveriesTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 OperateDeliveriesStation
+    JobTime					 120
+	Worker					 DeliveriesTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 LeaveDeliveriesStation
+    JobTime					 1
+	Worker					 DeliveriesTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 ActivateExportsStation
+    JobTime					 1
+	Worker					 ExportsTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 OperateExportsStation
+    JobTime					 120
+	Worker					 ExportsTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 LeaveExportsStation
+    JobTime					 1
+	Worker					 ExportsTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 ActivateGarbageStation
+    JobTime					 1
+	Worker					 GarbageTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 OperateGarbageStation
+    JobTime					 120
+	Worker					 GarbageTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 LeaveGarbageStation
+    JobTime					 1
+	Worker					 GarbageTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 ActivateIntakeStation
+    JobTime					 1
+	Worker					 IntakeTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 OperateIntakeStation
+    JobTime					 60
+	Worker					 IntakeTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 LeaveIntakeStation
+    JobTime					 1
+	Worker					 IntakeTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 ActivateEmergencyStation
+    JobTime					 1
+	Worker					 EmergencyTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 OperateEmergencyStation
+    JobTime					 60
+	Worker					 EmergencyTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 LeaveEmergencyStation
+    JobTime					 1
+	Worker					 EmergencyTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 ActivateCalloutStation
+    JobTime					 1
+	Worker					 CalloutTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 OperateCalloutStation
+    JobTime					 60
+	Worker					 CalloutTruckDriver
+	Properties				 HighPriority
+END
+
+BEGIN Job
+    Name					 LeaveCalloutStation
+    JobTime					 1
+	Worker					 CalloutTruckDriver
+	Properties				 HighPriority
+END
+

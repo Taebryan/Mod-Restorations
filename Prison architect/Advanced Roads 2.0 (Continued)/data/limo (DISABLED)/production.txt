@@ -1,0 +1,128 @@
+
+#######################################################
+#
+# Begin Limo Garage
+#
+#######################################################
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2RepairPapersCopy
+	Container			 Limo2FilingCabinet
+	MinSlotId			 0
+	MaxSlotId			 0
+	Distribution		 Nearest
+	Worker				 CraneOperator2
+    Worker				 CarMechanic2
+	Worker				 Prisoner
+	Properties			 HighPriority
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill1
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill2
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill3
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill4
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill5
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill6
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill7
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill8
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill9
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Limo2Bill10
+	Room				 Exports
+	StackInRoom			 Exports
+	Distribution		 Random
+END
+
+BEGIN Processor
+    Processor				 Limo2FilingCabinet
+	Object					 Limo2FilingCabinet
+    Input					 Limo2RepairPapersCopy
+	InputCount				 1
+    Output					 Limo2Bill1
+	OutputCount				 1
+	AlternateOutput			 Limo2Bill2
+	AlternateOutputChance	 0.5
+    OperatingTime			 1.0
+    Properties				 ShowDuringOperation
+	Worker					 CraneOperator2
+    Worker					 CarMechanic2
+	Worker					 Prisoner
+	Qualification			 Limo2RepairPractical
+END
+
+BEGIN Processor
+    Processor				 GantryCrane2Booth
+	Object					 GantryCrane2Booth
+    Input					 GantryCrane2BoothOrder
+	InputCount				 1
+    Output					 GantryCrane2BoothOrder
+	OutputCount				 0
+    OperatingTime			 99.0
+	Worker					 CraneOperator2
+	Qualification			 Limo2RepairPractical
+END

@@ -1,0 +1,88 @@
+
+BEGIN Prefab
+	Name        LimoGarageRightNormal
+	Research	LimoRepairShop
+	w           17
+	h           21
+	Icon	    RoomDeliveries
+	BEGIN Object    Type    GantryCrane2SpawnerRightNormal   x   12    y  6    orX 0   orY 0   END
+	BEGIN Object	Type	RoadGate2Small		x	12	  y	 0	  orX 0	  orY 1	  END
+	BEGIN Object	Type	RoadGate2Small		x	12	  y	 20	  orX 0	  orY 1	  END
+END
+
+BEGIN Prefab
+	Name        LimoGarageRightWide
+	Research	LimoRepairShop
+	w           23
+	h           21
+	Icon	    RoomDeliveries
+	BEGIN Object    Type    GantryCrane2SpawnerRightWide   x   18    y  6    orX 0   orY 0   END
+	BEGIN Object	Type	RoadGate2Small		x	18	  y	 0	  orX 0	  orY 1	  END
+	BEGIN Object	Type	RoadGate2Small		x	18	  y	 20	  orX 0	  orY 1	  END
+END
+
+BEGIN Prefab
+	Name        LimoGarageRightTall
+	Research	LimoRepairShop
+	w           17
+	h           31
+	Icon	    RoomDeliveries
+	BEGIN Object    Type    GantryCrane2SpawnerRightTall   x   12    y  6    orX 0   orY 0   END
+	BEGIN Object	Type	RoadGate2Small		x	12	  y	 0	  orX 0	  orY 1	  END
+	BEGIN Object	Type	RoadGate2Small		x	12	  y	 30	  orX 0	  orY 1	  END
+END
+
+BEGIN Prefab
+	Name		LimoGarageCentreNormal
+	Research	LimoRepairShop
+	w			23
+	h			21
+	Icon		RoomDeliveries
+	BEGIN Object	Type	GantryCrane2SpawnerCentreNormal	  x	  10	y  6	orX 0	orY 0	END
+	BEGIN Object	Type	RoadGate2Small		x	10	  y	 0	  orX 0	  orY 1	  END
+	BEGIN Object	Type	RoadGate2Small		x	10	  y	 20	  orX 0	  orY 1	  END
+END
+
+BEGIN Prefab
+	Name		LimoGarageCentreTall
+	Research	LimoRepairShop
+	w			23
+	h			31
+	Icon		RoomDeliveries
+	BEGIN Object	Type	GantryCrane2SpawnerCentreTall	  x	  10	y  6	orX 6	orY 0	END
+	BEGIN Object	Type	RoadGate2Small		x	10	  y	 0	  orX 0	  orY 1	  END
+	BEGIN Object	Type	RoadGate2Small		x	10	  y	 30	  orX 0	  orY 1	  END
+END
+
+BEGIN Prefab
+	Name        LimoGarageLeftNormal
+	Research	LimoRepairShop
+	w           17
+	h           21
+	Icon	    RoomDeliveries
+	BEGIN Object    Type    GantryCrane2SpawnerLeftNormal   x   3    y  6    orX 0   orY 0   END
+	BEGIN Object    Type    RoadGate2Small   x   3    y  0    orX 0   orY 1   END
+	BEGIN Object    Type    RoadGate2Small   x   3    y  20    orX 0   orY 0   END
+END
+
+BEGIN Prefab
+	Name        LimoGarageLeftWide
+	Research	LimoRepairShop
+	w           23
+	h           21
+	Icon	    RoomDeliveries
+	BEGIN Object    Type    GantryCrane2SpawnerLeftWide   x   3    y  6    orX 0   orY 0   END
+	BEGIN Object    Type    RoadGate2Small   x   3    y  0    orX 0   orY 1   END
+	BEGIN Object    Type    RoadGate2Small   x   3    y  20    orX 0   orY 0   END
+END
+
+BEGIN Prefab
+	Name        LimoGarageLeftTall
+	Research	LimoRepairShop
+	w           17
+	h           31
+	Icon	    RoomDeliveries
+	BEGIN Object    Type    GantryCrane2SpawnerLeftTall   x   3    y  6    orX 0   orY 0   END
+	BEGIN Object    Type    RoadGate2Small   x   3    y  0    orX 0   orY 1   END
+	BEGIN Object    Type    RoadGate2Small   x   3    y  30    orX 0   orY 0   END
+END

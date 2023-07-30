@@ -1,0 +1,47 @@
+BEGIN Window
+    NAME         controlbar
+    WIDTH        240
+    HEIGHT       30
+    PANEL        1
+END
+
+BEGIN Container
+    NAME        Container
+    XPOS        Scaled          0
+    YPOS        Scaled          0
+    WIDTH       Scaled          10000
+    HEIGHT      Scaled          10000
+END
+
+BEGIN Button
+    NAME        MainMenu
+    XPOS        Scaled          8888
+    YPOS        Scaled          0
+    WIDTH       Scaled          1111
+    HEIGHT      Scaled          10000
+END
+
+BEGIN Button
+    NAME        Todo
+    XPOS        Scaled          0
+    YPOS        Scaled          0
+    WIDTH       Scaled          5740
+    HEIGHT      Scaled          10000
+END
+
+BEGIN Button
+    NAME        Research
+    XPOS        Scaled          6294
+    YPOS        Scaled          0
+    WIDTH       Scaled          1111
+    HEIGHT      Scaled          10000
+END
+
+BEGIN Button
+    NAME        Grading
+    XPOS        Scaled          7591
+    YPOS        Scaled          0
+    WIDTH       Scaled          1111
+    HEIGHT      Scaled          10000
+END
+
