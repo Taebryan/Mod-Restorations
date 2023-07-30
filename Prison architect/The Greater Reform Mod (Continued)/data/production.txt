@@ -1,0 +1,212 @@
+# -------------------------------------------------------------------------
+# Modles
+# -------------------------------------------------------------------------
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             PlasticModel  
+    Container            ModelTable
+    Room                 ModelWorkshop	
+    Distribution         Nearest  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             PlasticModel  
+    Container            Table  
+    Room                 ModelWorkshop  
+    Distribution         Nearest 
+    MinSlotId            1 	
+    MaxSlotId            3  
+    Condition            NotLoaded  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             PaintedModel  
+    Container            Table  
+    Room                 ModelWorkshop  
+    Distribution         Nearest  
+    MinSlotId            1 	
+    MaxSlotId            3  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             PaintedModel  
+    Room                 Exports  
+    Distribution         Nearest  
+    Condition            LoadedOnTable
+END
+
+# -------------------------------------------------------------------------
+# Accounts
+# -------------------------------------------------------------------------
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             PapperSheet  
+    Container            AccountingMachine
+    Room                 AccountingOffice	
+    Distribution         Nearest  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             PapperSheet  
+    Container            Table  
+    Room                 AccountingOffice  
+    Distribution         Nearest 
+    MinSlotId            1 	
+    MaxSlotId            3  
+    Condition            NotLoaded  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             AlteredAccounts 
+    Container            Table  
+    Room                 AccountingOffice  
+    Distribution         Nearest  
+    MinSlotId            1	
+    MaxSlotId            3  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             AlteredAccounts  
+    Room                 Exports  
+    Distribution         Nearest  
+    Condition            LoadedOnTable
+END
+
+# -------------------------------------------------------------------------
+# Hair Products
+# -------------------------------------------------------------------------
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             HairProduct  
+    Container            SalonStand
+    Room                 Salon	
+    Distribution         Nearest  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             HairProduct  
+    Container            Table  
+    Room                 Salon  
+    Distribution         Nearest 
+    MinSlotId            1 	
+    MaxSlotId            3  
+    Condition            NotLoaded  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             Wig 
+    Container            Table  
+    Room                 Salon  
+    Distribution         Nearest  
+    MinSlotId            1	
+    MaxSlotId            3  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             Wig  
+    Room                 Exports  
+    Distribution         Nearest  
+    Condition            LoadedOnTable
+END
+
+# -------------------------------------------------------------------------
+# Mechanics
+# -------------------------------------------------------------------------
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             EngineParts  
+    Container            StrippedCar
+    Room                 Garage	
+    Distribution         Nearest  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             EngineParts  
+    Container            Table  
+    Room                 Garage  
+    Distribution         Nearest 
+    MinSlotId            1 	
+    MaxSlotId            3  
+    Condition            NotLoaded  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             RepairedEngine 
+    Container            Table  
+    Room                 Garage  
+    Distribution         Nearest  
+    MinSlotId            1	
+    MaxSlotId            3  
+END
+
+BEGIN ProductionRule       
+    Rule                 Storage
+    Material             RepairedEngine  
+    Room                 Exports  
+    Distribution         Nearest  
+    Condition            LoadedOnTable
+END
+
+# -------------------------------------------------------------------------
+# Processors
+# -------------------------------------------------------------------------
+
+BEGIN Processor
+    Processor            ModelTable
+    Input                PlasticModel
+    Output               PaintedModel
+    OperatingTime        30.0
+    Object               ModelTable
+    Qualification        AngerManagement
+    Qualification        AnxietyManagement
+    Worker               Prisoner
+    Properties           ShowDuringOperation
+END
+
+BEGIN Processor
+    Processor            AccountingMachine
+    Input                PapperSheet
+    Output               AlteredAccounts
+    OperatingTime        60.0
+    Object               AccountingMachine
+    Qualification        BasicAccounting
+    Worker               Prisoner
+    Properties           ShowDuringOperation
+END
+
+BEGIN Processor
+    Processor            SalonStand
+    Input                HairProduct
+    Output               Wig
+    OperatingTime        45.0
+    Object               SalonStand
+    Qualification        HairDressing
+    Worker               Prisoner
+    Properties           ShowDuringOperation
+END
+
+BEGIN Processor
+    Processor            StrippedCar
+    Input                EngineParts
+    Output               RepairedEngine
+    OperatingTime        90.0
+    Object               StrippedCar
+    Qualification        MechanicClass
+    Worker               Prisoner
+    Properties           ShowDuringOperation
+END

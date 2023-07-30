@@ -1,0 +1,9 @@
+
+Name                 "Slick Menu (Continued)"  
+Author               Sp4s12  
+Description          "[h1]Original Mod[/h1]\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2093228798]By Sp4s12[/url]\n\n[h1]Changes[/h1]\n- Fixed Missing Ui\n\n[h1]Disclaimer[/h1] This a updated version of the original mod. I am not the original author and don't claim any ownership, the original author can message me to request a take down of the mod if they so choose.\n\n[h1]Original Description[/h1]A UI refresh compatible with the latest version of the game and all the current DLCs.\nTools used :\n- Adobe Photoshop CC (edition of game data files)\n- Icon8 Pichon (Some icons),\n- Fontawesome 5 (Some other icons)"  
+IsTranslation        false  
+FileID               F3011384129  
+UpdateTime           1612123223  
+SteamAuthor          A76561198397419346  
+SteamTags            "mod,graphics and sound"  

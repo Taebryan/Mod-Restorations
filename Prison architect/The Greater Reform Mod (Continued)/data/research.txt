@@ -1,0 +1,66 @@
+
+BEGIN Research   
+	Name					GroupTherapy  
+	Type					Ability
+	Requires				MentalHealth 
+	Admin					MentalHealth  
+	Cost					-3000  
+	Time					120
+	X						875
+	Y						300
+END
+
+BEGIN Research   
+	Name					CreativeAccounting  
+	Type					Ability  
+	Requires				BankLoans  
+	Admin					Finance  
+	Cost					-2000  
+	Time					120  
+	X						100  
+	Y						180
+END
+
+BEGIN Research   
+	Name					BasicEducation  
+	Type					Ability  
+	Requires				Education  
+	Admin					Warden  
+	Cost					-1500  
+	Time					120  
+	X						760 
+	Y						600
+END
+
+BEGIN Research   
+	Name					AdvancedEducation  
+	Type					Ability  
+	Requires				Education  
+	Admin					Warden  
+	Cost					-1500  
+	Time					120  
+	X						760  
+	Y						660
+END
+
+BEGIN Research   
+	Name					BasicLabour 
+	Type					Ability  
+	Requires				PrisonLabour  
+	Admin					Maintainance  
+	Cost					-1500  
+	Time					120  
+	X						220 
+	Y						720
+END
+
+BEGIN Research   
+	Name					LifeDiscipline 
+	Type					Ability  
+	Requires				Security  
+	Admin					Security  
+	Cost					-1500  
+	Time					120  
+	X						760  
+	Y						25
+END

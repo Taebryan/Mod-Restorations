@@ -1,0 +1,44 @@
+
+BEGIN Object
+	Name				 StreetLightLeft
+	Width				 3
+	Height				 4
+	ConstructionTime	 5.0000
+	RenderDepth			 4
+	MoveSpeedFactor		 0.600000
+	Toughness			 50.0000
+	Price				 -50
+	Group				 StaticObject
+	BlockedBy			 Wall
+	BlockedBy			 UtilityStation
+	BEGIN	Sprite		 x 1 y 1 w 3 h 4 RotateType 4 END
+	MadeOf				 HollowMetal
+	Properties			 StaticObject
+	Properties			 DontAvoid
+	Properties			 CanPlaceOnRoad
+	SpecialRestriction	 NoShadow
+	Properties			 Scripted
+	GroundBaseOveride	 0
+END
+
+BEGIN Object
+	Name				 StreetLightRight
+	Width				 3
+	Height				 4
+	ConstructionTime	 5.0000
+	RenderDepth			 4
+	MoveSpeedFactor		 0.600000
+	Toughness			 50.0000
+	Price				 -50
+	Group				 StaticObject
+	BlockedBy			 Wall
+	BlockedBy			 UtilityStation
+	BEGIN	Sprite		 x 4 y 1 w 3 h 4 RotateType 4 END
+	MadeOf				 HollowMetal
+	Properties			 StaticObject
+	Properties			 DontAvoid
+	Properties			 CanPlaceOnRoad
+	SpecialRestriction	 NoShadow
+	Properties			 Scripted
+	GroundBaseOveride	 0
+END

@@ -1,0 +1,20 @@
+
+BEGIN Job
+    Name					 ChopForestryTree
+    JobTime					 15
+	Worker					 Prisoner
+    Tool					 Saw   
+	WorkGroup				 WoodGroup
+    Qualification			 TreeChopping
+END
+
+BEGIN Job
+    Name                     PlantForestryTree
+    JobTime                  10
+    Tool                     Spade
+    Worker                   Prisoner
+    Worker                   Gardener
+    Material                 ForestryTreeSapling
+	WorkGroup				 WoodGroup
+    Qualification			 TreeChopping
+END

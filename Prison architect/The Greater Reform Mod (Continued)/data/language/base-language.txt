@@ -1,0 +1,134 @@
+# -------------------------------------------------------------------------
+# Objects
+# -------------------------------------------------------------------------
+
+object_occupationaltherapist							Occupational Therapist
+object_lecturer											Lecturer
+object_hairdresser										Hairdresser
+object_mechanic											Mechanic
+object_staffsergeant									Staff Sergeant
+
+object_plasticmodel										Plastic Model
+object_paintedmodel										Painted Model
+object_pappersheet										Paper Sheet
+object_alteredaccounts									Altered Accounts
+object_engineparts										Engine Parts
+object_repairedengine									Repaired Engine
+object_hairproduct										Hair Product
+object_wig												Wig
+
+object_modeltable										Model Table
+object_accountingmachine								Accounting Machine
+object_salonstand										Salon Stand
+object_strippedcar										Stripped Car
+object_designdesk										Design Desk
+object_computerdesk										Computer Desk
+
+# -------------------------------------------------------------------------
+# Grants
+# -------------------------------------------------------------------------
+
+objective_grant_grouptherapy							Basic Therapy Centre
+objective_grant_grouptherapy_description				Create a progressive environment to help prisoner’s mental health improve and help them reform for parole.
+objective_grant_grouptherapy_reaserch					Research Group Therapy
+objective_grant_grouptherapy_office						Build an Office
+objective_grant_grouptherapy_therapycentre				Build a Therapy Centre
+objective_grant_grouptherapy_ot							Hire an Occupational Therapist
+
+objective_grant_creativeaccounting						Basic Accounting Facilities
+objective_grant_creativeaccounting_description			Create all the needed facilities to fiddle the books a little.
+objective_grant_creativeaccounting_reaserch				Research Creative Accounting
+objective_grant_creativeaccounting_accountingoffice		Build an Accounting Office
+
+objective_Grant_basiceducation							Basic Education Classes
+objective_grant_basiceducation_description				Basic education will help to improve inmates parole chances and reform chances.
+objective_grant_basiceducation_reaserch					Research Basic Education
+objective_grant_basiceducation_office					Build an Office
+objective_grant_basiceducation_lecturer					Hire a Lecturer
+
+objective_grant_advancededucation						Advanced Education Classes
+objective_grant_advancededucation_description			Advanced education classes will allow those few inmates that have the drive to do better to progress further.
+objective_grant_advancededucation_reaserch				Research Advanced Education
+
+objective_grant_basiclabour								Basic Labour Facilities
+objective_grant_basiclabour_description					Basic labour facilities will allow inmates to learn valuable skills to help them reform.
+objective_grant_basiclabour_reaserch					Research Basic Labour
+objective_grant_basiclabour_office						Build two Offices
+objective_grant_basiclabour_hairdresser					Hire a Hairdresser
+objective_grant_basiclabour_mechanic					Hire a Mechanic
+objective_grant_basiclabour_salon						Build a Salon
+objective_grant_basiclabour_garage						Build a Garage
+
+objective_grant_lifediscipline							Life Discipline Classes
+objective_grant_lifediscipline_description				Life discipline will allow inmates to do more and progress through there reform programs with better effects.
+objective_grant_lifediscipline_reaserch					Research Life Discipline
+objective_grant_lifediscipline_office					Build an Office
+objective_grant_lifediscipline_staffsergeant			Hire a Staff Sergeant
+objective_grant_lifediscipline_paradesquare				Build a Parade Square
+
+# -------------------------------------------------------------------------
+# Rooms
+# -------------------------------------------------------------------------
+
+room_modelworkshop										Model Workshop
+room_therapycentre										Therapy Centre
+room_accountingoffice									Accounting Office
+room_salon												Salon
+room_garage												Garage
+room_paradesquare										Parade Square
+room_studio												Studio
+room_ictlab												ICT Lab
+
+# -------------------------------------------------------------------------
+# Research
+# -------------------------------------------------------------------------
+
+research_grouptherapy									Group Therapy
+research_creativeaccounting								Creative Accounting
+research_basiceducation									Basic Education
+research_advancededucation								Advanced Education
+research_basiclabour									Basic Labour
+research_lifediscipline									Life Discipline
+
+researchtooltip_grouptherapy							Group Therapy allows for anger management and anxiety management.
+researchtooltip_creativeaccounting						Creative Accounting allows you to create profit out of thin air and a little bit of paper and ink.
+researchtooltip_basiceducation							Basic Education takes a step back from the general education program and helps prisoners with reading and writing skills.
+researchtooltip_advancededucation						Advanced Education pushes the prisoners to be the best they can be and teach them how to use the skills they have to better themselves.
+researchtooltip_basiclabour								Basic Labour give prisoners the skills to get some form of employment when they leave the prison whilst making money for you while they learn.
+researchtooltip_lifediscipline							Life Discipline give prisoners the motivation to achieve their goals no matter what they are and a bit of fitness.
+
+# -------------------------------------------------------------------------
+# Reform Programs
+# -------------------------------------------------------------------------
+
+reformprogram_angermanagement							Anger Management
+reformprogram_anxietymanagement							Anxiety Management
+reformprogram_basicaccounting							Basic Accounting
+reformprogram_readingclass								Reading Class
+reformprogram_writtingclass								Writing Class
+reformprogram_hairdressing								Hairdressing Class
+reformprogram_mechanicclass								Mechanic Class
+reformprogram_basictraining								Basic Training
+reformprogram_designclass								Design Class
+reformprogram_programmingclass							Programming Class
+
+# -------------------------------------------------------------------------
+# Contraband / Tools
+# -------------------------------------------------------------------------
+
+equipment_paintbrush									Paint Brush
+equipment_ink											Ink
+equipment_electricalwire								Electrical Wire
+equipment_glue											Glue
+equipment_metalruler									Metal Ruler
+
+# -------------------------------------------------------------------------
+# Jobs
+# -------------------------------------------------------------------------
+
+job_custom_modelpainting								Model Painting
+job_custom_cookthebooks									Cook The Books
+job_custom_wigmaking									Wig Making
+job_custom_enginerepair									Engine Repair
+
+

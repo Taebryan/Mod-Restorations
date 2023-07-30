@@ -1,0 +1,5 @@
+
+object_StreetLightLeft									 Street Light (Left lane)
+buildtoolbar_popup_obj_StreetLightLeft					 A street latern with functional light.\n\nIf you see the light coming out from beneath, then another mod which is modifying objects.spritebank might be interfering with this mod. Reordering your modslist might help.
+object_StreetLightRight									 Street Light (Right lane)
+buildtoolbar_popup_obj_StreetLightRight					 A street latern with functional light.\n\nIf you see the light coming out from beneath, then another mod which is modifying objects.spritebank might be interfering with this mod. Reordering your modslist might help.

@@ -1,0 +1,594 @@
+
+######################################################
+# Log
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 WoodSaw
+	Room				 WoodWorkshop
+	Distribution		 Nearest
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 WorkshopSaw
+	Room				 Workshop
+	Distribution		 NonCompeting
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 WoodSaw
+	Room				 WoodWorkshop
+	Distribution		 OutOfStock
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 WorkshopSaw
+	Room				 Workshop
+	Distribution		 OutOfStock
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 LogStorageRack
+	Room				 WoodWorkshop
+	Distribution		 NonCompeting
+	Properties			 HighPriority
+	MinSlotId			 0
+	MaxSlotId			 7
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 LogStorageRack
+	Room				 WoodWorkshop
+	Distribution		 OutOfStock
+	Properties			 HighPriority
+	MinSlotId			 0
+	MaxSlotId			 7
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 LogStorageRack
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MinSlotId			 0
+	MaxSlotId			 7
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 LogStorageRack
+	Room				 Workshop
+	Distribution		 OutOfStock
+	MinSlotId			 0
+	MaxSlotId			 7
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 LogStorageRack
+	Room				 PrisonForestry
+	Distribution		 NonCompeting
+	MinSlotId			 0
+	MaxSlotId			 7
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 LogStorageRack
+	Room				 PrisonForestry
+	Distribution		 OutOfStock
+	MinSlotId			 0
+	MaxSlotId			 7
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 Table
+	Room				 WoodWorkshop
+	Distribution		 NonCompeting
+	MaxSlotId			 3
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 Table
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MaxSlotId			 3
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 SmallTable
+	Room				 WoodWorkshop
+	Distribution		 NonCompeting
+	MaxSlotId			 1
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Container			 SmallTable
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MaxSlotId			 1
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Room				 WoodWorkshop
+	Distribution		 NonCompeting
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Room				 Workshop
+	Distribution		 NonCompeting
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Log
+	Room				 Storage
+	Distribution		 NonCompeting
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+######################################################
+# Wood
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 CoffinTable
+	Room				 CoffinWorkshop
+	Distribution		 NonCompeting
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 CoffinTable
+	Room				 CoffinWorkshop
+	Distribution		 OutOfStock
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 CarpenterTable
+	Room				 Workshop
+	Distribution		 NonCompeting
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 CarpenterTable
+	Room				 Workshop
+	Distribution		 OutOfStock
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 WoodStorageRack
+	Room				 WoodWorkshop
+	Distribution		 NonCompeting
+	MinSlotId			 0
+	MaxSlotId			 7
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 WoodStorageRack
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MinSlotId			 0
+	MaxSlotId			 7
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 Table
+	Room				 WoodWorkshop
+	Distribution		 NonCompeting
+	MaxSlotId			 3
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 SmallTable
+	Room				 WoodWorkshop
+	Distribution		 NonCompeting
+	MaxSlotId			 1
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 SmallGardenTable
+	Room				 WoodWorkshop
+	Distribution		 NonCompeting
+	MaxSlotId			 1
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 Table
+	Room				 CoffinWorkshop
+	Distribution		 NonCompeting
+	MaxSlotId			 3
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 SmallTable
+	Room				 CoffinWorkshop
+	Distribution		 NonCompeting
+	MaxSlotId			 1
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 Table
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MaxSlotId			 3
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Container			 SmallTable
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MaxSlotId			 1
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Room				 WoodWorkshop
+	Distribution		 NonCompeting
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Room				 CoffinWorkshop
+	Distribution		 NonCompeting
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 Wood
+	Room				 Workshop
+	Distribution		 NonCompeting
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+######################################################
+# SheetMetal
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 WorkshopSaw
+	Room				 PhoneWorkshop
+	Distribution		 NonCompeting
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 WorkshopSaw
+	Room				 Workshop
+	Distribution		 NonCompeting
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 WorkshopSaw
+	Room				 PhoneWorkshop
+	Distribution		 OutOfStock
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 WorkshopSaw
+	Room				 Workshop
+	Distribution		 OutOfStock
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 MetalStorageRack
+	Room				 PhoneWorkshop
+	Distribution		 NonCompeting
+	MinSlotId			 0
+	MaxSlotId			 7
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 MetalStorageRack
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MinSlotId			 0
+	MaxSlotId			 7
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 Table
+	Room				 PhoneWorkshop
+	Distribution		 NonCompeting
+	MaxSlotId			 3
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 SmallTable
+	Room				 PhoneWorkshop
+	Distribution		 NonCompeting
+	MaxSlotId			 1
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 Table
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MaxSlotId			 3
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Container			 SmallTable
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MaxSlotId			 1
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Room				 PhoneWorkshop
+	Distribution		 NonCompeting
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 SheetMetal
+	Room				 Workshop
+	Distribution		 NonCompeting
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+######################################################
+# LicensePlate
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 LicensePlateBlank
+	Container			 PhoneTable
+	Distribution		 NonCompeting
+	Properties			 HighPriority
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 LicensePlateBlank
+	Container			 WorkshopPress
+	Distribution		 NonCompeting
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 LicensePlate
+	Container			 Table
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MaxSlotId			 3
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 LicensePlate
+	Container			 SmallTable
+	Room				 Workshop
+	Distribution		 NonCompeting
+	MaxSlotId			 1
+	Condition			 NotLoaded
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+BEGIN ProductionRule
+	Rule				 Storage
+	Material			 LicensePlate
+	Room				 Exports
+	Distribution		 Nearest
+	Worker				 Workman
+	Worker               Prisoner
+END
+
+######################################################
+# Processor
+
+BEGIN Processor
+    Processor            WoodSaw
+    Input                Log
+    InputCount           1
+    Output               Wood
+    OutputCount          4
+    OperatingTime        8.0
+	Object				 WoodSaw
+	Properties           ShowDuringOperation
+	Worker				 Workman
+    Worker               Prisoner
+END

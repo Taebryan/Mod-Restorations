@@ -1,0 +1,29 @@
+
+BEGIN Program
+    Name			 WoodWork
+    SessionCost		 -250
+    Places			 5
+    SessionLength	 60
+    NumSessions		 1
+    Difficulty		 30
+    Teacher			 Workman
+    Room			 WoodWorkshop
+    Research		 PrisonLabour
+    Intake			 Voluntary
+    Qualification	 WorkshopInduction
+    Properties		 Practical
+END
+
+BEGIN Program
+    Name			 TreeChopping
+    SessionCost		 -100
+    Places			 10
+    SessionLength	 60
+    NumSessions		 1
+    Difficulty		 10
+    Research		 GroundsKeeping
+    Room			 PrisonForestry
+    Teacher			 Gardener
+    Intake			 Voluntary
+    Properties		 Practical
+END

@@ -1,0 +1,862 @@
+# -------------------------------------------------------------------------
+# Staff
+# -------------------------------------------------------------------------
+
+BEGIN Object     
+    Name                 OccupationalTherapist 
+    Toughness            10.0000  
+    Price                -750
+	Upkeep				 -75
+    Toughness            5
+    RenderDepth          2  
+    ViewRange            3
+	RenderDepth          2
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation 
+    Properties           Entity
+    Properties           Staff
+    Properties           Administrator	
+	Properties           RoomSpecific
+    Research             GroupTherapy
+    BEGIN   Sprite
+        x 0 
+        y 0  
+        w 2  
+        h 2  
+        RotateType 1
+    END
+	BEGIN ToolbarSprite
+        x 0 
+        y 0  
+        w 2  
+        h 2  
+	END
+END
+
+BEGIN Object     
+    Name                 Lecturer
+    Toughness            10.0000  
+    Price                -750
+	Upkeep				 -75
+    Toughness            5
+    RenderDepth          2  
+    ViewRange            3
+	RenderDepth          2
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation 
+    Properties           Entity
+    Properties           Staff
+    Properties           Administrator	
+	Properties           RoomSpecific
+    Research             BasicEducation
+    BEGIN   Sprite
+        x 0 
+        y 2  
+        w 2  
+        h 2  
+        RotateType 1
+    END
+	BEGIN ToolbarSprite
+        x 0 
+        y 2  
+        w 2  
+        h 2  
+	END
+END
+
+BEGIN Object     
+    Name                 HairDresser
+    Toughness            10.0000  
+    Price                -600
+	Upkeep				 -60
+    Toughness            5
+    RenderDepth          2  
+    ViewRange            3
+	RenderDepth          2
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation 
+    Properties           Entity
+    Properties           Staff
+    Properties           Administrator	
+	Properties           RoomSpecific
+    Research             BasicLabour
+    BEGIN   Sprite
+        x 0 
+        y 4 
+        w 2  
+        h 2  
+        RotateType 1
+    END
+	BEGIN ToolbarSprite
+        x 0 
+        y 4 
+        w 2  
+        h 2   
+	END
+END
+
+BEGIN Object     
+    Name                 Mechanic
+    Toughness            10.0000  
+    Price                -700
+	Upkeep				 -70
+    Toughness            5
+    RenderDepth          2  
+    ViewRange            3
+	RenderDepth          2
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation 
+    Properties           Entity
+    Properties           Staff
+    Properties           Administrator	
+	Properties           RoomSpecific
+    Research             BasicLabour
+    BEGIN   Sprite
+        x 8 
+        y 2  
+        w 2  
+        h 2  
+        RotateType 1
+    END
+	BEGIN ToolbarSprite
+        x 8 
+        y 2  
+        w 2  
+        h 2   
+	END
+END
+
+BEGIN Object     
+    Name                 StaffSergeant
+    Toughness            10.0000  
+    Price                -800
+	Upkeep				 -80
+    Toughness            5
+    RenderDepth          2  
+    ViewRange            3
+	RenderDepth          2
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation 
+    Properties           Entity
+    Properties           Staff
+    Properties           Administrator	
+	Properties           RoomSpecific
+    Research             LifeDiscipline
+    BEGIN   Sprite
+        x 8 
+        y 0  
+        w 2  
+        h 2  
+        RotateType 1
+    END
+	BEGIN ToolbarSprite
+        x 8 
+        y 0  
+        w 2  
+        h 2   
+	END
+END
+
+# -------------------------------------------------------------------------
+# Materials / Goods
+# -------------------------------------------------------------------------
+
+BEGIN Object     
+    Name                 PlasticModel
+	Width                1
+	Height               1
+	MoveSpeedFactor      0.75
+    MaxStackSize         10
+    Price                -10
+	RenderDepth          1
+	Properties           Material 
+    Properties           SlowDelivery
+    BEGIN   Sprite
+        x 6 
+        y 6  
+        w 2  
+        h 2  
+        RotateType 4
+    END
+	BEGIN   StackSprite
+        x 4 
+        y 6  
+        w 2  
+        h 2 
+        RotateType 4
+    END
+	MadeOf               Composite
+END
+
+BEGIN Object     
+    Name                 PaintedModel
+	Width                1
+	Height               1
+	MoveSpeedFactor      0.75
+    MaxStackSize         10
+    Price                -50
+	RenderDepth          1
+	Properties           Material
+	Properties           Sellable
+    BEGIN   Sprite
+        x 6
+        y 8  
+        w 2  
+        h 2 
+        RotateType 4
+    END
+    BEGIN   StackSprite
+        x 4 
+        y 8  
+        w 2  
+        h 2 
+        RotateType 4
+    END
+	MadeOf               Composite
+END
+
+BEGIN Object     
+    Name                 PapperSheet
+	Width                1
+	Height               1
+	MoveSpeedFactor      0.75
+    MaxStackSize         20
+    Price                -5
+	RenderDepth          2
+	Properties           Material 
+    Properties           SlowDelivery
+    BEGIN   Sprite
+        x 6 
+        y 10  
+        w 2  
+        h 2  
+        RotateType 4
+    END
+	BEGIN   StackSprite
+        x 4 
+        y 10  
+        w 2  
+        h 2 
+        RotateType 4
+    END
+	MadeOf               Composite
+END
+
+BEGIN Object     
+    Name                 AlteredAccounts
+	Width                1
+	Height               1
+	MoveSpeedFactor      0.75
+    MaxStackSize         20
+    Price                -100
+	RenderDepth          2
+	Properties           Material
+	Properties           Sellable
+    BEGIN   Sprite
+        x 6
+        y 12  
+        w 2  
+        h 2  
+        RotateType 4
+    END
+    BEGIN   StackSprite
+        x 4
+        y 12  
+        w 2  
+        h 2 
+        RotateType 4
+    END
+	MadeOf               Composite
+END
+
+BEGIN Object     
+    Name                 HairProduct
+	Width                1
+	Height               1
+	MoveSpeedFactor      0.75
+    MaxStackSize         20
+    Price                -10
+	RenderDepth          1
+	Properties           Material 
+    Properties           SlowDelivery
+    BEGIN   Sprite
+        x 6 
+        y 14  
+        w 2  
+        h 2  
+        RotateType 4
+    END
+	BEGIN   StackSprite
+        x 4 
+        y 14  
+        w 2  
+        h 2 
+        RotateType 4
+    END
+	MadeOf               Composite
+END
+
+BEGIN Object     
+    Name                 Wig
+	Width                1
+	Height               1
+	MoveSpeedFactor      0.75
+    MaxStackSize         10
+    Price                -50
+	RenderDepth          1
+	Properties           Material
+	Properties           Sellable
+    BEGIN   Sprite
+        x 6
+        y 16  
+        w 2  
+        h 2 
+        RotateType 4
+    END
+    BEGIN   StackSprite
+        x 4 
+        y 16 
+        w 2  
+        h 2 
+        RotateType 4
+    END
+	MadeOf               Composite
+END
+
+BEGIN Object     
+    Name                 EngineParts
+	Width                1
+	Height               1
+	MoveSpeedFactor      0.75
+    MaxStackSize         30
+    Price                -25
+	RenderDepth          2
+	Properties           Material 
+    Properties           SlowDelivery
+    BEGIN   Sprite
+        x 6 
+        y 18  
+        w 2  
+        h 2  
+        RotateType 4
+    END
+	BEGIN   StackSprite
+        x 4 
+        y 18  
+        w 2  
+        h 2 
+        RotateType 4
+    END
+	MadeOf               Composite
+END
+
+BEGIN Object     
+    Name                 RepairedEngine
+	Width                1
+	Height               1
+	MoveSpeedFactor      0.75
+    MaxStackSize         5
+    Price                -250
+	RenderDepth          2
+	Properties           Material
+	Properties           Sellable
+    BEGIN   Sprite
+        x 6 
+        y 20  
+        w 2  
+        h 2  
+        RotateType 4
+    END
+    BEGIN   StackSprite
+        x 4
+        y 20  
+        w 2  
+        h 2 
+        RotateType 4
+    END
+	MadeOf               Composite
+END
+
+# -------------------------------------------------------------------------
+# Objects
+# -------------------------------------------------------------------------
+
+BEGIN Object
+    Name                 ModelTable
+	Width                3
+	Height               1
+    ConstructionTime     20
+    MaxStackSize         1
+	MoveSpeedFactor      0.5
+    Price                -1500
+	RenderDepth          0
+    NumSlots             3
+    Group                StaticObject	
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation
+    Properties           StaticObject
+    Properties           RoomSpecific
+    Properties           Processor
+    Research             GroupTherapy
+    BEGIN   Sprite
+        x 8
+        y 6  
+        w 6  
+        h 3 
+        RotateType 4
+		BEGIN Marker
+           x             1.0
+           y             1.0
+           orientation.x 0.0
+           orientation.y 0.0
+           Index         0
+        END
+        BEGIN Marker
+           x             3.0
+           y             1.0
+           Index         1
+        END
+        BEGIN Marker
+           x             5.0
+           y             1.0
+           Index         2
+        END
+    END
+    SpriteScale          1
+	BEGIN ToolbarSprite
+        x 10
+        y 6 
+        w 2  
+        h 2 
+	END
+    MadeOf               Composite
+	WorkGroup            ModelWorkshop
+    Worker               Prisoner
+	AutoOrder            PlasticModel
+	AutoOrderQuantity    10
+END
+
+BEGIN Object
+    Name                 AccountingMachine
+	Width                3
+	Height               1
+    ConstructionTime     20
+    MaxStackSize         1
+	MoveSpeedFactor      0.5
+    Price                -1750
+	RenderDepth          0
+    NumSlots             3
+    Group                StaticObject	
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation
+    Properties           StaticObject
+    Properties           RoomSpecific
+    Properties           Processor
+    Research             CreativeAccounting
+    BEGIN   Sprite
+        x 8 
+        y 9  
+        w 6  
+        h 3 
+        RotateType 4
+		BEGIN Marker
+           x             1.0
+           y             1.0
+           orientation.x 0.0
+           orientation.y 0.0
+           Index         0
+        END
+        BEGIN Marker
+           x             3.0
+           y             1.0
+           Index         1
+        END
+        BEGIN Marker
+           x             5.0
+           y             1.0
+           Index         2
+        END
+    END
+    SpriteScale          1
+	BEGIN ToolbarSprite
+        x 10
+        y 9 
+        w 2  
+        h 2  
+	END
+    MadeOf               Composite
+	WorkGroup            AccountingOffice
+    Worker               Prisoner
+	AutoOrder            PapperSheet
+	AutoOrderQuantity    20
+END
+
+BEGIN Object
+    Name                 SalonStand
+	Width                2
+	Height               2
+    ConstructionTime     20
+    MaxStackSize         1
+	MoveSpeedFactor      0.5
+    Price                -1000
+	RenderDepth          0
+    NumSlots             3
+    Group                StaticObject	
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation
+    Properties           StaticObject
+    Properties           RoomSpecific
+    Properties           Processor
+    Research             BasicLabour
+    BEGIN   Sprite
+        x 8
+        y 12  
+        w 3  
+        h 3 
+        RotateType 4
+		BEGIN Marker
+           x             0.0
+           y             3.0
+           orientation.x 0.0
+           orientation.y 0.0
+           Index         0
+        END
+        BEGIN Marker
+           x             1.5
+           y             1.5
+           Index         1
+        END
+        BEGIN Marker
+           x             3.0
+           y             3.0
+           Index         2
+        END
+    END
+    SpriteScale          1
+	BEGIN ToolbarSprite
+        x 8
+        y 12 
+        w 3  
+        h 3  
+	END
+    MadeOf               Composite	
+	WorkGroup            Salon
+    Worker               Prisoner
+	AutoOrder            HairProduct
+	AutoOrderQuantity    20
+END
+
+BEGIN Object
+    Name                 StrippedCar
+	Width                4
+	Height               2
+    ConstructionTime     20
+    MaxStackSize         1
+	MoveSpeedFactor      0.5
+    Price                -2500
+	RenderDepth          0
+    NumSlots             3
+    Group                StaticObject	
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation
+    Properties           StaticObject
+    Properties           RoomSpecific
+    Properties           Processor
+    Research             BasicLabour
+    BEGIN   Sprite
+        x 8 
+        y 15  
+        w 6  
+        h 4 
+        RotateType 4
+		BEGIN Marker
+           x             1.0
+           y             1.0
+           orientation.x 0.0
+           orientation.y 0.0
+           Index         0
+        END
+        BEGIN Marker
+           x             3.0
+           y             3.0
+           Index         1
+        END
+        BEGIN Marker
+           x             1.0
+           y             2.0
+           Index         2
+        END
+    END
+    SpriteScale          1
+	BEGIN ToolbarSprite
+        x 8
+        y 15 
+        w 6  
+        h 4  
+	END
+    MadeOf               Composite
+	WorkGroup            Garage
+    Worker               Prisoner
+	AutoOrder            EngineParts
+	AutoOrderQuantity    30
+END
+
+BEGIN Object
+    Name                 DesignDesk
+	Width                2
+	Height               2
+    ConstructionTime     20
+    MaxStackSize         1
+	MoveSpeedFactor      0.5
+    Price                -1000
+	RenderDepth          1
+    NumSlots             1
+    AttachToWall         true  
+    Group                StaticObject	
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation
+    Properties           StaticObject
+    Properties           RoomSpecific
+    Research             AdvancedEducation
+    BEGIN   Sprite
+        x 8 
+        y 19  
+        w 3  
+        h 3 
+        RotateType 4
+        BEGIN Marker
+           x             2.0
+           y             1.0
+           Index         1
+        END
+    END
+    SpriteScale          1
+	BEGIN ToolbarSprite
+        x 8
+        y 19 
+        w 3 
+        h 3  
+	END
+    MadeOf               Composite	
+END
+
+BEGIN Object
+    Name                 ComputerDesk
+	Width                2
+	Height               2
+    ConstructionTime     20
+    MaxStackSize         1
+	MoveSpeedFactor      0.5
+    Price                -1000
+	RenderDepth          1
+    NumSlots             1
+    AttachToWall         true  
+    Group                StaticObject	
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation
+    Properties           StaticObject
+    Properties           RoomSpecific
+    Research        	 AdvancedEducation
+    BEGIN   Sprite
+        x 11 
+        y 12  
+        w 3  
+        h 3 
+        RotateType 4
+        BEGIN Marker
+           x             2.0
+           y             1.0
+           Index         1
+        END
+    END
+    SpriteScale          1
+	BEGIN ToolbarSprite
+        x 11
+        y 12 
+        w 3 
+        h 3  
+	END
+    MadeOf               Composite	
+END
+
+# -------------------------------------------------------------------------
+# Contraband / Tools
+# -------------------------------------------------------------------------
+
+BEGIN Equipment  
+    Name                 PaintBrush
+    BEGIN   Sprite
+        x 8 
+        y 4 
+        w 2  
+        h 2   
+        RotateType 1
+    END
+    Scale                1.00000  
+    AttackPower          6.00000  
+    RechargeTime         3.00000 
+    Properties           Weapons
+    Properties           Wood
+    Properties           Tools
+END
+
+BEGIN Equipment  
+    Name                 Ink
+    BEGIN   Sprite
+        x 10 
+        y 4  
+        w 2  
+        h 2   
+        RotateType 1
+    END 
+    Scale                0.800000  
+    Properties           Narcotics
+    Properties           Smelly
+END
+
+BEGIN Equipment  
+    Name                 MetalRuler
+    BEGIN   Sprite
+        x 12 
+        y 4 
+        w 2  
+        h 2   
+        RotateType 1
+    END
+    Scale                1.00000  
+    AttackPower          6.00000  
+    RechargeTime         3.00000 
+    Properties           Weapons
+    Properties           Metal
+    Properties           Tools
+END
+
+BEGIN Equipment  
+    Name                 Glue
+    BEGIN   Sprite
+        x 14 
+        y 4  
+        w 2  
+        h 2   
+        RotateType 1
+    END 
+    Scale                0.800000  
+    Properties           Narcotics
+    Properties           Smelly
+END
+
+# -------------------------------------------------------------------------
+# Rooms
+# -------------------------------------------------------------------------
+
+BEGIN Room       
+    Name                 ModelWorkshop 
+	WorkGroup            ModelWorkshop 
+    Research             GroupTherapy 
+    Properties           PrisonersCanWork 
+    Properties           RequiresSector	
+    Qualification        AngerManagement
+    Qualification        AnxietyManagement
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Object   Id ModelTable END
+    BEGIN Requirement Type Object   Id Table END
+    BEGIN Contraband    Id PaintBrush END
+END
+
+BEGIN Room       
+    Name                TherapyCentre
+	WorkGroup           TherapyCentre
+    Research            GroupTherapy
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Indoor  END
+    BEGIN Requirement Type Object  Id Chair END
+    BEGIN Requirement Type Object  Id OfficeDesk END
+    BEGIN Requirement Type Object  Id SchoolDesk END
+END
+
+BEGIN Room       
+    Name                 AccountingOffice
+	WorkGroup            AccountingOffice
+    Research             CreativeAccounting
+    Properties           PrisonersCanWork  
+    Properties           RequiresSector		
+    Qualification        BasicAccounting
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Object   Id AccountingMachine END
+    BEGIN Requirement Type Object   Id Table END
+    BEGIN Contraband    Id Ink END
+END
+
+BEGIN Room       
+    Name                 Salon 
+	WorkGroup            Salon
+    Research             BasicLabour 
+    Properties           PrisonersCanWork 
+    Properties           RequiresSector
+    Qualification        HairDressing
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Object   Id SalonStand END
+    BEGIN Requirement Type Object   Id Table END
+    BEGIN Requirement Type Object   Id Bench END
+    BEGIN Contraband    Id Scissors END
+END
+
+BEGIN Room       
+    Name                 Garage 
+	WorkGroup            Garage
+    Research             BasicLabour
+    Properties           PrisonersCanWork 
+    Properties           RequiresSector
+    Qualification        MechanicClass
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Object   Id StrippedCar END
+    BEGIN Requirement Type Object   Id Table END
+    BEGIN Contraband    Id Drill END
+    BEGIN Contraband    Id Hammer END
+    BEGIN Contraband    Id Saw END
+    BEGIN Contraband    Id Screwdriver END 
+END
+
+BEGIN Room       
+    Name                 ParadeSquare 
+	WorkGroup            ParadeSquare
+    Research             LifeDiscipline 
+    Properties           RequiresSector		
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Object  Id Chair END
+    BEGIN Requirement Type Object  Id OfficeDesk END
+    BEGIN Requirement Type Object  Id SchoolDesk END
+END
+
+BEGIN Room       
+    Name                 Studio
+	WorkGroup            Studio
+    Research             AdvancedEducation 
+    Properties           RequiresSector
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Object   Id DesignDesk END
+    BEGIN Contraband    Id MetalRuler END
+	BEGIN Contraband    Id Glue END
+    BEGIN Contraband    Id Scissors END
+END
+
+BEGIN Room       
+    Name                 ICTLab
+	WorkGroup            ICTLab
+    Research             AdvancedEducation 
+    Properties           RequiresSector
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Object   Id ComputerDesk END
+	BEGIN Contraband    Id PianoWire END 
+END

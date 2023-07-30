@@ -1,0 +1,361 @@
+
+BEGIN Object
+    Name                 Log
+    MaxStackSize       	 3
+    RenderDepth          1
+    Price                -100
+    Sprite               RawWood
+    StackSprite          StackLogs
+    Properties           Material
+	WorkGroup			 WoodGroup
+    Properties           Sellable
+END
+
+BEGIN Object     
+    Name                 ForestryTree  
+    Width                3
+    Height               3  
+    ConstructionTime     -1
+    Toughness            10.0000  
+    RenderDepth          2
+    Price                -1
+    Group                StaticObject  
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               Tree
+    SpriteScale          0.9
+    MadeOf               Wood
+    Research             PrisonLabour
+    Properties           StaticObject
+	Properties			 Scripted
+	Properties			 DontAvoid
+	WorkGroup			 WoodGroup
+END
+
+BEGIN Object     
+    Name                 ForestryTreeYoung  
+    Width                3
+    Height               3  
+    ConstructionTime     -1 
+    Toughness            10.0000  
+    RenderDepth          2
+    Price                -1
+    Group                StaticObject  
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               TreeYoung
+    SpriteScale          0.5
+    MadeOf               Wood
+    Research             PrisonLabour
+    Properties           StaticObject
+	Properties			 Scripted
+	Properties			 DontAvoid
+	WorkGroup			 WoodGroup
+END
+
+BEGIN Object     
+    Name                 ForestryTreeSapling
+    Width                3
+    Height               3  
+    ConstructionTime     -1
+    Toughness            10.0000  
+    RenderDepth          2
+    Price                -1
+    Group                StaticObject  
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               TreeInPot
+	MaxStackSize		 40
+    StackSprite          StackTrees
+    SpriteScale          0.3
+    MadeOf               Wood
+    Research             PrisonLabour
+	Properties			 Material
+	WorkGroup			 WoodGroup
+	Teleportable		 true
+END
+
+BEGIN Object     
+    Name                 ForestryTreeSaplingPlanted
+    Width                3
+    Height               3  
+    ConstructionTime     3
+    Toughness            10.0000  
+    RenderDepth          2
+    Price                -150
+    Group                StaticObject  
+	Properties			 RoomSpecific
+    BlockedBy            Wall  
+    BlockedBy            StaticObject  
+    BlockedBy            UtilityStation  
+    Sprite               TreeSapling
+    SpriteScale          0.3
+    MadeOf               Wood
+    Research             PrisonLabour
+    Properties           StaticObject
+	Properties			 Scripted
+	Properties			 DontAvoid
+	WorkGroup			 WoodGroup
+END
+
+BEGIN Object
+	Name				 ForestryTreeStump
+	Width				 1
+	Height				 1
+	ConstructionTime	 -1
+	Toughness			 50.0000
+	RenderDepth			 0
+	Price				 -1
+	Group				 StaticObject
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	Sprite				 TreeStump
+	MadeOf				 Wood
+    Research             PrisonLabour
+	Properties			 Sellable
+	Properties			 StaticObject
+	Properties			 Scripted
+	Properties			 DontAvoid
+	WorkGroup			 WoodGroup
+END
+
+BEGIN Object 
+	Name				 MetalStorageRack
+	ConstructionTime	 4
+	MoveSpeedFactor		 0.6
+	Toughness			 90
+	Price				 -150
+	Group				 StaticObject
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	BlockedBy			 Wall
+	MadeOf				 SolidMetal
+	Properties			 StaticObject
+	NumSlots			 8
+	RenderDepth			 0
+	AutoOrder			 SheetMetal
+	AutoOrderQuantity	 80
+	Width				 4
+	Height				 2
+	BEGIN	Sprite		 x 1 y 6 w 6 h 3 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 0.7 y 1.75 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 0.7 y 0.25 orientation.x 0 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 2.15 y 1.75 orientation.x 0 orientation.y 0 Index 2 END
+		BEGIN	Marker	 x 2.15 y 0.25 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN	Marker	 x 3.65 y 0.25 orientation.x 0 orientation.y 0 Index 4 END
+		BEGIN	Marker	 x 3.65 y 1.75 orientation.x 0 orientation.y 0 Index 5 END
+		BEGIN	Marker	 x 5.15 y 0.25 orientation.x 0 orientation.y 0 Index 6 END
+		BEGIN	Marker	 x 5.15 y 1.75 orientation.x 0 orientation.y 0 Index 7 END
+	END
+	Research			 PrisonLabour
+END
+
+BEGIN Object 
+	Name				 LogStorageRack
+	ConstructionTime	 4
+	MoveSpeedFactor		 0.6
+	Toughness			 90
+	Price				 -150
+	Group				 StaticObject
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	BlockedBy			 Wall
+	MadeOf				 SolidMetal
+	Properties			 StaticObject
+	NumSlots			 8
+	RenderDepth			 0
+	Width				 4
+	Height				 2
+	BEGIN	Sprite		 x 8 y 10 w 6 h 3 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 0.7 y 1.75 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 0.7 y 0.25 orientation.x 0 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 2.15 y 1.75 orientation.x 0 orientation.y 0 Index 2 END
+		BEGIN	Marker	 x 2.15 y 0.25 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN	Marker	 x 3.65 y 0.25 orientation.x 0 orientation.y 0 Index 4 END
+		BEGIN	Marker	 x 3.65 y 1.75 orientation.x 0 orientation.y 0 Index 5 END
+		BEGIN	Marker	 x 5.15 y 0.25 orientation.x 0 orientation.y 0 Index 6 END
+		BEGIN	Marker	 x 5.15 y 1.75 orientation.x 0 orientation.y 0 Index 7 END
+	END
+	Research			 PrisonLabour
+	WorkGroup			 WoodGroup
+END
+
+BEGIN Object 
+	Name				 WoodStorageRack
+	ConstructionTime	 4
+	MoveSpeedFactor		 0.6
+	Toughness			 90
+	Price				 -150
+	Group				 StaticObject
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	BlockedBy			 Wall
+	MadeOf				 SolidMetal
+	Properties			 StaticObject
+	NumSlots			 8
+	RenderDepth			 0
+	Width				 4
+	Height				 2
+	BEGIN	Sprite		 x 8 y 6 w 6 h 3 RotateType 4 TopAligned false
+		BEGIN	Marker	 x 0.7 y 1.75 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN	Marker	 x 0.7 y 0.25 orientation.x 0 orientation.y 0 Index 1 END
+		BEGIN	Marker	 x 2.15 y 1.75 orientation.x 0 orientation.y 0 Index 2 END
+		BEGIN	Marker	 x 2.15 y 0.25 orientation.x 0 orientation.y 0 Index 3 END
+		BEGIN	Marker	 x 3.65 y 0.25 orientation.x 0 orientation.y 0 Index 4 END
+		BEGIN	Marker	 x 3.65 y 1.75 orientation.x 0 orientation.y 0 Index 5 END
+		BEGIN	Marker	 x 5.15 y 0.25 orientation.x 0 orientation.y 0 Index 6 END
+		BEGIN	Marker	 x 5.15 y 1.75 orientation.x 0 orientation.y 0 Index 7 END
+	END
+	Research			 PrisonLabour
+	WorkGroup			 WoodGroup
+END
+
+BEGIN Object
+	Name				 SmallTable
+	Width				 2
+	ConstructionTime	 0
+	MoveSpeedFactor		 0.250000
+	Toughness			 10.0000
+	Price				 -50
+	NumSlots			 2
+	Group				 StaticObject
+	BlockedBy			 Wall
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	MadeOf				 Composite
+	BEGIN	Sprite		 x 1 y 16 w 4 h 2 RotateType 2 TopAligned true
+		BEGIN Marker	 x 1.046875 y 0.71875 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN Marker	 x 2.953125 y 0.71875 orientation.x 0 orientation.y 0 Index 1 END
+		BEGIN Marker	 x 5.015625 y -1 orientation.x -1 orientation.y 0 Index 0 END
+		BEGIN Marker	 x 4.984375 y 0.34375 orientation.x -1 orientation.y 0 Index 1 END
+	END
+	ToolbarSprite		 TableToolbar
+	Properties			 StaticObject
+	Properties			 RoomSpecific
+END
+
+BEGIN Object
+	Name				 SmallGardenTable
+	Width				 2
+	ConstructionTime	 0
+	MoveSpeedFactor		 0.250000
+	Toughness			 10.0000
+	Price				 -50
+	NumSlots			 2
+	Group				 StaticObject
+	BlockedBy			 Wall
+	Properties			 RoomSpecific
+	BlockedBy			 StaticObject
+	BlockedBy			 UtilityStation
+	MadeOf				 Composite
+	Properties			 StaticObject
+	BEGIN	Sprite		 x 8 y 16 w 4 h 2 RotateType 2 TopAligned false
+		BEGIN Marker	 x 1.046875 y 0.71875 orientation.x 0 orientation.y 0 Index 0 END
+		BEGIN Marker	 x 2.953125 y 0.71875 orientation.x 0 orientation.y 0 Index 1 END
+		BEGIN Marker	 x 5.015625 y -1 orientation.x -1 orientation.y 0 Index 0 END
+		BEGIN Marker	 x 4.984375 y 0.34375 orientation.x -1 orientation.y 0 Index 1 END
+	END
+	ToolbarSprite		 StackWood
+END
+
+BEGIN Object 
+    Name                 WoodSaw
+    Width                3
+    Height               1
+    ConstructionTime     15.00000  
+    MoveSpeedFactor      0.250000  
+    Toughness            25.0000  
+    Price                -1650  
+    NumSlots             3
+    Group                StaticObject  
+    BlockedBy            Wall    
+    BlockedBy            StaticObject   
+    BlockedBy            UtilityStation  
+    MadeOf               SolidMetal
+    Properties           StaticObject
+    Properties           Processor
+    Properties           RoomSpecific
+	WorkGroup			 WoodGroup
+	ToolbarSprite		 WorkshopSawToolbar
+	BEGIN Sprite          x 1  y 10  w 6  h 3   RotateType 4
+		BEGIN Marker  x 1       y 1         orientation.x 0 orientation.y 0   Index 0   END
+		BEGIN Marker  x 2.96875 y 1.4375    orientation.x -1 orientation.y 0  Index 1   END
+		BEGIN Marker  x 5       y 1         orientation.x 0 orientation.y 0   Index 2   END
+	END
+	Research			 PrisonLabour
+END
+
+BEGIN Room
+    Name                 Workshop
+	Properties			 RequiresSector
+    Research             PrisonLabour
+    Properties           PrisonersCanWork
+    Qualification        WorkshopInduction
+    BEGIN Requirement Type Object   Id WorkshopSaw END
+    BEGIN Requirement Type Object   Id WorkshopPress END
+    BEGIN LikelyObject  Id      OakTable         END
+    BEGIN LikelyObject  Id      CarpenterTable   END
+    BEGIN LikelyObject  Id      Table            END
+    BEGIN LikelyObject  Id      SmallTable       END
+    BEGIN LikelyObject  Id      MetalStorageRack END
+    BEGIN LikelyObject  Id      WoodStorageRack  END
+    BEGIN LikelyObject  Id      MetalDetector    END
+    BEGIN Contraband    Id      Saw              END
+    BEGIN Contraband    Id      Screwdriver      END
+    BEGIN Contraband    Id      Hammer           END
+    BEGIN Contraband    Id      Drill            END
+    BEGIN Contraband    Id      Shank            END
+    BEGIN Contraband    Id      WoodenPickAxe    END
+END
+
+BEGIN Room
+    Name                 WoodWorkshop
+	Properties			 RequiresSector
+    Research             PrisonLabour
+    Properties           PrisonersCanWork
+    Qualification        WoodWork
+	WorkGroup			 WoodGroup
+    BEGIN Requirement Type Object   Id WoodSaw   END
+    BEGIN LikelyObject  Id      Table            END
+    BEGIN LikelyObject  Id      SmallTable       END
+    BEGIN LikelyObject  Id      SmallGardenTable END
+    BEGIN LikelyObject  Id      LogStorageRack   END
+    BEGIN LikelyObject  Id      WoodStorageRack  END
+    BEGIN LikelyObject  Id      MetalDetector    END
+    BEGIN Contraband    Id      Saw              END
+    BEGIN Contraband    Id      WoodenPickAxe    END
+END
+
+BEGIN Room
+    Name                 PrisonForestry
+	Properties			 RequiresSector
+    BEGIN Requirement Type Outdoor      END
+    BEGIN LikelyObject  Id     ForestryTreeSaplingPlanted  END
+    BEGIN LikelyObject  Id     LogStorageRack  END
+    BEGIN LikelyObject  Id     MetalDetector   END
+    BEGIN Contraband  Id   Saw END
+    BEGIN Contraband  Id   Axe END
+    BEGIN Contraband  Id   Spade END
+    Properties           PrisonersCanWork
+	WorkGroup			 WoodGroup
+    Research             GroundsKeeping
+	Qualification		 TreeChopping
+END
+
+BEGIN Room       
+    Name                 Forestry
+    Research             GroundsKeeping
+    BEGIN Requirement Type MinimumSize  x 5  y 5  END
+    BEGIN Requirement Type Outdoor END
+    BEGIN LikelyObject  Id     LogStorageRack  END
+    BEGIN Contraband  Id   Saw END
+    BEGIN Contraband  Id   Axe END
+    BEGIN Contraband  Id   Spade END
+	
+	Properties			PrisonersCanWork
+	WorkResearch		ForestryLabour
+END

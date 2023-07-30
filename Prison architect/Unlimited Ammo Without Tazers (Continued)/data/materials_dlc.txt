@@ -1,0 +1,35 @@
+BEGIN Equipment  
+    Name                 ModifiedHandgun  
+    BEGIN SpriteBank
+        Name            objects_d11_2
+        Sprite          d_ModifiedHandgun
+    END  
+    Scale                0.700000  
+    AttackPower          20.0000
+    RechargeTime         0.35000
+    Range                15.0
+    Ammo                 1000000
+    Properties           Weapons
+    Properties           Metal
+    Properties           RangedWeapon    
+    Properties           NoImport
+    Properties           ExtraContraband
+END
+
+BEGIN Equipment  
+    Name                 ModifiedAssaultRifle  
+    BEGIN SpriteBank
+        Name            objects_d11_2
+        Sprite          d_ModifiedAssaultRifle
+    END 
+    AttackPower          5.00000  
+    RechargeTime         0.1000
+    Range                25.0
+    Ammo                 1000000
+    TwoHanded            true  
+    Properties           Weapons
+    Properties           RangedWeapon
+    Properties           Metal
+    Properties           NoImport
+    Properties           ExtraContraband
+END

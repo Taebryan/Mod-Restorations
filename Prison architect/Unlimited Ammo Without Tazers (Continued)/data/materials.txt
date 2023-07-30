@@ -1,0 +1,75 @@
+BEGIN Equipment  
+    Name                 Gun  
+    Sprite               Gun  
+    Scale                0.700000  
+    AttackPower          15.0000
+    RechargeTime         0.50000
+    Range                10.0
+    Ammo                 25555
+    Properties           Weapons
+    Properties           Metal
+    Properties           RangedWeapon    
+    Properties           NoImport
+END
+
+BEGIN Equipment  
+    Name                 Shotgun  
+    Sprite               Shotgun  
+    Scale                1.20000  
+    AttackPower          25.00000  
+    RechargeTime         1.00000  
+    TwoHanded            true  
+    Range                10.0
+    Ammo                 25555
+    Properties           Weapons
+    Properties           RangedWeapon
+    Properties           Metal
+    Properties           NoImport
+END
+
+BEGIN Equipment  
+    Name                 Rifle  
+    Sprite               Rifle  
+    Scale                1.20000  
+    AttackPower          50.00000  
+    RechargeTime         2.00000
+    TwoHanded            true  
+    Range                40.0
+    Ammo                 25555
+    Properties           Weapons
+    Properties           RangedWeapon
+    Properties           Metal
+    Properties           NoImport
+END
+
+BEGIN Equipment  
+    Name                 AssaultRifle  
+    Sprite               AssaultRifle  
+    Scale                1.10000  
+    AttackPower          4 
+    RechargeTime         0.1000
+    Range                1000.0
+    Ammo                 25555
+    TwoHanded            true  
+    Properties           Weapons
+    Properties           RangedWeapon
+    Properties           Metal
+    Properties           NoImport
+END
+
+BEGIN Equipment  
+    Name                 SubMachineGun
+    Sprite               Mac10
+    Scale                1.10000  
+    AttackPower          2.00000
+    RechargeTime         0.1000
+    Range                20.0
+    Ammo                 25555
+    Properties           Weapons
+    Properties           RangedWeapon
+    Properties           Metal
+    Properties           NoImport
+END
+
+
+

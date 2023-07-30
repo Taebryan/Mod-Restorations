@@ -1,0 +1,43 @@
+﻿
+object_ForestryTree							 Forestry Tree
+object_ForestryTreeYoung					 Forestry Tree
+object_ForestryTreeSapling					 Forestry Tree
+object_ForestryTreeSaplingPlanted			 Forestry Tree
+object_ForestryTreeStump					 Forestry Tree Stump
+buildtoolbar_popup_obj_ForestryTreeSaplingPlanted	 Place this Tree in a Prisoner Forestry. It will grow FAST, so you won't need too many of them to have a lot of Logs! Start small, have 4 or 8 trees, see if it settles your production line, depending on what you want or need for your prison.
+object_MetalStorageRack						 Metal Storage Rack
+buildtoolbar_popup_obj_MetalStorageRack		 Storage Rack for SheetMetal. Will buffer the SheetMetal supply for your Workshop Saw. Auto orders extra SheetMetal when the supply to your saws is low. Should be placed in a normal Workshop and/or "Smart Phone" Factory. Tables won't be required when you use this Rack.
+object_LogStorageRack						 Log Storage Rack
+buildtoolbar_popup_obj_LogStorageRack		 Storage Rack for Log. Will buffer the Log supply for your Wood Saw. Should be placed in a Prisoner Forestry and/or Wood Workshop. Tables won't be required when you use this Rack.
+object_WoodStorageRack						 Wood Storage Rack
+buildtoolbar_popup_obj_WoodStorageRack		 Storage Rack for Wood. Will buffer the Wood supply for Carpenter Tables and Coffin Tables. Should be placed in a Wood Workshop and/or normal Workshop. Tables won't be required when you use this Rack.
+object_WoodSaw								 Wood Saw
+buildtoolbar_popup_obj_WoodSaw				 A Wood Saw for the Wood Workshop. 1 Log becomes 4 Wood. Can also be operated by Workmen, so don't build too many. A tiny  Wood Workshop with two Wood Saws is more than enough to supply a lot of wood!
+object_SmallTable							 Small Table
+buildtoolbar_popup_obj_SmallTable			 A small table. Can be used in rooms where a table is required.
+object_SmallGardenTable						 Small Wooden Garden Table
+buildtoolbar_popup_obj_SmallGardenTable		 A small wooden garden table. Can be used in gardens and some (but not all) production rooms.
+
+room_WoodWorkshop							 Wood Workshop
+buildtoolbar_popup_room_WoodWorkshop		 Where you send your prisoners to die of boredom while making you stacks of Wood out of Logs. Provides a constant Log to Wood production line to help your Carpentry and Coffin Tables. Place some Log and Wood Storage Racks in your normal Workshop and/or Wood Workshop to prevent export.
+room_PrisonForestry							 Prisoner Forestry
+buildtoolbar_popup_room_PrisonForestry		 Send prisoners to work in the Prisoner Forestry
+
+reformprogram_WoodWork						 Wood Work
+reformprogram_WoodWork_text					 A complex trade skill that requires good practical ability. Qualified inmates can use this skill to create high value wood on the WoodSaw.\n\nThis program takes place in a Wood Workshop.
+reformprogram_TreeChopping					 Tree Chopping
+reformprogram_TreeChopping_text				 After completing the Tree Chopping program, you can send prisoners to work in the Prisoner Forestry.
+
+job_custom_PlantForestryTree				 Plant Forestry Tree
+job_custom_ChopForestryTree					 Chop Forestry Tree
+
+tooltip_Divider											 =================
+tooltip_button_MaxAgePlus								 Grow Time: (+)
+tooltip_Caption_MaxAge									 ==   *X hours   ==
+tooltip_button_MaxAgeMinus								 Grow Time: (-)
+tooltip_TreeAge											 Forestry Tree has 3 growing stages:\n\nMy age is *X hours\nGrow *Y hours per stage\nChop tree after *Z hours
+tooltip_Tree0											 Chestnut
+tooltip_Tree1											 Fir
+tooltip_Tree2											 Palm
+tooltip_Tree3											 Oak
+tooltip_Tree4											 Conifer

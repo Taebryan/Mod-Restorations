@@ -1,0 +1,41 @@
+
+BEGIN Job
+    Name                    ModelPainting
+    JobTime                 30
+    Tool                    PaintBrush
+    Worker                  Prisoner
+    Object                  ModelTable
+    Material                PlasticModel
+    Qualification           AngerManagement
+    Qualification           AnxietyManagement
+END
+
+BEGIN Job
+    Name                    CookTheBooks
+    JobTime                 60
+    Tool                    Ink
+    Worker                  Prisoner
+    Object                  AccountingMachine
+    Material                PapperSheet
+    Qualification           BasicAccounting
+END
+
+BEGIN Job
+    Name                    WigMaking
+    JobTime                 45
+    Tool                    Scissors
+    Worker                  Prisoner
+    Object                  SalonStand
+    Material                HairProduct
+    Qualification           HairDressing
+END
+
+BEGIN Job
+    Name                    EngineRepair
+    JobTime                 90
+    Tool                    Hammer
+    Worker                  Prisoner
+    Object                  StrippedCar
+    Material                EngineParts
+    Qualification           MechanicClass
+END

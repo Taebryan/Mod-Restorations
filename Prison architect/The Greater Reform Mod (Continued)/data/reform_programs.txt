@@ -1,0 +1,162 @@
+
+BEGIN Program
+    Name            AngerManagement
+    SessionCost     -150
+    Places          20
+    SessionLength   60
+    NumSessions     2
+    Difficulty      14
+    Room            TherapyCentre
+    Teacher         OccupationalTherapist
+    Equipment       SchoolDesk
+    Research        GroupTherapy
+    Intake          ReferralViolence
+    Intake          ReferralAlcoholism
+    Intake          ReferralDrugAddiction
+    Properties      StudentsSit
+    Properties      Passive 
+END
+
+BEGIN Program
+    Name            AnxietyManagement
+    SessionCost     -150
+    Places          20
+    SessionLength   60
+    NumSessions     2
+    Difficulty      8
+    Room            TherapyCentre
+    Teacher         OccupationalTherapist
+    Equipment       SchoolDesk
+    Research        GroupTherapy
+    Intake          Mandatory
+    Properties      StudentsSit
+    Properties      Passive   
+END
+
+BEGIN Program
+    Name            BasicAccounting
+    SessionCost     -100
+    Places          10
+    SessionLength   60
+    NumSessions     2
+    Difficulty      9
+    Room            AccountingOffice
+    Teacher         Accountant
+    Equipment       AccountingMachine
+    Research        CreativeAccounting
+    Intake          Voluntary
+    Properties      Practical
+END
+
+BEGIN Program
+    Name            ReadingClass
+    SessionCost     -100
+    Places          10
+    SessionLength   60
+    NumSessions     3
+    Difficulty      13
+    Room            Classroom
+    Teacher         Lecturer
+    Equipment       SchoolDesk
+    Research        BasicEducation
+    Intake          Voluntary
+    Properties      StudentsSit
+END
+
+BEGIN Program
+    Name            WrittingClass
+    SessionCost     -100
+    Places          10
+    SessionLength   60
+    NumSessions     3
+    Difficulty      11
+    Room            Classroom
+    Teacher         Lecturer
+    Equipment       SchoolDesk
+    Research        BasicEducation
+    Intake          Voluntary
+    Properties      StudentsSit
+END
+
+BEGIN Program
+    Name            HairDressing
+    SessionCost     -100
+    Places          10
+    SessionLength   60
+    NumSessions     2
+    Difficulty      9
+    Room            Salon
+    Teacher         HairDresser
+    Equipment       SalonStand
+    Research        BasicLabour
+    Intake          Voluntary
+    Properties      Practical
+END
+
+BEGIN Program
+    Name            MechanicClass
+    SessionCost     -100
+    Places          10
+    SessionLength   90
+    NumSessions     2
+    Difficulty      9
+    Room            Garage
+    Teacher         Mechanic
+    Equipment       StrippedCar
+    Research        BasicLabour
+    Intake          Voluntary
+    Properties      Practical 
+END
+
+BEGIN Program
+    Name            BasicTraining
+    SessionCost     -100
+    Places          10
+    SessionLength   60
+    NumSessions     4
+    Difficulty      9
+    Room            ParadeSquare
+    Teacher         StaffSergeant
+    Equipment       SchoolDesk
+    Research        LifeDiscipline
+    Intake          Voluntary
+    Intake          ReferralViolence
+    Intake          ReferralDrugAddiction
+    Intake          ReferralAlcoholism
+    Properties      Practical
+    Properties      Passive	
+END
+
+BEGIN Program
+    Name            DesignClass
+    SessionCost     -100
+    Places          10
+    SessionLength   60
+    NumSessions     2
+    Difficulty      11
+    Room            Studio
+    Teacher         Teacher
+    Equipment       DesignDesk
+    Research        AdvancedEducation
+    Intake          Voluntary
+    Properties      CanHireExternally
+    Properties      StudentsSit
+    Properties      Academic
+END
+
+BEGIN Program
+    Name            ProgrammingClass
+    SessionCost     -100
+    Places          10
+    SessionLength   60
+    NumSessions     2
+    Difficulty      11
+    Room            ICTLab
+    Teacher         Teacher
+    Equipment       ComputerDesk
+    Research        AdvancedEducation
+    Intake          Voluntary
+    Properties      CanHireExternally
+    Properties      StudentsSit
+    Properties      Academic
+END
