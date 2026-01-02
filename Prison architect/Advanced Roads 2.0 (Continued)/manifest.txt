@@ -1,7 +1,7 @@
 
-Name                 "Advanced Road 2.0(Continued)"  
+Name                 "Advanced Road 2.0 (Continued)"  
 Author               murgh  
-Description          "[h1]Original Mod[/h1]\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2294999171]By murgh[/url]\n\n[h1]Changes[/h1]\n- Fixed invisible delivery packages [url=https://steamcommunity.com/id/rybikson]Huge thanks to rybikson[/url]\n\n- Fixed Ui Issues [url=https://steamcommunity.com/profiles/76561198284770794]Huge thanks to Hankthetank[/url]\n\n[h1]Disclaimer[/h1]\nThis a updated version of the original mod. I am not the original author and don't claim any ownership, the original author can message me to request a take down of the mod if they so choose."  
+Description          "[h1]Check out my Mod Restoration Collection above for more mod updates and fixes[/h1]\n\n[h1]Original Mod[/h1]\n[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2294999171]By murgh[/url]\n\n[h1]Changes[/h1]\n- Fixed invisible delivery packages [url=https://steamcommunity.com/id/rybikson]Huge thanks to rybikson[/url]\n\n- Fixed Ui Issues [url=https://steamcommunity.com/profiles/76561198284770794]Huge thanks to Hankthetank[/url]\n\n[img]https://i.imgur.com/zDaK5SB.png[/img]\n\n[h1]Original Description[/h1]\n"  
 IsTranslation        false  
 FileID               F3011282137  
 UpdateTime           1453916518  
